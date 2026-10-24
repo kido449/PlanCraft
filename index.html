@@ -4,6 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PlanCraft AI - GenAI Event Planning Assistant</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <script>
+      // Clean up any legacy Service Workers or caches left over from other localhost:3000 projects (e.g. HaBity)
+      if (typeof window !== 'undefined') {
+        document.title = 'PlanCraft AI - GenAI Event Planning Assistant';
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.getRegistrations().then(function(registrations) {
+            for (var i = 0; i < registrations.length; i++) {
+              registrations[i].unregister();
+            }
+          });
+        }
+        if ('caches' in window) {
+          caches.keys().then(function(names) {
+            for (var j = 0; j < names.length; j++) {
+              caches.delete(names[j]);
+            }
+          });
+        }
+      }
+    </script>
     <meta name="description" content="Constraint-aware GenAI event planner that coordinates mutually consistent budgets, timelines, and vendors with live replanning." />
     <meta property="og:title" content="PlanCraft AI - GenAI Event Planning Assistant" />
     <meta property="og:description" content="Constraint-aware GenAI event planner that coordinates mutually consistent budgets, timelines, and vendors with live replanning." />

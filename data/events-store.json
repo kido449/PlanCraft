@@ -839,7 +839,8 @@
       "estimated_cost": 8500,
       "actual_cost": null,
       "status": "planned",
-      "notes": "Secures a modern, industrial-chic warehouse or garden space in San Francisco for ceremony and reception."
+      "notes": "Secures a modern, industrial-chic warehouse or garden space in San Francisco for ceremony and reception.",
+      "is_user_edited": true
     },
     "80e6f026-4c4b-43e1-b05c-67832e7e7ddc": {
       "id": "80e6f026-4c4b-43e1-b05c-67832e7e7ddc",
@@ -1368,7 +1369,7 @@
       "title": "Finalize Vendor Contracts",
       "category": "Planning",
       "due_date": "2026-10-23",
-      "status": "completed",
+      "status": "pending",
       "notes": "Sign all vendor agreements including catering and entertainment.",
       "is_user_edited": true
     },
@@ -1607,7 +1608,8 @@
       "category": "Logistics",
       "due_date": "2026-11-14",
       "status": "pending",
-      "notes": "Host a small rehearsal dinner to review the run-of-show and finalize seating charts."
+      "notes": "Host a small rehearsal dinner to review the run-of-show and finalize seating charts.",
+      "is_user_edited": true
     },
     "c182cd57-2ca2-47c3-a908-343d672ea154": {
       "title": "60-Day Complete Vendor Checkpoint",
@@ -2094,7 +2096,7 @@
     "7814f974-a311-473a-a961-b66c50a66630": {
       "name": "Alice Walker",
       "email": "",
-      "rsvp_status": "attending",
+      "rsvp_status": "pending",
       "plus_ones": 0,
       "dietary_notes": "",
       "notes": "",

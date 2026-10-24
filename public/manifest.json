@@ -1,0 +1,15 @@
+{
+  "short_name": "PlanCraft AI",
+  "name": "PlanCraft AI - GenAI Event Planning Assistant",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "32x32 48x48 72x72 96x96 144x144 192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#111111",
+  "theme_color": "#111111",
+  "display": "standalone"
+}
