@@ -1572,7 +1572,8 @@
       "category": "Planning",
       "due_date": "2026-10-30",
       "status": "pending",
-      "notes": "Sign contracts with venue, caterer, and photographer to lock in dates and pricing."
+      "notes": "Sign contracts with venue, caterer, and photographer to lock in dates and pricing.",
+      "is_user_edited": true
     },
     "93edcc33-45e5-4950-a017-8be0adb11a63": {
       "id": "93edcc33-45e5-4950-a017-8be0adb11a63",
@@ -1618,6 +1619,16 @@
       "status": "pending",
       "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
       "id": "c182cd57-2ca2-47c3-a908-343d672ea154",
+      "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "is_user_edited": true
+    },
+    "0eee1bc6-e998-4b08-a6ec-aced4449960c": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "0eee1bc6-e998-4b08-a6ec-aced4449960c",
       "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
       "is_user_edited": true
     }
