@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { BudgetItemRecord, BudgetItemStatus } from '../types';
+import { withScrollLock } from '../utils/scrollStability';
 import {
   Plus,
   Trash2,
@@ -59,18 +60,15 @@ export const BudgetSection: React.FC<BudgetSectionProps> = ({
   };
 
   const handleSaveEdit = async (id: string) => {
-    const scrollYBefore = window.scrollY;
-    (document.activeElement as HTMLElement)?.blur();
-    await onUpdateItem(id, {
-      category: editCategory,
-      estimated_cost: Number(editEstimatedCost),
-      actual_cost: editActualCost.trim() !== '' ? Number(editActualCost) : null,
-      status: editStatus,
-      notes: editNotes,
-    });
-    setEditingId(null);
-    requestAnimationFrame(() => {
-      window.scrollTo({ top: scrollYBefore, behavior: 'instant' });
+    await withScrollLock(async () => {
+      await onUpdateItem(id, {
+        category: editCategory,
+        estimated_cost: Number(editEstimatedCost),
+        actual_cost: editActualCost.trim() !== '' ? Number(editActualCost) : null,
+        status: editStatus,
+        notes: editNotes,
+      });
+      setEditingId(null);
     });
   };
 
@@ -78,18 +76,20 @@ export const BudgetSection: React.FC<BudgetSectionProps> = ({
     e.preventDefault();
     if (!newCategory.trim() || !newEstimatedCost) return;
 
-    await onAddItem({
-      category: newCategory.trim(),
-      estimated_cost: Number(newEstimatedCost),
-      actual_cost: null,
-      status: 'planned',
-      notes: newNotes.trim(),
-    });
+    await withScrollLock(async () => {
+      await onAddItem({
+        category: newCategory.trim(),
+        estimated_cost: Number(newEstimatedCost),
+        actual_cost: null,
+        status: 'planned',
+        notes: newNotes.trim(),
+      });
 
-    setNewCategory('');
-    setNewEstimatedCost('');
-    setNewNotes('');
-    setShowAddForm(false);
+      setNewCategory('');
+      setNewEstimatedCost('');
+      setNewNotes('');
+      setShowAddForm(false);
+    });
   };
 
   // Filter & sort logic
@@ -532,7 +532,7 @@ export const BudgetSection: React.FC<BudgetSectionProps> = ({
                           <Edit2 className="w-3.5 h-3.5" />
                         </button>
                         <button
-                          onClick={() => onDeleteItem(item.id)}
+                          onClick={() => withScrollLock(() => onDeleteItem(item.id))}
                           className="p-1 text-[#7A7571] hover:text-rose-700 transition"
                           title="Delete line item"
                         >

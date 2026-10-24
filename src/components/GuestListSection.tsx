@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { GuestRecord } from '../types';
+import { withScrollLock } from '../utils/scrollStability';
 import {
   Users,
   UserCheck,
@@ -64,31 +65,22 @@ export const GuestListSection: React.FC<GuestListSectionProps> = React.memo(({
     e.preventDefault();
     if (!name.trim()) return;
 
-    const scrollYBefore = window.scrollY;
+    await withScrollLock(async () => {
+      await onAddGuest({
+        name: name.trim(),
+        email: email.trim(),
+        rsvp_status: rsvpStatus,
+        plus_ones: Number(plusOnes) || 0,
+        dietary_notes: dietaryNotes.trim(),
+        notes: notes.trim(),
+      });
 
-    // Blur active element before closing form to prevent browser focus-reset scroll jumps
-    if (document.activeElement instanceof HTMLElement) {
-      document.activeElement.blur();
-    }
-
-    await onAddGuest({
-      name: name.trim(),
-      email: email.trim(),
-      rsvp_status: rsvpStatus,
-      plus_ones: Number(plusOnes) || 0,
-      dietary_notes: dietaryNotes.trim(),
-      notes: notes.trim(),
-    });
-
-    setName('');
-    setEmail('');
-    setDietaryNotes('');
-    setNotes('');
-    setPlusOnes(0);
-    setShowAddForm(false);
-
-    requestAnimationFrame(() => {
-      window.scrollTo({ top: scrollYBefore, behavior: 'instant' });
+      setName('');
+      setEmail('');
+      setDietaryNotes('');
+      setNotes('');
+      setPlusOnes(0);
+      setShowAddForm(false);
     });
   };
 
@@ -329,14 +321,16 @@ export const GuestListSection: React.FC<GuestListSectionProps> = React.memo(({
                   <button
                     type="button"
                     onClick={() =>
-                      onUpdateGuest(g.id, {
-                        rsvp_status:
-                          g.rsvp_status === 'attending'
-                            ? 'pending'
-                            : g.rsvp_status === 'pending'
-                            ? 'attending'
-                            : 'attending',
-                      })
+                      withScrollLock(() =>
+                        onUpdateGuest(g.id, {
+                          rsvp_status:
+                            g.rsvp_status === 'attending'
+                              ? 'pending'
+                              : g.rsvp_status === 'pending'
+                              ? 'attending'
+                              : 'attending',
+                        })
+                      )
                     }
                     className="px-2.5 py-1 text-xs font-medium rounded-full border border-[#DCD8D5] hover:bg-black/5 text-[#111111]"
                   >
@@ -344,7 +338,7 @@ export const GuestListSection: React.FC<GuestListSectionProps> = React.memo(({
                   </button>
                   <button
                     type="button"
-                    onClick={() => onDeleteGuest(g.id)}
+                    onClick={() => withScrollLock(() => onDeleteGuest(g.id))}
                     className="p-1.5 text-rose-700 hover:text-rose-900 rounded-full hover:bg-rose-50"
                     title="Remove guest"
                   >

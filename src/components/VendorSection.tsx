@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { VendorRecord, VendorStatus } from '../types';
+import { withScrollLock } from '../utils/scrollStability';
 import {
   Plus,
   Trash2,
@@ -72,36 +73,40 @@ export const VendorSection: React.FC<VendorSectionProps> = ({
   };
 
   const handleSaveEdit = async (id: string) => {
-    await onUpdateVendor(id, {
-      category: editCategory,
-      name: editName,
-      contact: editContact.trim() || null,
-      estimated_cost: Number(editEstimatedCost),
-      status: editStatus,
-      notes: editNotes,
+    await withScrollLock(async () => {
+      await onUpdateVendor(id, {
+        category: editCategory,
+        name: editName,
+        contact: editContact.trim() || null,
+        estimated_cost: Number(editEstimatedCost),
+        status: editStatus,
+        notes: editNotes,
+      });
+      setEditingId(null);
     });
-    setEditingId(null);
   };
 
   const handleCreateVendor = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!newName.trim()) return;
 
-    await onAddVendor({
-      category: newCategory.trim() || 'Vendor',
-      name: newName.trim(),
-      contact: newContact.trim() || null,
-      estimated_cost: Number(newEstimatedCost) || 0,
-      status: 'shortlisted',
-      notes: newNotes.trim(),
-    });
+    await withScrollLock(async () => {
+      await onAddVendor({
+        category: newCategory.trim() || 'Vendor',
+        name: newName.trim(),
+        contact: newContact.trim() || null,
+        estimated_cost: Number(newEstimatedCost) || 0,
+        status: 'shortlisted',
+        notes: newNotes.trim(),
+      });
 
-    setNewCategory('');
-    setNewName('');
-    setNewContact('');
-    setNewEstimatedCost('');
-    setNewNotes('');
-    setShowAddForm(false);
+      setNewCategory('');
+      setNewName('');
+      setNewContact('');
+      setNewEstimatedCost('');
+      setNewNotes('');
+      setShowAddForm(false);
+    });
   };
 
   const cycleStatus = async (vendor: VendorRecord) => {
@@ -110,7 +115,7 @@ export const VendorSection: React.FC<VendorSectionProps> = ({
     else if (vendor.status === 'contacted') next = 'booked';
     else next = 'shortlisted';
 
-    await onUpdateVendor(vendor.id, { status: next });
+    await withScrollLock(() => onUpdateVendor(vendor.id, { status: next }));
   };
 
   const filteredVendors = vendors.filter((v) => {
@@ -442,7 +447,7 @@ export const VendorSection: React.FC<VendorSectionProps> = ({
                         <Edit2 className="w-3.5 h-3.5" />
                       </button>
                       <button
-                        onClick={() => onDeleteVendor(vendor.id)}
+                        onClick={() => withScrollLock(() => onDeleteVendor(vendor.id))}
                         className="p-1 text-[#7A7571] hover:text-rose-700"
                         title="Delete vendor"
                       >

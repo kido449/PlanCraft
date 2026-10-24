@@ -746,7 +746,8 @@
       "estimated_cost": 15000,
       "actual_cost": null,
       "status": "planned",
-      "notes": "Allocation for Napa Valley Cellars venue hire and setup."
+      "notes": "Allocation for Napa Valley Cellars venue hire and setup.",
+      "is_user_edited": true
     },
     "d1ceafdd-a33d-48a5-a1e3-c6addb0cc39e": {
       "id": "d1ceafdd-a33d-48a5-a1e3-c6addb0cc39e",
@@ -1367,8 +1368,9 @@
       "title": "Finalize Vendor Contracts",
       "category": "Planning",
       "due_date": "2026-10-23",
-      "status": "pending",
-      "notes": "Sign all vendor agreements including catering and entertainment."
+      "status": "completed",
+      "notes": "Sign all vendor agreements including catering and entertainment.",
+      "is_user_edited": true
     },
     "09a59249-8f2c-49fc-bedd-4c886d71529f": {
       "id": "09a59249-8f2c-49fc-bedd-4c886d71529f",
@@ -2092,7 +2094,7 @@
     "7814f974-a311-473a-a961-b66c50a66630": {
       "name": "Alice Walker",
       "email": "",
-      "rsvp_status": "pending",
+      "rsvp_status": "attending",
       "plus_ones": 0,
       "dietary_notes": "",
       "notes": "",

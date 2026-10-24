@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { TimelineTaskRecord, TimelineTaskStatus } from '../types';
+import { withScrollLock } from '../utils/scrollStability';
 import {
   Calendar,
   Plus,
@@ -85,7 +86,7 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({
   const toggleTaskStatus = async (task: TimelineTaskRecord) => {
     const nextStatus: TimelineTaskStatus =
       task.status === 'completed' ? 'pending' : 'completed';
-    await onUpdateTask(task.id, { status: nextStatus });
+    await withScrollLock(() => onUpdateTask(task.id, { status: nextStatus }));
   };
 
   const startEditing = (task: TimelineTaskRecord) => {
@@ -98,33 +99,37 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({
   };
 
   const saveEdit = async (id: string) => {
-    await onUpdateTask(id, {
-      title: editTitle,
-      category: editCategory,
-      due_date: editDueDate,
-      status: editStatus,
-      notes: editNotes,
+    await withScrollLock(async () => {
+      await onUpdateTask(id, {
+        title: editTitle,
+        category: editCategory,
+        due_date: editDueDate,
+        status: editStatus,
+        notes: editNotes,
+      });
+      setEditingId(null);
     });
-    setEditingId(null);
   };
 
   const handleCreateTask = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!newTitle.trim()) return;
 
-    await onAddTask({
-      title: newTitle.trim(),
-      category: newCategory.trim() || 'General',
-      due_date: newDueDate || new Date().toISOString().split('T')[0],
-      status: 'pending',
-      notes: newNotes.trim(),
-    });
+    await withScrollLock(async () => {
+      await onAddTask({
+        title: newTitle.trim(),
+        category: newCategory.trim() || 'General',
+        due_date: newDueDate || new Date().toISOString().split('T')[0],
+        status: 'pending',
+        notes: newNotes.trim(),
+      });
 
-    setNewTitle('');
-    setNewCategory('Preparation');
-    setNewDueDate('');
-    setNewNotes('');
-    setShowAddForm(false);
+      setNewTitle('');
+      setNewCategory('Preparation');
+      setNewDueDate('');
+      setNewNotes('');
+      setShowAddForm(false);
+    });
   };
 
   const getDaysUntilDue = (dateStr: string) => {
@@ -441,7 +446,7 @@ export const TimelineSection: React.FC<TimelineSectionProps> = ({
                           <Edit2 className="w-3.5 h-3.5" />
                         </button>
                         <button
-                          onClick={() => onDeleteTask(task.id)}
+                          onClick={() => withScrollLock(() => onDeleteTask(task.id))}
                           className="p-1 text-[#7A7571] hover:text-rose-700"
                           title="Delete task"
                         >

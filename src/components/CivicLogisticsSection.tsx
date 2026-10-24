@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { VolunteerRecord, PermitRecord } from '../types';
+import { withScrollLock } from '../utils/scrollStability';
 import {
   Users,
   ShieldCheck,
@@ -77,33 +78,37 @@ export const CivicLogisticsSection: React.FC<CivicLogisticsSectionProps> = ({
   const handleCreateVolunteer = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!volRole.trim()) return;
-    await onAddVolunteer({
-      role: volRole.trim(),
-      contact_name: volContact.trim() || 'Open Shift',
-      shift_time: volShift.trim(),
-      count_needed: Number(volCount) || 2,
-      count_confirmed: 0,
-      status: 'recruiting',
-      notes: volNotes.trim(),
+    await withScrollLock(async () => {
+      await onAddVolunteer({
+        role: volRole.trim(),
+        contact_name: volContact.trim() || 'Open Shift',
+        shift_time: volShift.trim(),
+        count_needed: Number(volCount) || 2,
+        count_confirmed: 0,
+        status: 'recruiting',
+        notes: volNotes.trim(),
+      });
+      setVolRole('');
+      setVolContact('');
+      setShowAddVolunteer(false);
     });
-    setVolRole('');
-    setVolContact('');
-    setShowAddVolunteer(false);
   };
 
   const handleCreatePermit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!permitType.trim()) return;
-    await onAddPermit({
-      permit_type: permitType.trim(),
-      issuing_agency: issuingAgency.trim(),
-      status: permitStatus,
-      fee: Number(permitFee) || 0,
-      deadline: permitDeadline,
-      notes: permitNotes.trim(),
+    await withScrollLock(async () => {
+      await onAddPermit({
+        permit_type: permitType.trim(),
+        issuing_agency: issuingAgency.trim(),
+        status: permitStatus,
+        fee: Number(permitFee) || 0,
+        deadline: permitDeadline,
+        notes: permitNotes.trim(),
+      });
+      setPermitType('');
+      setShowAddPermit(false);
     });
-    setPermitType('');
-    setShowAddPermit(false);
   };
 
   return (
@@ -318,10 +323,12 @@ export const CivicLogisticsSection: React.FC<CivicLogisticsSectionProps> = ({
                       <button
                         type="button"
                         onClick={() =>
-                          onUpdateVolunteer(v.id, {
-                            count_confirmed: v.count_confirmed < v.count_needed ? v.count_confirmed + 1 : v.count_confirmed,
-                            status: v.count_confirmed + 1 >= v.count_needed ? 'filled' : 'recruiting',
-                          })
+                          withScrollLock(() =>
+                            onUpdateVolunteer(v.id, {
+                              count_confirmed: v.count_confirmed < v.count_needed ? v.count_confirmed + 1 : v.count_confirmed,
+                              status: v.count_confirmed + 1 >= v.count_needed ? 'filled' : 'recruiting',
+                            })
+                          )
                         }
                         className="px-2.5 py-1 text-xs font-medium rounded-full border border-[#DCD8D5] hover:bg-black/5 text-[#111111]"
                         title="Quick confirm +1 volunteer"
@@ -330,7 +337,7 @@ export const CivicLogisticsSection: React.FC<CivicLogisticsSectionProps> = ({
                       </button>
                       <button
                         type="button"
-                        onClick={() => onDeleteVolunteer(v.id)}
+                        onClick={() => withScrollLock(() => onDeleteVolunteer(v.id))}
                         className="p-1.5 text-rose-700 hover:text-rose-900 rounded-full hover:bg-rose-50"
                         title="Remove volunteer role"
                       >
@@ -483,9 +490,11 @@ export const CivicLogisticsSection: React.FC<CivicLogisticsSectionProps> = ({
                       <button
                         type="button"
                         onClick={() =>
-                          onUpdatePermit(p.id, {
-                            status: p.status === 'approved' ? 'required' : p.status === 'in_progress' ? 'approved' : 'in_progress',
-                          })
+                          withScrollLock(() =>
+                            onUpdatePermit(p.id, {
+                              status: p.status === 'approved' ? 'required' : p.status === 'in_progress' ? 'approved' : 'in_progress',
+                            })
+                          )
                         }
                         className="px-2.5 py-1 text-xs font-medium rounded-full border border-[#DCD8D5] hover:bg-black/5 text-[#111111]"
                       >
@@ -493,7 +502,7 @@ export const CivicLogisticsSection: React.FC<CivicLogisticsSectionProps> = ({
                       </button>
                       <button
                         type="button"
-                        onClick={() => onDeletePermit(p.id)}
+                        onClick={() => withScrollLock(() => onDeletePermit(p.id))}
                         className="p-1.5 text-rose-700 hover:text-rose-900 rounded-full hover:bg-rose-50"
                         title="Remove permit"
                       >

@@ -60,6 +60,7 @@ import { EditorialFooter } from './components/EditorialFooter';
 import { CreateEventModal } from './components/CreateEventModal';
 import { ConstraintEditModal } from './components/ConstraintEditModal';
 import { ExportModal } from './components/ExportModal';
+import { withScrollLock } from './utils/scrollStability';
 
 import {
   DollarSign,
@@ -300,42 +301,46 @@ export default function App() {
   // 4. Save Constraints Only
   const handleSaveConstraintsOnly = async (newBudget: number, newGuestCount: number) => {
     if (!activeEvent) return;
-    try {
-      await updateEvent(activeEvent.id, {
-        total_budget: newBudget,
-        guest_count: newGuestCount,
-      });
-      const refreshed = await fetchEvent(activeEvent.id);
-      setActiveEvent(refreshed);
-      setIsEditConstraintsOpen(false);
-      showSuccess('Constraints updated. You can trigger a Replan whenever ready.');
-      await loadEventsList(activeEvent.id, true);
-    } catch (err: any) {
-      showError(err.message || 'Failed to update constraints');
-    }
+    await withScrollLock(async () => {
+      try {
+        await updateEvent(activeEvent.id, {
+          total_budget: newBudget,
+          guest_count: newGuestCount,
+        });
+        const refreshed = await fetchEvent(activeEvent.id);
+        setActiveEvent(refreshed);
+        setIsEditConstraintsOpen(false);
+        showSuccess('Constraints updated. You can trigger a Replan whenever ready.');
+        await loadEventsList(activeEvent.id, true);
+      } catch (err: any) {
+        showError(err.message || 'Failed to update constraints');
+      }
+    });
   };
 
   // 5. Replan Event with AI
   const handleSaveAndReplan = async (newBudget: number, newGuestCount: number, reason: string) => {
     if (!activeEvent) return;
-    try {
-      setIsReplanning(true);
-      const res = await replanEvent(activeEvent.id, {
-        new_budget: newBudget,
-        new_guest_count: newGuestCount,
-        reason,
-      });
+    await withScrollLock(async () => {
+      try {
+        setIsReplanning(true);
+        const res = await replanEvent(activeEvent.id, {
+          new_budget: newBudget,
+          new_guest_count: newGuestCount,
+          reason,
+        });
 
-      setActiveEvent(res.event);
-      setReplanRationale(res.rationale || 'Constraints recalculated and rebalanced.');
-      setIsEditConstraintsOpen(false);
-      showSuccess('Replanning complete! Preserved custom items and re-distributed flexible lines.');
-      await loadEventsList(activeEvent.id, true);
-    } catch (err: any) {
-      showError(err.message || 'Replanning failed');
-    } finally {
-      setIsReplanning(false);
-    }
+        setActiveEvent(res.event);
+        setReplanRationale(res.rationale || 'Constraints recalculated and rebalanced.');
+        setIsEditConstraintsOpen(false);
+        showSuccess('Replanning complete! Preserved custom items and re-distributed flexible lines.');
+        await loadEventsList(activeEvent.id, true);
+      } catch (err: any) {
+        showError(err.message || 'Replanning failed');
+      } finally {
+        setIsReplanning(false);
+      }
+    });
   };
 
   // 6. Budget item mutations
