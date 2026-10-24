@@ -1,0 +1,2321 @@
+{
+  "events": {
+    "6b5d5d95-4d35-40a9-8dcb-e965f042fa14": {
+      "id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "owner_id": "default-user-101",
+      "type": "wedding",
+      "name": "Elena & Marcus Autumn Vineyard Wedding",
+      "date": "2026-10-24",
+      "guest_count": 120,
+      "location": "Napa Valley, CA",
+      "total_budget": 35000,
+      "vibe": "Rustic elegance, warm amber lighting, farm-to-table dining, acoustic jazz",
+      "created_at": "2026-10-20T11:53:21.201Z",
+      "updated_at": "2026-10-20T11:53:21.201Z"
+    },
+    "28b61816-f8f5-4fc8-8037-4b540e3a24e6": {
+      "id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "owner_id": "default-user-101",
+      "type": "community",
+      "name": "Oakland Community Harvest & Youth Arts Festival",
+      "date": "2026-11-15",
+      "guest_count": 120,
+      "location": "Oakland, CA",
+      "total_budget": 35000,
+      "vibe": "Inclusive civic gathering, local food trucks, community youth art wall, volunteer run",
+      "created_at": "2026-10-20T13:14:19.313Z",
+      "updated_at": "2026-10-22T16:52:52.339Z"
+    },
+    "601fd888-7fb6-4997-b03d-ad089a6bbd85": {
+      "id": "601fd888-7fb6-4997-b03d-ad089a6bbd85",
+      "owner_id": "user-a",
+      "type": "wedding",
+      "name": "Sarah & Tom Wedding",
+      "date": "2026-11-20",
+      "guest_count": 100,
+      "location": "New York, NY",
+      "total_budget": 25000,
+      "vibe": "Romantic, modern floral",
+      "created_at": "2026-10-21T16:53:30.466Z",
+      "updated_at": "2026-10-21T16:53:30.466Z"
+    },
+    "30fccb95-776e-460f-8c4d-8d6eb48a4697": {
+      "id": "30fccb95-776e-460f-8c4d-8d6eb48a4697",
+      "owner_id": "test-runner",
+      "type": "wedding",
+      "name": "Amara & Liam Garden Wedding",
+      "date": "2026-09-15",
+      "guest_count": 150,
+      "location": "Cotswolds, UK",
+      "total_budget": 45000,
+      "vibe": "English garden party, pastel florals, champagne tower",
+      "created_at": "2026-10-21T16:54:02.709Z",
+      "updated_at": "2026-10-21T16:54:02.709Z"
+    },
+    "bccb40fe-e9b8-4551-9a56-f21f6585873f": {
+      "id": "bccb40fe-e9b8-4551-9a56-f21f6585873f",
+      "owner_id": "test-runner",
+      "type": "birthday",
+      "name": "Marcus 40th Rooftop Soiree",
+      "date": "2026-08-10",
+      "guest_count": 60,
+      "location": "Chicago, IL",
+      "total_budget": 12000,
+      "vibe": "Moody speakeasy, craft bourbon bar, live jazz trio",
+      "created_at": "2026-10-21T16:54:02.721Z",
+      "updated_at": "2026-10-21T16:54:02.721Z"
+    },
+    "96f4aa83-d64e-4b7d-a15e-4efe32c43c49": {
+      "id": "96f4aa83-d64e-4b7d-a15e-4efe32c43c49",
+      "owner_id": "test-runner",
+      "type": "community",
+      "name": "Riverside Earth Day Green Festival",
+      "date": "2026-04-22",
+      "guest_count": 500,
+      "location": "Austin, TX",
+      "total_budget": 18000,
+      "vibe": "Eco-conscious, zero-waste workshops, local food co-ops, acoustic stage",
+      "created_at": "2026-10-21T16:54:02.727Z",
+      "updated_at": "2026-10-21T16:54:02.727Z"
+    },
+    "e16c620b-1a51-416a-96c7-3336e5dc7bcb": {
+      "id": "e16c620b-1a51-416a-96c7-3336e5dc7bcb",
+      "owner_id": "edge-tester",
+      "type": "community",
+      "name": "Zero Budget Clean Up",
+      "date": "2026-06-01",
+      "guest_count": 50,
+      "location": "Local Park",
+      "total_budget": 0,
+      "vibe": "Volunteer community clean up",
+      "created_at": "2026-10-21T16:55:11.010Z",
+      "updated_at": "2026-10-21T16:55:11.010Z"
+    },
+    "817f7fd4-6cfc-4596-893d-9cfd46d10430": {
+      "id": "817f7fd4-6cfc-4596-893d-9cfd46d10430",
+      "owner_id": "edge-tester",
+      "type": "birthday",
+      "name": "Zero Guest Solo Party",
+      "date": "2026-06-01",
+      "guest_count": 0,
+      "location": "Home",
+      "total_budget": 500,
+      "vibe": "Intimate solo reflection",
+      "created_at": "2026-10-21T16:55:11.029Z",
+      "updated_at": "2026-10-21T16:55:11.029Z"
+    },
+    "2c08574d-e35f-462e-b091-525146739356": {
+      "id": "2c08574d-e35f-462e-b091-525146739356",
+      "owner_id": "edge-tester",
+      "type": "wedding",
+      "name": "Mega Yacht Gala",
+      "date": "2026-07-01",
+      "guest_count": 500,
+      "location": "Monaco",
+      "total_budget": 50000000,
+      "vibe": "Ultra luxury",
+      "created_at": "2026-10-21T16:55:11.034Z",
+      "updated_at": "2026-10-21T16:55:11.034Z"
+    },
+    "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b": {
+      "id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "owner_id": "verifier-user",
+      "type": "wedding",
+      "name": "Julian & Maya Vineyard Wedding",
+      "date": "2026-10-18",
+      "guest_count": 80,
+      "location": "Napa Valley, CA",
+      "total_budget": 28000,
+      "vibe": "Rustic warmth, ambient fairy lights, artisan farm-to-table dinner",
+      "created_at": "2026-10-22T16:20:24.734Z",
+      "updated_at": "2026-10-22T16:22:41.820Z"
+    },
+    "b7f159d9-6048-4e1f-8ffd-dd913476d484": {
+      "id": "b7f159d9-6048-4e1f-8ffd-dd913476d484",
+      "owner_id": "verifier-user",
+      "type": "community",
+      "name": "East Austin Earth Day Clean-Up Festival",
+      "date": "2026-04-25",
+      "guest_count": 400,
+      "location": "Austin, TX",
+      "total_budget": 15000,
+      "vibe": "Zero-waste workshops, live bluegrass stage, community tree planting",
+      "created_at": "2026-10-22T16:20:28.385Z",
+      "updated_at": "2026-10-22T16:20:28.385Z"
+    },
+    "d7433834-a37a-42cc-ba12-8d0ce1c3167c": {
+      "id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "owner_id": "default-user-101",
+      "type": "wedding",
+      "name": "Audit Wedding Gala",
+      "date": "2026-11-20",
+      "guest_count": 120,
+      "location": "Grand Ballroom & Garden Terrace",
+      "total_budget": 35000,
+      "vibe": "Black-tie optional, vegetarian options required, refined and romantic",
+      "created_at": "2026-10-22T16:32:06.442Z",
+      "updated_at": "2026-10-22T16:32:06.442Z"
+    },
+    "f160b919-d6da-47fd-9d65-93a132efd010": {
+      "id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "owner_id": "default-user-101",
+      "type": "wedding",
+      "name": "Audit Wedding Gala",
+      "date": "2026-11-20",
+      "guest_count": 120,
+      "location": "Grand Ballroom & Garden Terrace",
+      "total_budget": 35000,
+      "vibe": "Black-tie optional, vegetarian options required, refined and romantic",
+      "created_at": "2026-10-22T16:33:28.698Z",
+      "updated_at": "2026-10-22T16:33:32.041Z"
+    },
+    "2d0678f9-3760-41b7-8673-63b0a0452047": {
+      "id": "2d0678f9-3760-41b7-8673-63b0a0452047",
+      "owner_id": "default-user-101",
+      "type": "community",
+      "name": "Riverside Park Earth Day Cleanup & Fair",
+      "date": "2026-10-15",
+      "guest_count": 350,
+      "location": "Riverside Community Park & Pavilion",
+      "total_budget": 8000,
+      "vibe": "Requires city park permit, waste management volunteers, and sound amplification permit",
+      "created_at": "2026-10-22T16:33:32.146Z",
+      "updated_at": "2026-10-22T16:33:32.146Z"
+    },
+    "5013ddd6-7878-4427-8c6a-f3a02352149d": {
+      "id": "5013ddd6-7878-4427-8c6a-f3a02352149d",
+      "owner_id": "default-user-101",
+      "type": "wedding",
+      "name": "Audit Wedding Gala",
+      "date": "2026-11-20",
+      "guest_count": 120,
+      "location": "Grand Ballroom & Garden Terrace",
+      "total_budget": 35000,
+      "vibe": "Black-tie optional, vegetarian options required, refined and romantic",
+      "created_at": "2026-10-22T16:37:39.835Z",
+      "updated_at": "2026-10-22T16:43:13.645Z"
+    },
+    "29597d08-acab-4c21-9558-3839cd1b58f6": {
+      "id": "29597d08-acab-4c21-9558-3839cd1b58f6",
+      "owner_id": "default-user-101",
+      "type": "wedding",
+      "name": "Napa Valley Vineyard Wedding",
+      "date": "2026-10-24",
+      "guest_count": 120,
+      "location": "Napa Valley, CA",
+      "total_budget": 35000,
+      "vibe": "Rustic elegance, warm amber lighting, farm-to-table dining, acoustic jazz",
+      "created_at": "2026-10-22T16:44:19.295Z",
+      "updated_at": "2026-10-22T16:44:19.295Z"
+    },
+    "748fc2ca-74ec-482c-b5f3-722eb9be492b": {
+      "id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "owner_id": "test-planner-202",
+      "type": "wedding",
+      "name": "Gathering",
+      "date": "2026-11-15",
+      "guest_count": 100,
+      "location": "San Francisco, CA",
+      "total_budget": 25000,
+      "vibe": "Modern minimal, warm candlelight, organic florals",
+      "created_at": "2026-10-22T16:47:14.958Z",
+      "updated_at": "2026-10-23T05:05:16.092Z"
+    },
+    "77c29013-ef5d-4de4-9e6b-daac412dfdb3": {
+      "id": "77c29013-ef5d-4de4-9e6b-daac412dfdb3",
+      "owner_id": "default-user-101",
+      "type": "birthday",
+      "name": "Retro Neon 30th Rooftop Bash",
+      "date": "2026-11-07",
+      "guest_count": 45,
+      "location": "Austin, TX",
+      "total_budget": 4500,
+      "vibe": "80s synthwave neon, craft cocktail bar, gourmet slider station, vinyl DJ",
+      "created_at": "2026-10-22T16:53:05.376Z",
+      "updated_at": "2026-10-22T16:53:05.376Z"
+    },
+    "8fcc199a-8885-4d8a-81d7-65b0c4b20ac5": {
+      "id": "8fcc199a-8885-4d8a-81d7-65b0c4b20ac5",
+      "owner_id": "default-user-101",
+      "type": "wedding",
+      "name": "Quick Test Event",
+      "date": "2026-12-01",
+      "guest_count": 50,
+      "location": "Napa Valley",
+      "total_budget": 20000,
+      "vibe": "Rustic elegance",
+      "created_at": "2026-10-22T16:54:52.659Z",
+      "updated_at": "2026-10-22T16:54:52.659Z"
+    },
+    "810cba91-477e-4a12-ae74-19fe8a5ad14d": {
+      "id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "owner_id": "default-user-101",
+      "type": "wedding",
+      "name": "Autumn Vineyard Wedding Gala",
+      "date": "2026-11-15",
+      "guest_count": 85,
+      "location": "Napa Valley Cellars",
+      "total_budget": 55000,
+      "vibe": "Warm candlelight, jazz duo, refined plated dinner",
+      "created_at": "2026-10-22T16:59:20.183Z",
+      "updated_at": "2026-10-23T03:36:37.902Z"
+    },
+    "f336e3a9-c60c-4650-8276-294a66a9f546": {
+      "id": "f336e3a9-c60c-4650-8276-294a66a9f546",
+      "owner_id": "test-planner-202",
+      "type": "wedding",
+      "name": "iii",
+      "date": "2026-11-15",
+      "guest_count": 100,
+      "location": "San Francisco, CA",
+      "total_budget": 25000,
+      "vibe": "Modern minimal, warm candlelight, organic florals",
+      "created_at": "2026-10-24T15:44:34.815Z",
+      "updated_at": "2026-10-24T15:44:34.815Z"
+    },
+    "0cef9003-72ab-4389-a0a3-b5cc638d80ba": {
+      "id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "owner_id": "test-planner-202",
+      "type": "wedding",
+      "name": "iikk",
+      "date": "2026-11-15",
+      "guest_count": 100,
+      "location": "San Francisco, CA",
+      "total_budget": 25000,
+      "vibe": "Modern minimal, warm candlelight, organic florals",
+      "created_at": "2026-10-24T15:44:46.142Z",
+      "updated_at": "2026-10-24T15:44:46.142Z"
+    }
+  },
+  "budget_items": {
+    "b-1": {
+      "id": "b-1",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "category": "Venue & Vineyard Estate Grounds",
+      "estimated_cost": 11500,
+      "actual_cost": 11500,
+      "status": "paid",
+      "notes": "Includes lawn ceremony site, barrel room reception, and bridal suite access"
+    },
+    "b-2": {
+      "id": "b-2",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "category": "Farm-to-Table Catering & Service Staff",
+      "estimated_cost": 10800,
+      "actual_cost": 10500,
+      "status": "in_progress",
+      "notes": "3-course plated seasonal dinner with local pairings for 120 guests"
+    },
+    "b-3": {
+      "id": "b-3",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "category": "Curated Wine & Artisan Beverage Bar",
+      "estimated_cost": 3500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Napa reserve cabernet, sparkling toast, signature fig & bourbon cocktail"
+    },
+    "b-4": {
+      "id": "b-4",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "category": "Floral Design & Architectural Arch",
+      "estimated_cost": 2800,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Terracotta urn arrangements, olive branches, and cascading garden roses"
+    },
+    "b-5": {
+      "id": "b-5",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "category": "Photography & Heritage Keepsake Album",
+      "estimated_cost": 3200,
+      "actual_cost": 3200,
+      "status": "paid",
+      "notes": "8 hours documentary-style coverage, second shooter, and fine-art album"
+    },
+    "b-6": {
+      "id": "b-6",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "category": "Acoustic Trio & Ambient Vineyard Lighting",
+      "estimated_cost": 1800,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Ceremony strings, cocktail jazz set, bistro string lights, and speech audio"
+    },
+    "b-7": {
+      "id": "b-7",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "category": "Letterpress Invitations & Day-of Paper",
+      "estimated_cost": 900,
+      "actual_cost": 850,
+      "status": "paid",
+      "notes": "Custom handmade cotton stock with blind deboss and wax seal suites"
+    },
+    "b-8": {
+      "id": "b-8",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "category": "Contingency & Production Buffer",
+      "estimated_cost": 500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Reserved for incidental load-in fees, corkage, or minor weather adaptations"
+    },
+    "730956b4-c695-447c-90bb-d1db0a9f4170": {
+      "id": "730956b4-c695-447c-90bb-d1db0a9f4170",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "category": "Venue & Permits",
+      "estimated_cost": 2200,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "City of Oakland park reservation fees, special event permit, sound permit, and park maintenance escrow."
+    },
+    "0ebfb9a8-7bf4-4fa1-acc6-9f58c46fd733": {
+      "id": "0ebfb9a8-7bf4-4fa1-acc6-9f58c46fd733",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "category": "Equipment & Rentals",
+      "estimated_cost": 3100,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Rental of 10x10 canopies, 6ft fold-out tables, folding chairs, ADA portable restrooms, and recycling/compost stations."
+    },
+    "8a7c6169-b940-4e8e-8083-efaf9c2537b1": {
+      "id": "8a7c6169-b940-4e8e-8083-efaf9c2537b1",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "category": "Food Truck Vouchers & Hospitality",
+      "estimated_cost": 3500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Community meal vouchers ($10 value each) for youth participants and volunteer shift meals across 4 local Oakland food trucks."
+    },
+    "d2f70d16-76d1-42c7-8e56-ec2564aa9cc4": {
+      "id": "d2f70d16-76d1-42c7-8e56-ec2564aa9cc4",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "category": "Youth Art Wall & Workshop Supplies",
+      "estimated_cost": 1800,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "8x24 ft freestanding modular mural plywood panels, eco-friendly exterior acrylic paints, brushes, canvas drop cloths, and protective aprons."
+    },
+    "21da146c-3d66-4a27-8bcc-9f01600d48c6": {
+      "id": "21da146c-3d66-4a27-8bcc-9f01600d48c6",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "category": "Live Sound, Audio & Stage",
+      "estimated_cost": 1600,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Small covered mobile stage, dual-speaker PA system, dynamic microphones for youth performances/speakers, and silent solar/battery generator."
+    },
+    "7a1278e4-8adf-4f88-9028-cf5129107482": {
+      "id": "7a1278e4-8adf-4f88-9028-cf5129107482",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "category": "Signage & Marketing / Printing",
+      "estimated_cost": 700,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Multilingual wayfinding lawn signs (English, Spanish, Cantonese), schedule banners, and neighborhood flyering across Oakland districts."
+    },
+    "e85f72bd-e1e2-47a3-94f5-f769e254faf8": {
+      "id": "e85f72bd-e1e2-47a3-94f5-f769e254faf8",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "category": "Volunteer Program & First Aid",
+      "estimated_cost": 600,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Volunteer screen-printed high-vis shirts, check-in badges, two-way radios, and fully equipped community safety/first-aid station."
+    },
+    "23ebcf1b-19f6-4bc8-87d7-be6aa6103923": {
+      "id": "23ebcf1b-19f6-4bc8-87d7-be6aa6103923",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "category": "Contingency & City Services",
+      "estimated_cost": 1500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Reserve buffer for weather adaptations, urgent hardware runs, and required city waste disposal service settlement."
+    },
+    "3b8a46fb-d892-4d66-90cf-a7c0302f1459": {
+      "category": "Photography & Super 8",
+      "estimated_cost": 5200,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Updated to include drone film",
+      "id": "3b8a46fb-d892-4d66-90cf-a7c0302f1459",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "is_user_edited": true
+    },
+    "d94aa114-ad52-494f-8205-136dc337fbfa": {
+      "id": "d94aa114-ad52-494f-8205-136dc337fbfa",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "category": "Venue & Rentals",
+      "estimated_cost": 6000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Napa Valley vineyard venue rental, basic furniture, and ambient lighting setup."
+    },
+    "f8b117ea-edd7-429f-8cf2-c0e2ff269e1e": {
+      "id": "f8b117ea-edd7-429f-8cf2-c0e2ff269e1e",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "category": "Catering & Bar",
+      "estimated_cost": 12000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Farm-to-table dinner for 80 guests ($100/head) including dedicated gluten-free celiac-safe preparation for Claire Bennett."
+    },
+    "a1a5a4e8-bf3d-4212-ab7b-0acaed1e67f9": {
+      "id": "a1a5a4e8-bf3d-4212-ab7b-0acaed1e67f9",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "category": "Decor & Florals",
+      "estimated_cost": 4000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Rustic floral arrangements, fairy lights, and artisanal table settings."
+    },
+    "0669e077-68f3-4349-9ba9-a1aacd0b39f8": {
+      "id": "0669e077-68f3-4349-9ba9-a1aacd0b39f8",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "category": "Photography & Video",
+      "estimated_cost": 3500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "8-hour coverage package including photo editing and highlight video."
+    },
+    "9d89c683-fce2-47ec-b081-a6843a8f4296": {
+      "id": "9d89c683-fce2-47ec-b081-a6843a8f4296",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "category": "Music & Entertainment",
+      "estimated_cost": 2000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Live acoustic duo for ceremony/reception and DJ for dancing."
+    },
+    "cd211522-3ef9-42a4-a458-4e2aa36b2370": {
+      "id": "cd211522-3ef9-42a4-a458-4e2aa36b2370",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "category": "Stationery & Invitations",
+      "estimated_cost": 800,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Eco-friendly, rustic-themed paper goods for 80 guests."
+    },
+    "864c39ac-db42-4bb7-9a18-dc92efd3b79d": {
+      "id": "864c39ac-db42-4bb7-9a18-dc92efd3b79d",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "category": "Attire & Beauty",
+      "estimated_cost": 1200,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Rustic-chic attire and on-site beauty services."
+    },
+    "ec2765dc-b866-415c-8a62-a096571a1271": {
+      "id": "ec2765dc-b866-415c-8a62-a096571a1271",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "category": "Contingency",
+      "estimated_cost": 500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Buffer for last-minute adjustments or unexpected costs."
+    },
+    "05613ed5-8920-4260-8388-4ded3954425c": {
+      "id": "05613ed5-8920-4260-8388-4ded3954425c",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "category": "Venue & Rentals",
+      "estimated_cost": 8500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Grand Ballroom & Garden Terrace rental, tables, chairs, and basic lighting."
+    },
+    "e9b4d337-1b31-4129-b702-62815bbd7ac7": {
+      "id": "e9b4d337-1b31-4129-b702-62815bbd7ac7",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "category": "Catering & Bar Service",
+      "estimated_cost": 12000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Fine-dining vegetarian plated menu for 120 guests, premium bar service, and signature cocktails."
+    },
+    "99ea3799-db6d-4f07-bbd1-2b45d100d28b": {
+      "id": "99ea3799-db6d-4f07-bbd1-2b45d100d28b",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "category": "Photography & Videography",
+      "estimated_cost": 4500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Documentary-style photography and highlight video coverage."
+    },
+    "83e8cc38-46c5-406c-b2a0-c6f172e553f1": {
+      "id": "83e8cc38-46c5-406c-b2a0-c6f172e553f1",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "category": "Floral Design & Decor",
+      "estimated_cost": 3500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Ceremony arch, centerpieces, and romantic garden terrace installations."
+    },
+    "6bb96695-1212-410f-bc1e-9d9a049dc2b9": {
+      "id": "6bb96695-1212-410f-bc1e-9d9a049dc2b9",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "category": "Music & Entertainment",
+      "estimated_cost": 2500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Acoustic ensemble for ceremony and refined DJ for reception."
+    },
+    "e2d9de85-aca1-432f-9b2a-f71520c82796": {
+      "id": "e2d9de85-aca1-432f-9b2a-f71520c82796",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "category": "Stationery & Favors",
+      "estimated_cost": 1500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Bespoke invitation suite and personalized golden hour guest favors."
+    },
+    "a066d2b0-9615-4a65-b296-28604a71beca": {
+      "id": "a066d2b0-9615-4a65-b296-28604a71beca",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "category": "Day-Of Coordination",
+      "estimated_cost": 2500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Full-service coordination to ensure seamless execution of the refined romantic vibe."
+    },
+    "4f717d11-79bc-45b3-bff4-42b0af454f7d": {
+      "id": "4f717d11-79bc-45b3-bff4-42b0af454f7d",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "category": "Venue & Grounds",
+      "estimated_cost": 8500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Grand Ballroom & Garden Terrace rental for ceremony and reception, including setup and teardown."
+    },
+    "fa79fe9e-74cd-4ba3-8e55-66702dc0bbd9": {
+      "id": "fa79fe9e-74cd-4ba3-8e55-66702dc0bbd9",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "category": "Catering & Bar",
+      "estimated_cost": 12000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Fine-dining plated vegetarian menu with premium wine and signature cocktail bar for 120 guests."
+    },
+    "a8145295-62a1-4c24-b9d0-4bb99351e509": {
+      "id": "a8145295-62a1-4c24-b9d0-4bb99351e509",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "category": "Photography & Videography",
+      "estimated_cost": 4500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Documentary style photography and highlight video coverage, including golden hour session."
+    },
+    "dfe5e932-7e4b-44c1-97a7-43442bfe5c87": {
+      "id": "dfe5e932-7e4b-44c1-97a7-43442bfe5c87",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "category": "Floral Installations",
+      "estimated_cost": 3500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Boutique floral atelier for ceremony arch, table centerpieces, and garden terrace accents."
+    },
+    "72b7e7e5-b734-4bd9-a69e-c78c7e691c77": {
+      "id": "72b7e7e5-b734-4bd9-a69e-c78c7e691c77",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "category": "Musical Accompaniment",
+      "estimated_cost": 2500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Acoustic ensemble for ceremony and cocktail hour, transitioning to DJ for reception."
+    },
+    "4c7d6eab-5f58-4696-b57f-b5aa3bcfc729": {
+      "id": "4c7d6eab-5f58-4696-b57f-b5aa3bcfc729",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "category": "Stationery & Favors",
+      "estimated_cost": 1500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Bespoke invitation suites, place cards, and personalized guest favors."
+    },
+    "79894e8a-ae8a-4d91-bb55-af8bfffadd77": {
+      "id": "79894e8a-ae8a-4d91-bb55-af8bfffadd77",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "category": "Day-Of Coordination",
+      "estimated_cost": 1500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Professional coordinator for run-of-show management and vendor liaison."
+    },
+    "16d8ecf7-8606-4dd2-b5f9-63579d46117e": {
+      "id": "16d8ecf7-8606-4dd2-b5f9-63579d46117e",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "category": "Contingency",
+      "estimated_cost": 1000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Reserve fund for last-minute adjustments or additional floral/food requests."
+    },
+    "d6f94777-b5af-4186-b760-07b7abb56a60": {
+      "category": "RSVP & Guest Services",
+      "estimated_cost": 500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Coordinate exact allergen counts.",
+      "id": "d6f94777-b5af-4186-b760-07b7abb56a60",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "is_user_edited": true
+    },
+    "5428c68c-6287-4f77-8538-2bdd89b2e354": {
+      "category": "Food & Beverage",
+      "estimated_cost": 500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Focus on 3-4 premium, visually striking items (e.g., macarons, signature cake) to maximize impact within the budget.",
+      "id": "5428c68c-6287-4f77-8538-2bdd89b2e354",
+      "event_id": "5013ddd6-7878-4427-8c6a-f3a02352149d",
+      "is_user_edited": true
+    },
+    "a3d78b39-26ed-4fb2-9d18-ec377f6cd273": {
+      "category": "llll",
+      "estimated_cost": 89999,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "ooo",
+      "id": "a3d78b39-26ed-4fb2-9d18-ec377f6cd273",
+      "event_id": "5013ddd6-7878-4427-8c6a-f3a02352149d",
+      "is_user_edited": true
+    },
+    "83ce0412-eeb5-4de5-a041-512880bb2121": {
+      "id": "83ce0412-eeb5-4de5-a041-512880bb2121",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "category": "Catering & Bar Service",
+      "estimated_cost": 10500,
+      "actual_cost": null,
+      "status": "in_progress",
+      "notes": "Refined plated dinner for 85 guests with premium wine and cocktail bar service.",
+      "is_user_edited": true
+    },
+    "cfdff5f9-97a2-413c-a90e-250dda302c8c": {
+      "id": "cfdff5f9-97a2-413c-a90e-250dda302c8c",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "category": "Stationery & Coordination",
+      "estimated_cost": 90,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Bespoke invitation suite and day-of coordination services.",
+      "is_user_edited": true
+    },
+    "00b468fe-a951-494b-abe0-2a0cb6e94317": {
+      "category": "Lighting & Audio",
+      "estimated_cost": 2000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "",
+      "id": "00b468fe-a951-494b-abe0-2a0cb6e94317",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "is_user_edited": true
+    },
+    "e1b48925-4ef6-4773-a127-ea5f501c4601": {
+      "id": "e1b48925-4ef6-4773-a127-ea5f501c4601",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "category": "Miscellaneous & Contingency",
+      "estimated_cost": 720,
+      "actual_cost": null,
+      "status": "paid",
+      "notes": "Buffer for tips, permits, and last-minute adjustments.",
+      "is_user_edited": true
+    },
+    "1d67d1b2-c91e-43fc-909d-30aedc74a149": {
+      "category": "Test Item",
+      "estimated_cost": 1000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "",
+      "id": "1d67d1b2-c91e-43fc-909d-30aedc74a149",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "is_user_edited": true
+    },
+    "bf80e772-e725-4486-abca-77c7a521aa91": {
+      "category": "Miscellaneous & Contingency",
+      "estimated_cost": 500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Artisanal favors (e.g., local honey, hand-poured candles) for 85 guests.",
+      "id": "bf80e772-e725-4486-abca-77c7a521aa91",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "is_user_edited": true
+    },
+    "cd59f9b2-3145-416a-8237-7f7e78b84901": {
+      "id": "cd59f9b2-3145-416a-8237-7f7e78b84901",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "category": "Venue Rental",
+      "estimated_cost": 15000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Allocation for Napa Valley Cellars venue hire and setup."
+    },
+    "d1ceafdd-a33d-48a5-a1e3-c6addb0cc39e": {
+      "id": "d1ceafdd-a33d-48a5-a1e3-c6addb0cc39e",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "category": "Entertainment",
+      "estimated_cost": 4500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Jazz duo performance fees and equipment rental."
+    },
+    "6a9dca06-27f3-4665-b26b-3920d38c5eac": {
+      "id": "6a9dca06-27f3-4665-b26b-3920d38c5eac",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "category": "Floral & Decor",
+      "estimated_cost": 8000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Autumn-themed floral arrangements and candlelight decor."
+    },
+    "9dfdde82-1a48-49a8-89fd-52280c2a6acf": {
+      "id": "9dfdde82-1a48-49a8-89fd-52280c2a6acf",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "category": "Photography & Video",
+      "estimated_cost": 4000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Professional coverage for the wedding gala."
+    },
+    "5eab301c-412e-4140-bcdd-7942a0c9624f": {
+      "category": "Floral & Decor",
+      "estimated_cost": 4000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Organic, loose arrangements; high-quality taper candles; minimal table settings.",
+      "id": "5eab301c-412e-4140-bcdd-7942a0c9624f",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "is_user_edited": true
+    },
+    "7e863594-242b-40b0-b7d2-8f8a9bcd9fd7": {
+      "id": "7e863594-242b-40b0-b7d2-8f8a9bcd9fd7",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "category": "Venue & Rentals",
+      "estimated_cost": 8000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Includes San Francisco venue fee and basic table/chair rentals for 100 guests.",
+      "is_user_edited": true
+    },
+    "927ee461-0ae8-4be1-8455-de87f40b8cff": {
+      "id": "927ee461-0ae8-4be1-8455-de87f40b8cff",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "category": "Catering & Bar",
+      "estimated_cost": 7500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Plated dinner and open bar service for 100 attendees at a mid-tier rate."
+    },
+    "8f9de4c2-acb3-4364-bc96-4cda4ed60b14": {
+      "id": "8f9de4c2-acb3-4364-bc96-4cda4ed60b14",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "category": "Photography & Video",
+      "estimated_cost": 3500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "8-hour coverage package including photo and video editing."
+    },
+    "92581487-3575-452b-91b1-a17d85957bf7": {
+      "id": "92581487-3575-452b-91b1-a17d85957bf7",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "category": "Music & Entertainment",
+      "estimated_cost": 1500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Live DJ or string quartet for ceremony and reception."
+    },
+    "a67674dd-fb17-4a10-96ca-a25641fcd3d5": {
+      "id": "a67674dd-fb17-4a10-96ca-a25641fcd3d5",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "category": "Stationery & Misc",
+      "estimated_cost": 500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Digital invitations, signage, and contingency for minor adjustments."
+    },
+    "8478705a-d8a9-4ba4-bb92-e8ff09df10db": {
+      "id": "8478705a-d8a9-4ba4-bb92-e8ff09df10db",
+      "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "category": "Venue & Grounds",
+      "estimated_cost": 8500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Secures a modern, industrial-chic warehouse or garden space in San Francisco for ceremony and reception."
+    },
+    "80e6f026-4c4b-43e1-b05c-67832e7e7ddc": {
+      "id": "80e6f026-4c4b-43e1-b05c-67832e7e7ddc",
+      "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "category": "Catering & Bar",
+      "estimated_cost": 9000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Covers fine-dining plated dinner for 100 guests plus a curated bar service with signature cocktails.",
+      "is_user_edited": true
+    },
+    "dbf319bb-6a56-4e5c-ad7c-ac62a731328c": {
+      "id": "dbf319bb-6a56-4e5c-ad7c-ac62a731328c",
+      "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "category": "Floral & Decor",
+      "estimated_cost": 3500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Includes organic floral installations, a ceremony arch, and warm candlelight accents throughout the venue."
+    },
+    "a9c1cb4a-21c1-4f3a-86d4-f9484010020c": {
+      "id": "a9c1cb4a-21c1-4f3a-86d4-f9484010020c",
+      "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "category": "Photography & Video",
+      "estimated_cost": 2500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Hires a documentary-style fine-art photographer for full-day coverage and a 3-minute highlight reel."
+    },
+    "cdac675d-7e40-484a-b889-52f797712281": {
+      "id": "cdac675d-7e40-484a-b889-52f797712281",
+      "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "category": "Music & Entertainment",
+      "estimated_cost": 1000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Engages an acoustic ensemble for the ceremony and a DJ for the reception to match the modern vibe."
+    },
+    "92a46bb1-d3f7-4e1e-9b91-08f1535173f7": {
+      "id": "92a46bb1-d3f7-4e1e-9b91-08f1535173f7",
+      "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "category": "Stationery & Coordination",
+      "estimated_cost": 500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Covers minimalist digital and paper invitation suites and day-of coordination services."
+    }
+  },
+  "timeline_tasks": {
+    "t-1": {
+      "id": "t-1",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "title": "Secure Napa Valley Vineyard Venue & Pay Deposit",
+      "category": "Venue",
+      "due_date": "2026-06-15",
+      "status": "completed",
+      "notes": "Contract signed with Oak Knoll Estate; 50% deposit cleared"
+    },
+    "t-2": {
+      "id": "t-2",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "title": "Chef Tasting & Finalize Farm-to-Table Menu",
+      "category": "Catering",
+      "due_date": "2026-07-20",
+      "status": "completed",
+      "notes": "Approved 3-course menu featuring roasted Sonoma chicken and braised short ribs"
+    },
+    "t-3": {
+      "id": "t-3",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "title": "Send Letterpress Invitations & Open RSVP Registry",
+      "category": "Stationery",
+      "due_date": "2026-08-10",
+      "status": "completed",
+      "notes": "120 invitations mailed out with dietary selection cards"
+    },
+    "t-4": {
+      "id": "t-4",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "title": "Floral Walkthrough & Ceremony Arch Structure Mockup",
+      "category": "Florals",
+      "due_date": "2026-09-05",
+      "status": "pending",
+      "notes": "Meet Studio Terrene on-site to measure pergola and review bloom colors"
+    },
+    "t-5": {
+      "id": "t-5",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "title": "Curate Song List & Rehearse Acoustic Prelude with Trio",
+      "category": "Entertainment",
+      "due_date": "2026-09-25",
+      "status": "pending",
+      "notes": "Confirm processional piece (Bach Cello Suite) and recessional indie folk"
+    },
+    "t-6": {
+      "id": "t-6",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "title": "Final Headcount Cutoff & Finalize Seating Chart",
+      "category": "Coordination",
+      "due_date": "2026-10-10",
+      "status": "pending",
+      "notes": "Submit final dietary breakdown to catering captain and print place cards"
+    },
+    "t-7": {
+      "id": "t-7",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "title": "Ceremony Rehearsal & Welcome Courtyard Dinner",
+      "category": "Execution",
+      "due_date": "2026-10-23",
+      "status": "pending",
+      "notes": "5:00 PM walk-through followed by family wood-fired pizza and wine"
+    },
+    "t-8": {
+      "id": "t-8",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "title": "Wedding Day Celebration & Sunset Wine Reception",
+      "category": "Execution",
+      "due_date": "2026-10-24",
+      "status": "pending",
+      "notes": "Event day execution per hour-by-hour Run-of-Show itinerary"
+    },
+    "2fa9e2e2-b069-4db3-87da-5ec43f092fc3": {
+      "id": "2fa9e2e2-b069-4db3-87da-5ec43f092fc3",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "title": "Park Permit & Sound Variance Submission",
+      "category": "Initial Booking",
+      "due_date": "2026-10-22",
+      "status": "pending",
+      "notes": "Submit expedited community festival application to City of Oakland Parks & Rec; secure sound permit for acoustic amplification."
+    },
+    "70908110-9b3f-4808-8192-4bea6e9e7917": {
+      "id": "70908110-9b3f-4808-8192-4bea6e9e7917",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "title": "Onboard Local Food Truck Partners",
+      "category": "Initial Booking",
+      "due_date": "2026-10-25",
+      "status": "pending",
+      "notes": "Contract 4 Oakland food trucks; establish voucher reimbursement workflow and verify Alameda County Environmental Health permits."
+    },
+    "5fdb5b39-027d-455f-8c45-6f0464e5febd": {
+      "id": "5fdb5b39-027d-455f-8c45-6f0464e5febd",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "title": "Launch Volunteer Drive & Neighborhood Outreach",
+      "category": "Design & Invites",
+      "due_date": "2026-10-28",
+      "status": "pending",
+      "notes": "Distribute multilingual flyers to Oakland libraries and youth centers; launch online shift registration for 30 volunteer roles."
+    },
+    "a8c2ac33-d1f9-402e-af0f-0ef8d5d59c97": {
+      "id": "a8c2ac33-d1f9-402e-af0f-0ef8d5d59c97",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "title": "Order Youth Art Supplies & Structural Boards",
+      "category": "Design & Invites",
+      "due_date": "2026-10-31",
+      "status": "pending",
+      "notes": "Procure timber framing, plywood flats, non-toxic outdoor acrylic paints, and markers from regional Bay Area suppliers."
+    },
+    "84e6c3ba-b853-4372-b589-7a71fbc5c004": {
+      "id": "84e6c3ba-b853-4372-b589-7a71fbc5c004",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "title": "Confirm Rental Logistics & Portable Restrooms",
+      "category": "Final Details",
+      "due_date": "2026-11-04",
+      "status": "pending",
+      "notes": "Finalize drop-off schedule for canopies, tables, chairs, hand-washing stations, and ADA-compliant portable restrooms."
+    },
+    "e617ea7f-edae-4d2b-b49d-543395f4c3f9": {
+      "id": "e617ea7f-edae-4d2b-b49d-543395f4c3f9",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "title": "Volunteer Lead Briefing & Role Walkthrough",
+      "category": "Final Details",
+      "due_date": "2026-11-07",
+      "status": "pending",
+      "notes": "Host virtual briefing with volunteer section captains: setup, youth art supervision, food truck queue control, and zero-waste sorting."
+    },
+    "255e584f-e5ca-4a78-82bb-5e9b5364ec0d": {
+      "id": "255e584f-e5ca-4a78-82bb-5e9b5364ec0d",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "title": "Sound System & Community Performer Roster Check",
+      "category": "Week-of Prep",
+      "due_date": "2026-11-10",
+      "status": "pending",
+      "notes": "Confirm acoustic run-of-show with local youth poets, acoustic artists, and ensure battery power storage is fully charged."
+    },
+    "f401e75a-c052-4396-9f07-2ee03e70d91b": {
+      "id": "f401e75a-c052-4396-9f07-2ee03e70d91b",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "title": "Signage Printing & Volunteer Kit Assembly",
+      "category": "Week-of Prep",
+      "due_date": "2026-11-12",
+      "status": "pending",
+      "notes": "Print vinyl entry banners, assemble volunteer welcome bags with t-shirts, schedules, meal tickets, and first-aid kits."
+    },
+    "b4a62abf-fa7e-4677-98a1-013e27a028a6": {
+      "id": "b4a62abf-fa7e-4677-98a1-013e27a028a6",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "title": "Site Pre-Staking & Art Wall Assembly",
+      "category": "Week-of Prep",
+      "due_date": "2026-11-14",
+      "status": "pending",
+      "notes": "Mark food truck stalls and canopy locations in the park; assemble timber support frames for the freestanding art panels."
+    },
+    "8c60440b-a561-4d09-87d8-88540209897b": {
+      "id": "8c60440b-a561-4d09-87d8-88540209897b",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "title": "Day-of Festival Execution & Strike",
+      "category": "Day-of Coordination",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "07:00 load-in and volunteer check-in; 11:00-16:00 festival operations; 16:30 community clean sweep and rental return."
+    },
+    "80717019-3043-4c2a-8f24-b02dbcce639b": {
+      "title": "Secure Sound Permit",
+      "category": "Logistics",
+      "due_date": "2026-08-01",
+      "status": "pending",
+      "notes": "City hall visit",
+      "id": "80717019-3043-4c2a-8f24-b02dbcce639b",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "is_user_edited": true
+    },
+    "386a002a-f958-4e48-b4d3-d5c01b16b8bd": {
+      "title": "Sound Permit Approved",
+      "category": "Logistics",
+      "due_date": "2026-08-01",
+      "status": "completed",
+      "notes": "City hall visit",
+      "id": "386a002a-f958-4e48-b4d3-d5c01b16b8bd",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "is_user_edited": true
+    },
+    "a9825033-72af-446d-b908-e6e8e6cfc2ea": {
+      "id": "a9825033-72af-446d-b908-e6e8e6cfc2ea",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "title": "Final Vendor Confirmations",
+      "category": "Logistics",
+      "due_date": "2026-10-18",
+      "status": "pending",
+      "notes": "Confirm final headcount (80) and dietary restrictions (Claire Bennett: GF) with caterer."
+    },
+    "07091bb6-9db2-410c-89d8-f163cc7fb050": {
+      "id": "07091bb6-9db2-410c-89d8-f163cc7fb050",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "title": "Venue Walkthrough",
+      "category": "Logistics",
+      "due_date": "2026-10-18",
+      "status": "pending",
+      "notes": "Final check on fairy light placement and rustic decor setup."
+    },
+    "307c008c-eeb9-459e-abdd-65bfc8e26672": {
+      "id": "307c008c-eeb9-459e-abdd-65bfc8e26672",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "title": "Ceremony & Reception",
+      "category": "Event",
+      "due_date": "2026-10-18",
+      "status": "pending",
+      "notes": "Main event execution in Napa Valley."
+    },
+    "998eb6cb-44c3-4956-9ca9-02639d5966da": {
+      "id": "998eb6cb-44c3-4956-9ca9-02639d5966da",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "title": "Finalize Vendor Contracts",
+      "category": "Planning",
+      "due_date": "2026-10-25",
+      "status": "pending",
+      "notes": "Lock in catering, floral, and photography vendors."
+    },
+    "04604d1f-91fc-4f82-878d-7bae83f83a4c": {
+      "id": "04604d1f-91fc-4f82-878d-7bae83f83a4c",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "title": "Catering Tasting & Menu Finalization",
+      "category": "Catering",
+      "due_date": "2026-10-28",
+      "status": "pending",
+      "notes": "Confirm vegetarian plated menu and signature cocktail pairings."
+    },
+    "d0d6b3d9-cc68-46ff-82e0-730116be133c": {
+      "id": "d0d6b3d9-cc68-46ff-82e0-730116be133c",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "title": "Dress & Suit Fittings",
+      "category": "Attire",
+      "due_date": "2026-11-01",
+      "status": "pending",
+      "notes": "Final alterations for black-tie optional attire."
+    },
+    "3a724a0d-89b5-495f-ac6f-4adce1a67e60": {
+      "id": "3a724a0d-89b5-495f-ac6f-4adce1a67e60",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "title": "Invitation Mailing",
+      "category": "Guests",
+      "due_date": "2026-10-22",
+      "status": "pending",
+      "notes": "Send out bespoke stationery suite to 120 guests (8-10 weeks prior)."
+    },
+    "6d306940-650c-4b18-a1b5-ecfc41d55b25": {
+      "id": "6d306940-650c-4b18-a1b5-ecfc41d55b25",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "title": "Floral Walkthrough & Design Review",
+      "category": "Decor",
+      "due_date": "2026-11-10",
+      "status": "pending",
+      "notes": "Review ceremony arch and garden terrace floral installations."
+    },
+    "71092aef-2f7e-4894-804b-125c63a19937": {
+      "id": "71092aef-2f7e-4894-804b-125c63a19937",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "title": "Rehearsal Dinner",
+      "category": "Events",
+      "due_date": "2026-11-19",
+      "status": "pending",
+      "notes": "Intimate dinner for immediate family and wedding party."
+    },
+    "4e991d40-f2b0-4e8f-9222-6239d3550280": {
+      "id": "4e991d40-f2b0-4e8f-9222-6239d3550280",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "title": "Day-Of Run-Of-Show Finalization",
+      "category": "Logistics",
+      "due_date": "2026-11-19",
+      "status": "pending",
+      "notes": "Confirm timeline with coordinator, vendors, and couple."
+    },
+    "566d6801-58a8-48ca-b53c-2f828f9139e3": {
+      "id": "566d6801-58a8-48ca-b53c-2f828f9139e3",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "title": "Venue Setup & Floral Installation",
+      "category": "Logistics",
+      "due_date": "2026-11-20",
+      "status": "pending",
+      "notes": "Early morning setup for Grand Ballroom & Garden Terrace."
+    },
+    "b0519fc1-c94a-40b1-8e3f-5746577abe89": {
+      "id": "b0519fc1-c94a-40b1-8e3f-5746577abe89",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "title": "Finalize Vendor Contracts",
+      "category": "Planning",
+      "due_date": "2026-10-25",
+      "status": "pending",
+      "notes": "Sign contracts with venue, caterer, photographer, and florist to secure dates."
+    },
+    "ed6d5311-7446-4c39-9848-ffe3b686bc1f": {
+      "id": "ed6d5311-7446-4c39-9848-ffe3b686bc1f",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "title": "Send Final RSVP Reminders",
+      "category": "Guest Management",
+      "due_date": "2026-10-28",
+      "status": "pending",
+      "notes": "Follow up with pending guests to finalize headcount for catering."
+    },
+    "8abda1d5-7743-4514-a027-4853e88b3910": {
+      "id": "8abda1d5-7743-4514-a027-4853e88b3910",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "title": "Catering Tasting & Menu Finalization",
+      "category": "Catering",
+      "due_date": "2026-11-01",
+      "status": "pending",
+      "notes": "Taste vegetarian plated menu and finalize wine pairings with caterer."
+    },
+    "a6ca5deb-db66-4936-9573-7da9de61e47d": {
+      "id": "a6ca5deb-db66-4936-9573-7da9de61e47d",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "title": "Dress & Suit Fittings",
+      "category": "Attire",
+      "due_date": "2026-11-05",
+      "status": "pending",
+      "notes": "Final alterations for wedding party attire."
+    },
+    "c5074806-c571-4b76-b289-660da38f2f91": {
+      "id": "c5074806-c571-4b76-b289-660da38f2f91",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "title": "Floral Walkthrough & Design Review",
+      "category": "Decor",
+      "due_date": "2026-11-10",
+      "status": "pending",
+      "notes": "Review floral mockups for arch and table settings with floral atelier."
+    },
+    "4c0dee70-c395-4290-b9b6-e6cfe605085c": {
+      "id": "4c0dee70-c395-4290-b9b6-e6cfe605085c",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "title": "Stationery Mailing Deadline",
+      "category": "Guest Management",
+      "due_date": "2026-11-12",
+      "status": "pending",
+      "notes": "Ensure all final invitations and details are mailed or delivered."
+    },
+    "b8cfec86-8799-454d-800e-67317a28308e": {
+      "id": "b8cfec86-8799-454d-800e-67317a28308e",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "title": "Ceremony Rehearsal Dinner",
+      "category": "Event Prep",
+      "due_date": "2026-11-19",
+      "status": "pending",
+      "notes": "Rehearse ceremony flow and host dinner for immediate family and wedding party."
+    },
+    "3cfee0d9-2877-4a63-b233-f01881d77ab4": {
+      "id": "3cfee0d9-2877-4a63-b233-f01881d77ab4",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "title": "Day-Of Run-Of-Show Review",
+      "category": "Coordination",
+      "due_date": "2026-11-20",
+      "status": "pending",
+      "notes": "Final check-in with coordinator and vendors before guest arrival."
+    },
+    "b66e22e7-1755-421b-bc9a-072d174a898c": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-20",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "b66e22e7-1755-421b-bc9a-072d174a898c",
+      "event_id": "5013ddd6-7878-4427-8c6a-f3a02352149d",
+      "is_user_edited": true
+    },
+    "297d1e70-47db-4259-836d-5e48f0086f22": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-16",
+      "status": "pending",
+      "notes": "Confirm arrival l, power requirements, and dietary headcounts.",
+      "id": "297d1e70-47db-4259-836d-5e48f0086f22",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "is_user_edited": true
+    },
+    "d0b0d2a7-47fd-465f-9740-eac5d1c1b288": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-10-24",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "d0b0d2a7-47fd-465f-9740-eac5d1c1b288",
+      "event_id": "29597d08-acab-4c21-9558-3839cd1b58f6",
+      "is_user_edited": true
+    },
+    "3b3843cd-4877-463d-b708-7ab16b732503": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-10-24",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "3b3843cd-4877-463d-b708-7ab16b732503",
+      "event_id": "29597d08-acab-4c21-9558-3839cd1b58f6",
+      "is_user_edited": true
+    },
+    "3f8ccb16-1144-4756-af2a-83120813217a": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-10-24",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "3f8ccb16-1144-4756-af2a-83120813217a",
+      "event_id": "29597d08-acab-4c21-9558-3839cd1b58f6",
+      "is_user_edited": true
+    },
+    "91e36281-5a8f-4d0a-a44e-88f9b5ea5250": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-07",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "91e36281-5a8f-4d0a-a44e-88f9b5ea5250",
+      "event_id": "77c29013-ef5d-4de4-9e6b-daac412dfdb3",
+      "is_user_edited": true
+    },
+    "4ba7788b-04d8-4bcd-860e-5dc8509b3932": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-07",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "4ba7788b-04d8-4bcd-860e-5dc8509b3932",
+      "event_id": "77c29013-ef5d-4de4-9e6b-daac412dfdb3",
+      "is_user_edited": true
+    },
+    "c280d65c-66dc-4661-a4cb-8547eda8cd20": {
+      "id": "c280d65c-66dc-4661-a4cb-8547eda8cd20",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "title": "Vendor Tastings & Contracts",
+      "category": "Planning",
+      "due_date": "2026-10-25",
+      "status": "pending",
+      "notes": " catering menu and confirm jazz duo availability.",
+      "is_user_edited": true
+    },
+    "7ca8c997-740c-4092-94b6-df0796b2b1b5": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, requirements, and dietary headcounts.",
+      "id": "7ca8c997-740c-4092-94b6-df0796b2b1b5",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "is_user_edited": true
+    },
+    "1d4a05d4-290b-479b-be33-28ef24c79e5a": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "1d4a05d4-290b-479b-be33-28ef24c79e5a",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "is_user_edited": true
+    },
+    "926dfc4a-de1a-4961-a14c-569694deccab": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "926dfc4a-de1a-4961-a14c-569694deccab",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "is_user_edited": true
+    },
+    "12e8874b-2021-4f98-9faa-7e40c013fa91": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "12e8874b-2021-4f98-9faa-7e40c013fa91",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "is_user_edited": true
+    },
+    "f3a573bb-6ee4-4150-b57d-cd9e6dc3ee80": {
+      "id": "f3a573bb-6ee4-4150-b57d-cd9e6dc3ee80",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "title": "Finalize Vendor Contracts",
+      "category": "Planning",
+      "due_date": "2026-10-23",
+      "status": "pending",
+      "notes": "Sign all vendor agreements including catering and entertainment."
+    },
+    "09a59249-8f2c-49fc-bedd-4c886d71529f": {
+      "id": "09a59249-8f2c-49fc-bedd-4c886d71529f",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "title": "Confirm Guest List",
+      "category": "Guests",
+      "due_date": "2026-10-30",
+      "status": "pending",
+      "notes": "Lock in final headcount of 85 attendees."
+    },
+    "0f530012-ad7f-449e-9cfb-be8a329fffef": {
+      "id": "0f530012-ad7f-449e-9cfb-be8a329fffef",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "title": "Submit Menu & Wine Pairings",
+      "category": "Catering",
+      "due_date": "2026-11-01",
+      "status": "pending",
+      "notes": "Finalize refined plated dinner menu with sommelier."
+    },
+    "8a1c21b2-fbd0-48b8-be0c-55ef4dd1130f": {
+      "id": "8a1c21b2-fbd0-48b8-be0c-55ef4dd1130f",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "title": "Decor & Lighting Setup",
+      "category": "Design",
+      "due_date": "2026-11-14",
+      "status": "pending",
+      "notes": "On-site installation of candlelight and floral decor."
+    },
+    "7e7e44b5-9ef9-414f-aa54-b270bb3c7cc9": {
+      "id": "7e7e44b5-9ef9-414f-aa54-b270bb3c7cc9",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "title": "Event Day",
+      "category": "Execution",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "Wedding gala execution at Napa Valley Cellars."
+    },
+    "7e46156a-89fc-43fa-beeb-b20523d24e6f": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "7e46156a-89fc-43fa-beeb-b20523d24e6f",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "is_user_edited": true
+    },
+    "8c166656-8bf3-4218-8c77-5066b5602cc6": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "8c166656-8bf3-4218-8c77-5066b5602cc6",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "is_user_edited": true
+    },
+    "e88ce7e4-8c66-4a44-97f9-eede9a7a5611": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "e88ce7e4-8c66-4a44-97f9-eede9a7a5611",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "is_user_edited": true
+    },
+    "fc87ec2e-068b-4c15-ba56-0ddec6e22276": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "fc87ec2e-068b-4c15-ba56-0ddec6e22276",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "is_user_edited": true
+    },
+    "e3ed657c-20f3-4a39-add0-c1fb677a56cc": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "e3ed657c-20f3-4a39-add0-c1fb677a56cc",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "is_user_edited": true
+    },
+    "4ee4b150-984f-4e5b-9a69-72ce7a063042": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "4ee4b150-984f-4e5b-9a69-72ce7a063042",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "is_user_edited": true
+    },
+    "059a234d-7260-481f-8b5e-c11bf97c9d34": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "059a234d-7260-481f-8b5e-c11bf97c9d34",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "is_user_edited": true
+    },
+    "4d9650dd-7c91-4411-b7d2-d5bd3557c08d": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "4d9650dd-7c91-4411-b7d2-d5bd3557c08d",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "is_user_edited": true
+    },
+    "70dab27a-5d1d-4a27-9c71-e6b5b6f4a92b": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "70dab27a-5d1d-4a27-9c71-e6b5b6f4a92b",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "is_user_edited": true
+    },
+    "c5a5b7df-6aaa-4183-b046-1382c05e2568": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "c5a5b7df-6aaa-4183-b046-1382c05e2568",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "is_user_edited": true
+    },
+    "c3b83c67-d0a3-4a3f-bb29-f27967a3fc0c": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "c3b83c67-d0a3-4a3f-bb29-f27967a3fc0c",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "is_user_edited": true
+    },
+    "8217fba3-fb76-4ebe-905b-a012d73e6d54": {
+      "id": "8217fba3-fb76-4ebe-905b-a012d73e6d54",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "title": "Finalize Vendor Contracts",
+      "category": "Planning",
+      "due_date": "2026-10-23",
+      "status": "pending",
+      "notes": "Sign all vendor agreements and confirm payment schedules."
+    },
+    "8f1a71b7-32ad-4478-8e5b-1e9cb351ef4d": {
+      "id": "8f1a71b7-32ad-4478-8e5b-1e9cb351ef4d",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "title": "Submit Final Guest Count",
+      "category": "Catering",
+      "due_date": "2026-11-01",
+      "status": "pending",
+      "notes": "Provide final headcount of 100 to caterer for menu preparation."
+    },
+    "0085f760-0ce4-4a26-9aa7-9dddd76ebe37": {
+      "id": "0085f760-0ce4-4a26-9aa7-9dddd76ebe37",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "title": "Design & Floral Confirmation",
+      "category": "Decor",
+      "due_date": "2026-11-08",
+      "status": "pending",
+      "notes": "Approve final floral arrangements and candlelight placement plan."
+    },
+    "2525d89a-893c-4224-99f7-3cad7137be65": {
+      "id": "2525d89a-893c-4224-99f7-3cad7137be65",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "title": "Final Walkthrough",
+      "category": "Logistics",
+      "due_date": "2026-11-14",
+      "status": "pending",
+      "notes": "On-site check with vendors to ensure setup aligns with modern minimal vibe."
+    },
+    "ee8e7fb0-8e42-4c7d-8023-3d95af64f6b7": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "ee8e7fb0-8e42-4c7d-8023-3d95af64f6b7",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "is_user_edited": true
+    },
+    "3afd0214-e2af-4d90-8bb7-a4c1fe262cd3": {
+      "id": "3afd0214-e2af-4d90-8bb7-a4c1fe262cd3",
+      "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "title": "Finalize Vendor Contracts",
+      "category": "Planning",
+      "due_date": "2026-10-30",
+      "status": "pending",
+      "notes": "Sign contracts with venue, caterer, and photographer to lock in dates and pricing."
+    },
+    "93edcc33-45e5-4950-a017-8be0adb11a63": {
+      "id": "93edcc33-45e5-4950-a017-8be0adb11a63",
+      "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "title": "Invitation Mailing",
+      "category": "Guests",
+      "due_date": "2026-10-25",
+      "status": "pending",
+      "notes": "Send out digital and paper invitations to ensure RSVPs are received 8-10 weeks prior."
+    },
+    "2e600895-2777-4eea-a17b-53ac28b8c814": {
+      "id": "2e600895-2777-4eea-a17b-53ac28b8c814",
+      "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "title": "Menu & Cocktail Tasting",
+      "category": "Catering",
+      "due_date": "2026-11-05",
+      "status": "pending",
+      "notes": "Conduct a tasting session with the artisan caterer to finalize the plated menu and signature drinks."
+    },
+    "cdc438af-798b-4d09-af96-58569d7d2aa8": {
+      "id": "cdc438af-798b-4d09-af96-58569d7d2aa8",
+      "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "title": "Floral Walkthrough",
+      "category": "Design",
+      "due_date": "2026-11-10",
+      "status": "pending",
+      "notes": "Meet with the floral atelier to review the organic floral arch and candlelight placement plan."
+    },
+    "c3e4a3d6-2992-44a2-bdf7-ea37f0036764": {
+      "id": "c3e4a3d6-2992-44a2-bdf7-ea37f0036764",
+      "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "title": "Ceremony Rehearsal Dinner",
+      "category": "Logistics",
+      "due_date": "2026-11-14",
+      "status": "pending",
+      "notes": "Host a small rehearsal dinner to review the run-of-show and finalize seating charts."
+    },
+    "c182cd57-2ca2-47c3-a908-343d672ea154": {
+      "title": "60-Day Complete Vendor Checkpoint",
+      "category": "Vendor Logistics",
+      "due_date": "2026-11-15",
+      "status": "pending",
+      "notes": "Confirm arrival logistics, power requirements, and dietary headcounts.",
+      "id": "c182cd57-2ca2-47c3-a908-343d672ea154",
+      "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "is_user_edited": true
+    }
+  },
+  "vendors": {
+    "v-1": {
+      "id": "v-1",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "category": "Venue",
+      "name": "Oak Knoll Estate & Vineyards",
+      "contact": "events@oakknollvineyard.com",
+      "estimated_cost": 11500,
+      "status": "booked",
+      "notes": "Exclusive estate grounds, ceremony terrace, prep suites, curfew 11:30 PM"
+    },
+    "v-2": {
+      "id": "v-2",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "category": "Catering",
+      "name": "Sonoma Harvest Culinary Works",
+      "contact": "cheftasting@sonomaharvest.com",
+      "estimated_cost": 10800,
+      "status": "booked",
+      "notes": "Full service brigade, farm-to-table seasonal harvest menu, cleanup included"
+    },
+    "v-3": {
+      "id": "v-3",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "category": "Beverage",
+      "name": "St. Helena Cellars & Spirits",
+      "contact": "sommelier@sthelenacellars.com",
+      "estimated_cost": 3500,
+      "status": "contacted",
+      "notes": "Selection of regional pinot noir, sauvignon blanc, and craft bitters bar"
+    },
+    "v-4": {
+      "id": "v-4",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "category": "Florals",
+      "name": "Studio Terrene Botanical Atelier",
+      "contact": "studio@terrenebotanicals.com",
+      "estimated_cost": 2800,
+      "status": "shortlisted",
+      "notes": "Terracotta vessels, olive foliage, garden roses, and arch floral installations"
+    },
+    "v-5": {
+      "id": "v-5",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "category": "Photography",
+      "name": "Julian Vance Fine Art Photography",
+      "contact": "julian@vancestudio.com",
+      "estimated_cost": 3200,
+      "status": "booked",
+      "notes": "Full day coverage, documentary film aesthetic, high-res archive delivery"
+    },
+    "v-6": {
+      "id": "v-6",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "category": "Music & Audio",
+      "name": "Silverado Strings Ensemble",
+      "contact": "booking@silveradostrings.com",
+      "estimated_cost": 1800,
+      "status": "contacted",
+      "notes": "Acoustic trio for ceremony, cocktail hour, and speaker PA system"
+    },
+    "3928cc06-4cdf-4946-8d4a-1d105785af1f": {
+      "id": "3928cc06-4cdf-4946-8d4a-1d105785af1f",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "category": "Venue & Permits",
+      "name": "City of Oakland Parks, Recreation & Youth Development",
+      "contact": null,
+      "estimated_cost": 2200,
+      "status": "shortlisted",
+      "notes": "Municipal authority providing public park reservation, amplified sound clearance, and park attendant staffing."
+    },
+    "75a420e3-b403-4ad2-b87f-c46cb4ee94e0": {
+      "id": "75a420e3-b403-4ad2-b87f-c46cb4ee94e0",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "category": "Equipment & Rentals",
+      "name": "East Bay Event Rentals & Sanitation Solutions",
+      "contact": null,
+      "estimated_cost": 3100,
+      "status": "shortlisted",
+      "notes": "Local vendor providing pop-up shade canopies, event tables, seating, hand-wash stations, and standard/ADA portable toilets."
+    },
+    "5469df28-ca04-45f5-abba-95a00da17ade": {
+      "id": "5469df28-ca04-45f5-abba-95a00da17ade",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "category": "Food Truck Vouchers & Hospitality",
+      "name": "Oakland Mobile Food Alliance / Local Truck Pod",
+      "contact": null,
+      "estimated_cost": 3500,
+      "status": "shortlisted",
+      "notes": "Curated selection of four neighborhood food trucks (Tacos, Afro-Caribbean, Vegan Soul, and Asian Street Food) accepting subsidy vouchers."
+    },
+    "bdfb857a-332e-4d1b-9e27-c36966f9f4ef": {
+      "id": "bdfb857a-332e-4d1b-9e27-c36966f9f4ef",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "category": "Youth Art Wall & Workshop Supplies",
+      "name": "Flax Art & Design (Oakland) & Urban Ore Reuse Materials",
+      "contact": null,
+      "estimated_cost": 1800,
+      "status": "shortlisted",
+      "notes": "Local art supply store and salvage yard providing mural backing boards, exterior paints, brushes, rollers, and protective gear."
+    },
+    "7085fd75-35e9-4bfc-b09f-d579b3d4797b": {
+      "id": "7085fd75-35e9-4bfc-b09f-d579b3d4797b",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "category": "Live Sound, Audio & Stage",
+      "name": "Town Sound & Acoustic Productions",
+      "contact": null,
+      "estimated_cost": 1600,
+      "status": "shortlisted",
+      "notes": "Oakland-based audio engineer supplying compact PA sound, wireless vocal microphones, battery generator, and acoustic mixing."
+    },
+    "dc4f2f9e-e40f-41a8-bf81-013158d4a859": {
+      "id": "dc4f2f9e-e40f-41a8-bf81-013158d4a859",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "category": "Signage & Marketing / Printing",
+      "name": "Community Printers of the East Bay",
+      "contact": null,
+      "estimated_cost": 700,
+      "status": "shortlisted",
+      "notes": "Union-certified community print shop producing recyclable coroplast directional signs, event maps, and multilingual flyers."
+    },
+    "f8620181-399f-4619-931f-c4e39bd3f8f5": {
+      "category": "Catering",
+      "name": "Artisan Hearth Co.",
+      "contact": "chef@artisanhearth.com",
+      "estimated_cost": 12000,
+      "status": "booked",
+      "notes": "Wood-fired pizza",
+      "id": "f8620181-399f-4619-931f-c4e39bd3f8f5",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "is_user_edited": true
+    },
+    "9f4f3d74-baea-40fd-a6d0-fb759772a064": {
+      "id": "9f4f3d74-baea-40fd-a6d0-fb759772a064",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "category": "Venue",
+      "name": "Napa Valley Vineyard Estate",
+      "contact": null,
+      "estimated_cost": 4000,
+      "status": "shortlisted",
+      "notes": "Outdoor rustic setting with existing infrastructure for fairy lights."
+    },
+    "3b004b97-d8f0-4529-81f2-73d2ab757565": {
+      "id": "3b004b97-d8f0-4529-81f2-73d2ab757565",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "category": "Catering",
+      "name": "Artisan Farm-to-Table Caterer",
+      "contact": null,
+      "estimated_cost": 12000,
+      "status": "shortlisted",
+      "notes": "Specialized in gluten-free celiac-safe protocols for Claire Bennett."
+    },
+    "67491012-3c35-4a21-ae11-14b7b19a9358": {
+      "id": "67491012-3c35-4a21-ae11-14b7b19a9358",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "category": "Photography",
+      "name": "Napa Wedding Photography Studio",
+      "contact": null,
+      "estimated_cost": 3500,
+      "status": "shortlisted",
+      "notes": "Experienced with natural light and rustic aesthetics."
+    },
+    "9ffa0acb-71f2-4765-ad21-9994e8770d47": {
+      "id": "9ffa0acb-71f2-4765-ad21-9994e8770d47",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "category": "Music",
+      "name": "Acoustic Duo & DJ Service",
+      "contact": null,
+      "estimated_cost": 2000,
+      "status": "shortlisted",
+      "notes": "Live acoustic for ceremony, DJ for reception."
+    },
+    "0620f688-9786-43d8-9540-57f5207d404a": {
+      "id": "0620f688-9786-43d8-9540-57f5207d404a",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "category": "Florals & Decor",
+      "name": "Rustic Floral Design Co.",
+      "contact": null,
+      "estimated_cost": 2500,
+      "status": "shortlisted",
+      "notes": "Local wildflowers and greenery for a warm, natural look."
+    },
+    "e0dbcf6e-37a2-4996-944c-bf56e256e4fc": {
+      "id": "e0dbcf6e-37a2-4996-944c-bf56e256e4fc",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "category": "Catering",
+      "name": "Artisan Vegetarian Caterer",
+      "contact": null,
+      "estimated_cost": 12000,
+      "status": "shortlisted",
+      "notes": "Specializes in fine-dining vegetarian plated menus and premium bar service."
+    },
+    "c8f71e98-6a6c-4cab-9d2f-da05cabe3d9d": {
+      "id": "c8f71e98-6a6c-4cab-9d2f-da05cabe3d9d",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "category": "Floral Design",
+      "name": "Boutique Floral Atelier",
+      "contact": null,
+      "estimated_cost": 3500,
+      "status": "shortlisted",
+      "notes": "Expert in romantic, refined floral installations and ceremony arches."
+    },
+    "36144df5-ead7-4f89-a68d-de4b9d1f54f4": {
+      "id": "36144df5-ead7-4f89-a68d-de4b9d1f54f4",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "category": "Photography",
+      "name": "Fine-Art Documentary Photographer",
+      "contact": null,
+      "estimated_cost": 4500,
+      "status": "shortlisted",
+      "notes": "Captures authentic moments with a refined, artistic touch."
+    },
+    "1965cc7b-1ba0-4d7b-b6a0-512f375215ca": {
+      "id": "1965cc7b-1ba0-4d7b-b6a0-512f375215ca",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "category": "Music",
+      "name": "Acoustic Ensemble & Wedding DJ",
+      "contact": null,
+      "estimated_cost": 2500,
+      "status": "shortlisted",
+      "notes": "Provides elegant ceremony music and sophisticated reception entertainment."
+    },
+    "8cc0ceb0-324d-47e5-9e38-a60087fcacfb": {
+      "id": "8cc0ceb0-324d-47e5-9e38-a60087fcacfb",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "category": "Coordination",
+      "name": "Luxury Wedding Coordinator",
+      "contact": null,
+      "estimated_cost": 2500,
+      "status": "shortlisted",
+      "notes": "Ensures flawless execution of the black-tie optional, romantic vibe."
+    },
+    "7054805b-fc02-4c58-8d51-551e3c3fc75b": {
+      "id": "7054805b-fc02-4c58-8d51-551e3c3fc75b",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "category": "Venue",
+      "name": "Grand Ballroom & Garden Terrace Management",
+      "contact": null,
+      "estimated_cost": 8500,
+      "status": "shortlisted",
+      "notes": "Primary venue provider with in-house staff for setup."
+    },
+    "dfbbdb53-9fb5-4b7e-bffb-655d489dee45": {
+      "id": "dfbbdb53-9fb5-4b7e-bffb-655d489dee45",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "category": "Catering",
+      "name": "Verdant Fine Dining Caterers",
+      "contact": null,
+      "estimated_cost": 12000,
+      "status": "shortlisted",
+      "notes": "Specialists in refined vegetarian plated menus and premium bar service."
+    },
+    "ccd4259e-84e1-4b01-a597-82f41cc9c0f1": {
+      "id": "ccd4259e-84e1-4b01-a597-82f41cc9c0f1",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "category": "Photography",
+      "name": "Lumina Documentary Photography",
+      "contact": null,
+      "estimated_cost": 4500,
+      "status": "shortlisted",
+      "notes": "Fine-art documentary style with experience in romantic garden settings."
+    },
+    "7a221641-fcf7-453e-b459-aaa6b41f9462": {
+      "id": "7a221641-fcf7-453e-b459-aaa6b41f9462",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "category": "Florals",
+      "name": "Bloom & Vine Atelier",
+      "contact": null,
+      "estimated_cost": 3500,
+      "status": "shortlisted",
+      "notes": "Boutique floral design for romantic arches and table installations."
+    },
+    "ee5504ba-166b-4f86-a294-5116aa07e069": {
+      "id": "ee5504ba-166b-4f86-a294-5116aa07e069",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "category": "Music",
+      "name": "Harmony Acoustic Ensemble & DJ",
+      "contact": null,
+      "estimated_cost": 2500,
+      "status": "shortlisted",
+      "notes": "Acoustic strings for ceremony, DJ for reception dance floor."
+    },
+    "277b924b-39d6-4360-93c2-8683886ca193": {
+      "id": "277b924b-39d6-4360-93c2-8683886ca193",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "category": "Coordination",
+      "name": "Elegance Event Coordination",
+      "contact": null,
+      "estimated_cost": 1500,
+      "status": "shortlisted",
+      "notes": "Day-of coordinator to manage timeline and vendor logistics."
+    },
+    "f614c58a-3148-438f-a3ac-4c9395852ac8": {
+      "id": "f614c58a-3148-438f-a3ac-4c9395852ac8",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "category": "Catering & Bar Service",
+      "name": "Napa Valley Gourmet Caterers",
+      "contact": null,
+      "estimated_cost": 10500,
+      "status": "shortlisted",
+      "notes": "Specialists in refined plated dinners and wine pairing."
+    },
+    "5529ca02-9e6b-49cb-95ba-5665b13242c6": {
+      "id": "5529ca02-9e6b-49cb-95ba-5665b13242c6",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "category": "Entertainment",
+      "name": "Bay Area Jazz Duo",
+      "contact": null,
+      "estimated_cost": 4500,
+      "status": "shortlisted",
+      "notes": "Live jazz performance for warm ambiance."
+    },
+    "e5a109d2-29fa-457a-a0bf-7b4ee65793ea": {
+      "id": "e5a109d2-29fa-457a-a0bf-7b4ee65793ea",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "category": "Venue",
+      "name": "Modern SF Loft or Garden Venue",
+      "contact": null,
+      "estimated_cost": 8000,
+      "status": "shortlisted",
+      "notes": "Space with natural light and capacity for 100 guests."
+    },
+    "8f60f04c-b3e2-4816-97a7-99d5ce88e700": {
+      "id": "8f60f04c-b3e2-4816-97a7-99d5ce88e700",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "category": "Caterer",
+      "name": "Farm-to-Table SF Catering Co.",
+      "contact": null,
+      "estimated_cost": 7500,
+      "status": "shortlisted",
+      "notes": "Specializes in organic ingredients and plated service."
+    },
+    "2baa4180-6f4d-4cfb-9375-ef1509da2ac9": {
+      "id": "2baa4180-6f4d-4cfb-9375-ef1509da2ac9",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "category": "Floral Designer",
+      "name": "Organic Bloom Studio",
+      "contact": null,
+      "estimated_cost": 4000,
+      "status": "shortlisted",
+      "notes": "Expert in minimalist organic floral design and candlelight integration."
+    },
+    "dff4ca8c-948a-4621-8bd7-d8d50f3487fd": {
+      "id": "dff4ca8c-948a-4621-8bd7-d8d50f3487fd",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "category": "Photographer",
+      "name": "Minimalist Lens Photography",
+      "contact": null,
+      "estimated_cost": 3500,
+      "status": "shortlisted",
+      "notes": "Focus on candid, warm-toned imagery matching the event vibe."
+    },
+    "f258b537-a6cf-4136-8e64-f5762b25ac56": {
+      "id": "f258b537-a6cf-4136-8e64-f5762b25ac56",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "category": "DJ/Band",
+      "name": "Acoustic Duo or DJ",
+      "contact": null,
+      "estimated_cost": 1500,
+      "status": "shortlisted",
+      "notes": "Provides background music suitable for a modern, intimate setting."
+    },
+    "7fc2a914-f968-40ba-9321-57451a7a64f1": {
+      "id": "7fc2a914-f968-40ba-9321-57451a7a64f1",
+      "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "category": "Venue",
+      "name": "The Foundry SF",
+      "contact": null,
+      "estimated_cost": 8500,
+      "status": "shortlisted",
+      "notes": "A modern industrial venue with high ceilings and natural light, ideal for a minimalist aesthetic."
+    },
+    "179bed29-a91f-4691-9e89-235045ea11cf": {
+      "id": "179bed29-a91f-4691-9e89-235045ea11cf",
+      "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "category": "Catering",
+      "name": "Artisan Catering Co.",
+      "contact": null,
+      "estimated_cost": 9000,
+      "status": "shortlisted",
+      "notes": "Boutique caterer specializing in seasonal, farm-to-table plated dinners and bespoke cocktail pairings."
+    },
+    "0fbb3e9f-aa27-4be3-b85a-340c639a37ae": {
+      "id": "0fbb3e9f-aa27-4be3-b85a-340c639a37ae",
+      "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "category": "Floral",
+      "name": "Organic Blooms Atelier",
+      "contact": null,
+      "estimated_cost": 3500,
+      "status": "shortlisted",
+      "notes": "Boutique floral studio known for lush, organic installations and warm, romantic candlelight designs."
+    },
+    "12be1040-608c-4e3c-b4c3-cc086ee5fbfc": {
+      "id": "12be1040-608c-4e3c-b4c3-cc086ee5fbfc",
+      "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "category": "Photography",
+      "name": "Fine-Art Documentary Studio",
+      "contact": null,
+      "estimated_cost": 2500,
+      "status": "shortlisted",
+      "notes": "Award-winning photography team focused on candid, documentary-style wedding coverage."
+    }
+  },
+  "volunteers": {
+    "2ec0ce41-309d-4342-ba57-18973e7f8306": {
+      "role": "Head of Waste Disposal",
+      "contact_name": "Marcus Brody",
+      "shift_time": "9:00 AM - 1:00 PM",
+      "count_needed": 5,
+      "count_confirmed": 0,
+      "status": "recruiting",
+      "notes": "Bringing truck for compost bags",
+      "id": "2ec0ce41-309d-4342-ba57-18973e7f8306",
+      "event_id": "2d0678f9-3760-41b7-8673-63b0a0452047",
+      "is_user_edited": true
+    }
+  },
+  "permits": {
+    "e0d0a32a-ac91-4f80-81dc-95882df95308": {
+      "permit_type": "Municipal Permit",
+      "issuing_agency": "Municipal Parks Dept",
+      "status": "approved",
+      "fee": 0,
+      "deadline": "",
+      "notes": "",
+      "id": "e0d0a32a-ac91-4f80-81dc-95882df95308",
+      "event_id": "2d0678f9-3760-41b7-8673-63b0a0452047",
+      "is_user_edited": true
+    }
+  },
+  "guests": {
+    "79c8feef-0b2d-445a-89e5-a8c8de2cf0e4": {
+      "name": "Claire Bennett",
+      "email": "claire@example.com",
+      "rsvp_status": "attending",
+      "plus_ones": 1,
+      "dietary_notes": "Gluten-Free Celiac",
+      "notes": "",
+      "id": "79c8feef-0b2d-445a-89e5-a8c8de2cf0e4",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b"
+    },
+    "d9404368-54c0-4fa1-a357-cbef56650046": {
+      "name": "Eleanor Vance",
+      "email": "eleanor@example.com",
+      "rsvp_status": "attending",
+      "plus_ones": 1,
+      "dietary_notes": "",
+      "notes": "",
+      "id": "d9404368-54c0-4fa1-a357-cbef56650046",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c"
+    },
+    "f4bc2a23-5fc6-44d7-bc50-2c06f9f7b498": {
+      "name": "Eleanor Vance",
+      "email": "eleanor@example.com",
+      "rsvp_status": "attending",
+      "plus_ones": 1,
+      "dietary_notes": "",
+      "notes": "",
+      "id": "f4bc2a23-5fc6-44d7-bc50-2c06f9f7b498",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010"
+    },
+    "c67faa13-2d05-4ee9-bae0-c961beb66f13": {
+      "name": "Test Guest",
+      "email": "",
+      "rsvp_status": "pending",
+      "plus_ones": 0,
+      "dietary_notes": "",
+      "notes": "",
+      "id": "c67faa13-2d05-4ee9-bae0-c961beb66f13",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d"
+    },
+    "7814f974-a311-473a-a961-b66c50a66630": {
+      "name": "Alice Walker",
+      "email": "",
+      "rsvp_status": "pending",
+      "plus_ones": 0,
+      "dietary_notes": "",
+      "notes": "",
+      "id": "7814f974-a311-473a-a961-b66c50a66630",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d"
+    },
+    "1b577b3c-c289-42e1-94aa-fb23ab728e12": {
+      "name": "Sophia Martinez",
+      "email": "",
+      "rsvp_status": "pending",
+      "plus_ones": 0,
+      "dietary_notes": "",
+      "notes": "",
+      "id": "1b577b3c-c289-42e1-94aa-fb23ab728e12",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d"
+    },
+    "58036e7a-3268-4d34-b8a7-52ac903d7a04": {
+      "name": "Lucas Mobile",
+      "email": "",
+      "rsvp_status": "pending",
+      "plus_ones": 0,
+      "dietary_notes": "",
+      "notes": "",
+      "id": "58036e7a-3268-4d34-b8a7-52ac903d7a04",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d"
+    }
+  },
+  "ideas": {
+    "i-1": {
+      "id": "i-1",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "theme": "Amber Hour Vineyard Walkway",
+      "description": "Lining the pathways between the ceremony lawn and the reception barrel room with oversized terracotta hurricane lamps and warm tungsten bistro string lighting."
+    },
+    "i-2": {
+      "id": "i-2",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "theme": "Local Terroir Olive Oil & Wine Pairing Favors",
+      "description": "Individual 100ml embossed dark-glass bottles of cold-pressed Napa Valley olive oil accompanied by custom letterpress recipe cards as guest place settings."
+    },
+    "i-3": {
+      "id": "i-3",
+      "event_id": "6b5d5d95-4d35-40a9-8dcb-e965f042fa14",
+      "theme": "Acoustic Sunset Transition",
+      "description": "Transitioning the Silverado Strings trio from classical Bach preludes into upbeat Spanish guitar and folk jazz as the golden hour sun dips behind the Mayacamas mountains."
+    },
+    "29285621-096a-4003-8fa3-ebec420aa732": {
+      "id": "29285621-096a-4003-8fa3-ebec420aa732",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "theme": "The Living Community Mural Wall",
+      "description": "A 24-foot modular wooden mural where youth artists sketch the outline of iconic Oakland flora and landmarks, inviting attendees of all ages to paint sections under guided mentorship."
+    },
+    "d0466113-7ce6-4b34-8a97-eeab536ae1da": {
+      "id": "d0466113-7ce6-4b34-8a97-eeab536ae1da",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "theme": "Harvest Seed Exchange & Urban Garden Hub",
+      "description": "An interactive corner partnering with East Bay community gardens featuring free winter vegetable seed packets, DIY seedling potting for kids, and composting demonstrations."
+    },
+    "c74918fb-caba-4d26-8058-884dbdfe3de9": {
+      "id": "c74918fb-caba-4d26-8058-884dbdfe3de9",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "theme": "Youth Storyteller & Acoustic Porch",
+      "description": "An unplugged, intimate performance space hosted on low-rise wooden platforms featuring local youth poets, spoken word artists, and school jazz duos performing short 15-minute sets."
+    },
+    "1af707fa-270a-417d-b7a6-5c3787fefdbb": {
+      "id": "1af707fa-270a-417d-b7a6-5c3787fefdbb",
+      "event_id": "28b61816-f8f5-4fc8-8037-4b540e3a24e6",
+      "theme": "Oakland Flavor Passport & Token System",
+      "description": "A pocket-sized stamp card given to youth and volunteers redeemable for sample bites across all four food trucks, encouraging exploration of diverse regional cuisines."
+    },
+    "5fffde4a-085f-4f6a-898b-555cd8ece5f6": {
+      "id": "5fffde4a-085f-4f6a-898b-555cd8ece5f6",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "theme": "Ambient Fairy Light Canopy",
+      "description": "Install a dense canopy of warm-white fairy lights over the dining area to create a magical, rustic evening atmosphere."
+    },
+    "fa4bb7e2-4e80-4371-8b41-356de8b3e97e": {
+      "id": "fa4bb7e2-4e80-4371-8b41-356de8b3e97e",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "theme": "Artisanal Farm-to-Table Menu",
+      "description": "Feature locally sourced Napa Valley produce and meats, with a clearly marked, separate gluten-free celiac-safe menu for Claire Bennett."
+    },
+    "44f7a3a7-58e6-460d-bb4d-7d784687960a": {
+      "id": "44f7a3a7-58e6-460d-bb4d-7d784687960a",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "theme": "Rustic Tablescapes",
+      "description": "Use reclaimed wood tables, mason jar centerpieces with wildflowers, and linen napkins to enhance the warm, rustic vibe."
+    },
+    "19693e9b-af17-4fa3-b2f3-2f62e4933e21": {
+      "id": "19693e9b-af17-4fa3-b2f3-2f62e4933e21",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "theme": "Golden Hour Garden Terrace",
+      "description": "Schedule a dedicated 30-minute golden hour photo session on the Garden Terrace, featuring soft, romantic lighting and bespoke floral backdrops."
+    },
+    "6e9b4585-cb84-4a79-b632-0a730397da1e": {
+      "id": "6e9b4585-cb84-4a79-b632-0a730397da1e",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "theme": "Signature Vegetarian Cocktail Pairings",
+      "description": "Create three signature cocktails paired with specific vegetarian dishes, served in elegant glassware with personalized labels."
+    },
+    "bd70b9db-c12f-4c00-8a54-a5aff39dab4b": {
+      "id": "bd70b9db-c12f-4c00-8a54-a5aff39dab4b",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "theme": "Bespoke Guest Favors",
+      "description": "Offer small, refined favors such as custom-seeded botanical kits or artisanal chocolates, wrapped in elegant packaging matching the invitation suite."
+    },
+    "0b9caa24-7c56-4575-b35a-5ddc58d710cd": {
+      "id": "0b9caa24-7c56-4575-b35a-5ddc58d710cd",
+      "event_id": "d7433834-a37a-42cc-ba12-8d0ce1c3167c",
+      "theme": "Romantic Lighting & Floral Arch",
+      "description": "Install a cascading floral arch at the ceremony site and use warm, ambient lighting in the Grand Ballroom to enhance the refined and romantic atmosphere."
+    },
+    "3cbcd084-806e-4549-88a3-ae522f7cdf2f": {
+      "id": "3cbcd084-806e-4549-88a3-ae522f7cdf2f",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "theme": "Golden Hour Garden Vows",
+      "description": "Schedule the ceremony for 4:30 PM to capture the romantic golden hour light on the Garden Terrace, with a seamless transition to the Ballroom for cocktails."
+    },
+    "9f4fce8a-e84d-45e9-8759-55b74b96acff": {
+      "id": "9f4fce8a-e84d-45e9-8759-55b74b96acff",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "theme": "Botanical Signature Cocktails",
+      "description": "Create three signature cocktails featuring edible flowers and herbal infusions to complement the vegetarian menu and black-tie optional vibe."
+    },
+    "dcc9e8f4-4830-4a83-96f4-72153a754877": {
+      "id": "dcc9e8f4-4830-4a83-96f4-72153a754877",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "theme": "Personalized Botanical Favors",
+      "description": "Offer guests small potted succulents or pressed flower keepsakes in custom packaging as a refined and sustainable favor."
+    },
+    "5068b3ae-812f-4fbe-a9dd-1ac8ebd948c8": {
+      "id": "5068b3ae-812f-4fbe-a9dd-1ac8ebd948c8",
+      "event_id": "f160b919-d6da-47fd-9d65-93a132efd010",
+      "theme": "Romantic String Quartet Set",
+      "description": "Commission a string quartet to play a curated set of romantic classics during the cocktail hour to enhance the refined atmosphere."
+    },
+    "f98c9863-0569-4a27-a5fa-7b0449dda595": {
+      "id": "f98c9863-0569-4a27-a5fa-7b0449dda595",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "theme": "Atmosphere & Design",
+      "description": "Curated styling and ambient lighting tailored to the theme."
+    },
+    "6867faaa-cd88-41a6-8455-f918dd2c2d7f": {
+      "id": "6867faaa-cd88-41a6-8455-f918dd2c2d7f",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "theme": "Guest Experience",
+      "description": "Personalized welcomes and interactive celebration elements."
+    },
+    "f9f4d8c1-c39b-4a66-846a-ca640ea33c4f": {
+      "id": "f9f4d8c1-c39b-4a66-846a-ca640ea33c4f",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "theme": "Atmosphere & Design",
+      "description": "Curated styling and ambient lighting tailored to the theme."
+    },
+    "22b6f750-8531-424b-aaec-77c937ad30f7": {
+      "id": "22b6f750-8531-424b-aaec-77c937ad30f7",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "theme": "Guest Experience",
+      "description": "Personalized welcomes and interactive celebration elements."
+    },
+    "600969b7-7c62-41f4-9e4e-732402acdd22": {
+      "id": "600969b7-7c62-41f4-9e4e-732402acdd22",
+      "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "theme": "Atmosphere & Design",
+      "description": "Curated styling and ambient lighting tailored to the theme."
+    },
+    "5862bd1d-c8f2-45f6-a3d6-2d07bd23cd48": {
+      "id": "5862bd1d-c8f2-45f6-a3d6-2d07bd23cd48",
+      "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
+      "theme": "Guest Experience",
+      "description": "Personalized welcomes and interactive celebration elements."
+    }
+  },
+  "replan_logs": {
+    "d73af842-4de5-4672-9749-4b2220137a6c": {
+      "id": "d73af842-4de5-4672-9749-4b2220137a6c",
+      "event_id": "f5dcd71c-4575-4d9c-af3a-594ad2e7d90b",
+      "timestamp": "2026-10-22T16:22:44.343Z",
+      "old_budget": 28000,
+      "new_budget": 28000,
+      "old_guest_count": 80,
+      "new_guest_count": 80,
+      "rationale": "With the budget and headcount remaining static at $28,000 and 80 guests, the plan maintains its original structural integrity while reinforcing the 'Rustic Warmth' aesthetic. Costs are strictly allocated to ensure the critical gluten-free celiac accommodation for Claire Bennett is explicitly budgeted within the food & beverage line, and vendor tiers are calibrated to maximize artisan farm-to-table quality within the fixed financial constraints."
+    },
+    "f9a633aa-288a-4881-9fa1-0f06e29a285a": {
+      "id": "f9a633aa-288a-4881-9fa1-0f06e29a285a",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "timestamp": "2026-10-22T17:20:08.664Z",
+      "old_budget": 25000,
+      "new_budget": 25000,
+      "old_guest_count": 85,
+      "new_guest_count": 85,
+      "rationale": "With no changes to the total budget ($25,000) or headcount (85), the existing locked line items for Catering, Lighting, and Stationery were retained exactly. The remaining unallocated budget of $11,810 was distributed across variable categories such as Venue, Floral, and Entertainment to maintain the 'Warm candlelight, jazz duo' vibe while ensuring a balanced, realistic allocation for a Napa Valley wedding."
+    },
+    "20fc7864-52a2-4887-ae92-07f33b018902": {
+      "id": "20fc7864-52a2-4887-ae92-07f33b018902",
+      "event_id": "810cba91-477e-4a12-ae74-19fe8a5ad14d",
+      "timestamp": "2026-10-23T03:36:40.288Z",
+      "old_budget": 55000,
+      "new_budget": 55000,
+      "old_guest_count": 85,
+      "new_guest_count": 85,
+      "rationale": "The total budget remains fixed at $55,000 with no change in headcount, requiring the redistribution of the remaining $40,090 across variable categories to align with the 'Warm candlelight, jazz duo' vibe. Locked items totaling $14,990 were preserved, and the remaining budget was allocated to high-impact areas like floral design, venue rental, and entertainment to ensure a refined plated dinner experience."
+    },
+    "18f7c585-599b-4d86-9e36-ec353b38df09": {
+      "id": "18f7c585-599b-4d86-9e36-ec353b38df09",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "timestamp": "2026-10-23T04:21:59.809Z",
+      "old_budget": 25000,
+      "new_budget": 25000,
+      "old_guest_count": 100,
+      "new_guest_count": 100,
+      "rationale": "With the budget and headcount remaining constant at $25,000 and 100 guests, the plan maintains the locked $4,000 floral commitment while reallocating the remaining $21,000 across venue, catering, and services to ensure a balanced, high-quality modern minimal experience. No mathematical scaling was required due to zero delta in constraints, allowing for stable vendor pricing and timeline sequencing."
+    },
+    "d4b102b8-35fc-47cb-9ea1-60248cb578e3": {
+      "id": "d4b102b8-35fc-47cb-9ea1-60248cb578e3",
+      "event_id": "748fc2ca-74ec-482c-b5f3-722eb9be492b",
+      "timestamp": "2026-10-23T05:05:18.555Z",
+      "old_budget": 25000,
+      "new_budget": 25000,
+      "old_guest_count": 100,
+      "new_guest_count": 100,
+      "rationale": "With no change to total budget ($25,000) or headcount (100), the existing allocation is preserved to maintain the modern minimal aesthetic. The locked Floral & Decor cost of $4,000 remains fixed, and all other categories are rebalanced to ensure the sum equals exactly $25,000 while supporting the warm candlelight vibe."
+    }
+  }
+}

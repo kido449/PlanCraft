@@ -1,0 +1,6 @@
+{
+  "name": "PlanCraft AI - GenAI Event Planning Assistant",
+  "description": "Constraint-aware GenAI event planner that coordinates mutually consistent budgets, timelines, and vendors with live replanning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
