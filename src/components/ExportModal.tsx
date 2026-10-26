@@ -112,18 +112,19 @@ export const ExportModal: React.FC<ExportModalProps> = ({ event, isOpen, onClose
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm print:p-0 print:bg-white">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm print:p-0 print:bg-white" role="dialog" aria-modal="true" aria-labelledby="export-modal-title">
       <div className="bg-[#EEEDEA] text-[#111111] border border-[#14372D]/30 rounded-[16px] w-full max-w-2xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] max-h-[90dvh] modal-viewport-container-90 print:border-none print:shadow-none print:max-h-none print:w-full">
         {/* Header */}
         <div className="px-6 py-5 border-b border-[#14372D]/15 flex items-center justify-between bg-white/40 print:hidden">
           <div>
-            <h2 className="text-xl font-medium tracking-tight text-[#111111]">
+            <h2 id="export-modal-title" className="text-xl font-medium tracking-tight text-[#111111]">
               Export Event <span className="accent-serif">Dossier</span>
             </h2>
             <p className="text-xs text-[#7A7571] mt-0.5">Download spreadsheets, day-of timeline, or print executive brief</p>
           </div>
           <button
             onClick={onClose}
+            aria-label="Close export dossier dialog"
             className="p-1 rounded-full text-[#7A7571] hover:text-[#111111] hover:bg-black/5 transition"
           >
             <X className="w-5 h-5" />

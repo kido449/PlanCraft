@@ -18,6 +18,7 @@ interface EventOverviewBannerProps {
   onRegenerate: () => void;
   onOpenExport: () => void;
   onOpenAssistant?: () => void;
+  onOpenPromptInspector?: () => void;
   isGenerating: boolean;
   replanRationale?: string | null;
   onDismissRationale?: () => void;
@@ -29,6 +30,7 @@ export const EventOverviewBanner: React.FC<EventOverviewBannerProps> = ({
   onRegenerate,
   onOpenExport,
   onOpenAssistant,
+  onOpenPromptInspector,
   isGenerating,
   replanRationale,
   onDismissRationale,
@@ -115,6 +117,17 @@ export const EventOverviewBanner: React.FC<EventOverviewBannerProps> = ({
             <Download className="w-4 h-4 text-[#E0A37E]" />
             <span>Export Dossier</span>
           </button>
+
+          {onOpenPromptInspector && (
+            <button
+              onClick={onOpenPromptInspector}
+              className="h-[43px] px-4 rounded-full bg-white/10 hover:bg-white/15 text-[#EEEDEA] border border-white/20 text-sm font-medium transition active:scale-95 flex items-center gap-2 cursor-pointer"
+              title="Inspect Live AI Prompt Synthesized for this Event"
+            >
+              <Sparkles className="w-4 h-4 text-[#E0A37E]" />
+              <span>Inspect Prompt</span>
+            </button>
+          )}
 
           <button
             onClick={onOpenEditConstraints}

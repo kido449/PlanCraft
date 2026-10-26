@@ -60,6 +60,7 @@ import { EditorialFooter } from './components/EditorialFooter';
 import { CreateEventModal } from './components/CreateEventModal';
 import { ConstraintEditModal } from './components/ConstraintEditModal';
 import { ExportModal } from './components/ExportModal';
+import { PromptInspectorModal } from './components/PromptInspectorModal';
 import { withScrollLock } from './utils/scrollStability';
 
 import {
@@ -90,6 +91,7 @@ export default function App() {
   const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
   const [isEditConstraintsOpen, setIsEditConstraintsOpen] = useState(false);
   const [isExportModalOpen, setIsExportModalOpen] = useState(false);
+  const [isPromptInspectorOpen, setIsPromptInspectorOpen] = useState(false);
   const [showEditorialStory, setShowEditorialStory] = useState(false);
   const [isHeroCollapsed, setIsHeroCollapsed] = useState(false);
 
@@ -209,6 +211,24 @@ export default function App() {
           status: 'shortlisted',
           notes: action.data.notes || 'Added by GenAI Assistant',
         });
+      } else if (action.type === 'rebalance_budget' && action.data.from_category && action.data.to_category && action.data.amount) {
+        const amt = Number(action.data.amount);
+        const fromItem = activeEvent.budget.find(
+          (b) => b.category.toLowerCase() === action.data.from_category?.toLowerCase()
+        );
+        const toItem = activeEvent.budget.find(
+          (b) => b.category.toLowerCase() === action.data.to_category?.toLowerCase()
+        );
+
+        if (fromItem && toItem) {
+          const newFromCost = Math.max(0, fromItem.estimated_cost - amt);
+          const newToCost = toItem.estimated_cost + amt;
+          await handleUpdateBudgetItem(fromItem.id, { estimated_cost: newFromCost });
+          await handleUpdateBudgetItem(toItem.id, { estimated_cost: newToCost });
+          showSuccess(`Rebalanced $${amt.toLocaleString()} from ${fromItem.category} to ${toItem.category}`);
+        } else {
+          showError(`Could not find matching categories to rebalance`);
+        }
       }
     } catch (err: any) {
       showError(err.message || 'Failed to apply recommendation');
@@ -648,6 +668,7 @@ export default function App() {
         onSelectEvent={handleSelectEvent}
         onOpenCreateModal={() => setIsCreateModalOpen(true)}
         onOpenExportModal={() => setIsExportModalOpen(true)}
+        onOpenPromptInspector={() => setIsPromptInspectorOpen(true)}
         currentUserId={currentUserId}
         onChangeUser={handleChangeUser}
         activeTab={activeTab}
@@ -662,6 +683,7 @@ export default function App() {
         onScrollToWorkspace={handleScrollToWorkspace}
         hasActiveEvent={Boolean(activeEvent)}
         activeEventName={activeEvent?.name}
+        activeEventType={activeEvent?.type}
         isCollapsed={isHeroCollapsed}
         onToggleCollapse={() => setIsHeroCollapsed((prev) => !prev)}
       />
@@ -698,6 +720,7 @@ export default function App() {
               onRegenerate={handleGeneratePlan}
               onOpenExport={() => setIsExportModalOpen(true)}
               onOpenAssistant={() => handleTabChange('assistant')}
+              onOpenPromptInspector={() => setIsPromptInspectorOpen(true)}
               isGenerating={isGenerating}
               replanRationale={replanRationale}
               onDismissRationale={() => setReplanRationale(null)}
@@ -1051,6 +1074,13 @@ export default function App() {
         event={activeEvent}
         isOpen={isExportModalOpen}
         onClose={() => setIsExportModalOpen(false)}
+      />
+
+      <PromptInspectorModal
+        eventId={activeEvent?.id || null}
+        eventName={activeEvent?.name}
+        isOpen={isPromptInspectorOpen}
+        onClose={() => setIsPromptInspectorOpen(false)}
       />
 
       {/* Floating Quick GenAI Planning Assistant Trigger */}

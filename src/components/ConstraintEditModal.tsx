@@ -37,18 +37,19 @@ export const ConstraintEditModal: React.FC<ConstraintEditModalProps> = ({
   const lockedVendors = event.vendors.filter((v) => v.is_user_edited || v.status === 'booked');
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="constraint-modal-title">
       <div className="bg-[#EEEDEA] text-[#111111] border border-[#14372D]/30 rounded-[16px] w-full max-w-xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] max-h-[90dvh] modal-viewport-container-90">
         {/* Header */}
         <div className="px-6 py-5 border-b border-[#14372D]/15 flex items-center justify-between bg-white/40">
           <div>
-            <h2 className="text-xl font-medium tracking-tight text-[#111111]">
+            <h2 id="constraint-modal-title" className="text-xl font-medium tracking-tight text-[#111111]">
               Edit Constraints & <span className="accent-serif">Rebalance</span>
             </h2>
             <p className="text-xs text-[#7A7571] mt-0.5">Constraint-aware replanning with locked item preservation</p>
           </div>
           <button
             onClick={onClose}
+            aria-label="Close edit constraints dialog"
             className="p-1 rounded-full text-[#7A7571] hover:text-[#111111] hover:bg-black/5 transition"
           >
             <X className="w-5 h-5" />

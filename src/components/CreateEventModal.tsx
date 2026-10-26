@@ -98,18 +98,19 @@ export const CreateEventModal: React.FC<CreateEventModalProps> = ({
 
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="create-event-title">
       <div className="bg-[#EEEDEA] text-[#111111] border border-[#14372D]/30 rounded-[16px] w-full max-w-2xl shadow-2xl overflow-hidden flex flex-col max-h-[92vh] max-h-[92dvh] modal-viewport-container-92">
         {/* Header */}
         <div className="px-6 py-5 border-b border-[#14372D]/15 flex items-center justify-between bg-white/40">
           <div>
-            <h2 className="text-xl font-medium tracking-tight text-[#111111]">
+            <h2 id="create-event-title" className="text-xl font-medium tracking-tight text-[#111111]">
               Create New <span className="accent-serif">Gathering</span>
             </h2>
             <p className="text-xs text-[#7A7571] mt-0.5">Initialize constraints for live GenAI synthesis</p>
           </div>
           <button
             onClick={onClose}
+            aria-label="Close create gathering dialog"
             className="p-1 rounded-full text-[#7A7571] hover:text-[#111111] hover:bg-black/5 transition"
           >
             <X className="w-5 h-5" />

@@ -1,8 +1,8 @@
 import { Router, Request, Response } from 'express';
 import { eventStore } from '../db/store.js';
-import { buildGeneratePrompt, buildReplanPrompt } from '../ai/prompts.js';
-import { executePlanGeneration } from '../ai/generator.js';
+import { buildGeneratePrompt } from '../ai/prompts.js';
 import { askEventAssistant } from '../ai/assistant.js';
+import { executeGenerateFlow, executeReplanFlow } from '../services/plannerService.js';
 
 export const eventsRouter = Router();
 
@@ -39,15 +39,33 @@ eventsRouter.post('/events', (req: Request, res: Response) => {
       });
     }
 
+    if (typeof name !== 'string' || name.trim().length === 0 || name.length > 200) {
+      return res.status(400).json({ success: false, error: 'Event name must be between 1 and 200 characters.' });
+    }
+    if (typeof location !== 'string' || location.length > 200) {
+      return res.status(400).json({ success: false, error: 'Location must be under 200 characters.' });
+    }
+    if (vibe && (typeof vibe !== 'string' || vibe.length > 1000)) {
+      return res.status(400).json({ success: false, error: 'Vibe must be under 1000 characters.' });
+    }
+    const numGuests = Number(guest_count);
+    if (isNaN(numGuests) || numGuests < 1 || numGuests > 500000) {
+      return res.status(400).json({ success: false, error: 'Guest count must be between 1 and 500,000.' });
+    }
+    const numBudget = Number(total_budget);
+    if (isNaN(numBudget) || numBudget < 0 || numBudget > 1000000000) {
+      return res.status(400).json({ success: false, error: 'Total budget must be a positive number under 1,000,000,000.' });
+    }
+
     const event = eventStore.createEvent(
       {
         type,
-        name,
+        name: name.trim(),
         date,
-        guest_count: Number(guest_count),
-        location,
-        total_budget: Number(total_budget),
-        vibe: vibe || '',
+        guest_count: numGuests,
+        location: location.trim(),
+        total_budget: numBudget,
+        vibe: (vibe || '').trim(),
       },
       ownerId
     );
@@ -95,21 +113,11 @@ eventsRouter.delete('/events/:id', (req: Request, res: Response) => {
 eventsRouter.post('/events/:id/generate', async (req: Request, res: Response) => {
   try {
     const ownerId = getOwnerId(req);
-    const eventWithDetails = eventStore.getEvent(req.params.id, ownerId);
-
-    // Delegate prompt construction to dedicated module
-    const prompt = buildGeneratePrompt(eventWithDetails);
-
-    // Delegate LLM call + parsing + validation to generator module
-    const generatedPlan = await executePlanGeneration(prompt);
-
-    // Delegate storage to database store
-    const updatedEvent = eventStore.saveGeneratedPlan(eventWithDetails.id, ownerId, generatedPlan);
-
+    const result = await executeGenerateFlow(req.params.id, ownerId);
     res.json({
       success: true,
-      event: updatedEvent,
-      promptUsed: prompt,
+      event: result.event,
+      promptUsed: result.promptUsed,
     });
   } catch (err: any) {
     console.error('Error generating event plan:', err);
@@ -121,50 +129,26 @@ eventsRouter.post('/events/:id/generate', async (req: Request, res: Response) =>
 eventsRouter.post('/events/:id/replan', async (req: Request, res: Response) => {
   try {
     const ownerId = getOwnerId(req);
-    const eventId = req.params.id;
-    const currentEvent = eventStore.getEvent(eventId, ownerId);
+    const { reason, budget_override, guest_override, constraints } = req.body || {};
+    if (reason && (typeof reason !== 'string' || reason.length > 500)) {
+      return res.status(400).json({ success: false, error: 'Replan reason must be under 500 characters.' });
+    }
+    if (constraints && (!Array.isArray(constraints) || constraints.length > 20)) {
+      return res.status(400).json({ success: false, error: 'Constraints must be an array of at most 20 items.' });
+    }
+    if (budget_override !== undefined && (isNaN(Number(budget_override)) || Number(budget_override) < 0 || Number(budget_override) > 1000000000)) {
+      return res.status(400).json({ success: false, error: 'Budget override must be a number between 0 and 1,000,000,000.' });
+    }
+    if (guest_override !== undefined && (isNaN(Number(guest_override)) || Number(guest_override) < 1 || Number(guest_override) > 500000)) {
+      return res.status(400).json({ success: false, error: 'Guest override must be a number between 1 and 500,000.' });
+    }
 
-    const { new_budget, new_guest_count, reason } = req.body;
-    const targetBudget = new_budget !== undefined ? Number(new_budget) : currentEvent.total_budget;
-    const targetGuests = new_guest_count !== undefined ? Number(new_guest_count) : currentEvent.guest_count;
-
-    const oldBudget = currentEvent.total_budget;
-    const oldGuests = currentEvent.guest_count;
-
-    // First update the event constraints in the DB
-    eventStore.updateEvent(eventId, ownerId, {
-      total_budget: targetBudget,
-      guest_count: targetGuests,
-    });
-
-    const refreshedEvent = eventStore.getEvent(eventId, ownerId);
-
-    // Delegate prompt construction with real deltas and locked items
-    const prompt = buildReplanPrompt(refreshedEvent, refreshedEvent, {
-      oldBudget,
-      newBudget: targetBudget,
-      oldGuests,
-      newGuests: targetGuests,
-      reason,
-    });
-
-    // Call LLM
-    const replanResult = await executePlanGeneration(prompt);
-
-    // Apply replan in DB while preserving locked items
-    const finalEvent = eventStore.applyReplan(eventId, ownerId, replanResult, {
-      old_budget: oldBudget,
-      new_budget: targetBudget,
-      old_guest_count: oldGuests,
-      new_guest_count: targetGuests,
-      rationale: replanResult.replan_rationale || reason || 'Constraints rebalanced.',
-    });
-
+    const result = await executeReplanFlow(req.params.id, ownerId, req.body);
     res.json({
       success: true,
-      event: finalEvent,
-      promptUsed: prompt,
-      rationale: replanResult.replan_rationale,
+      event: result.event,
+      promptUsed: result.promptUsed,
+      rationale: result.rationale,
     });
   } catch (err: any) {
     console.error('Error replanning event:', err);
@@ -446,6 +430,12 @@ eventsRouter.post('/events/:id/assistant', async (req: Request, res: Response) =
 
     if (!message || typeof message !== 'string') {
       return res.status(400).json({ success: false, error: 'Message is required.' });
+    }
+    if (message.length > 1500) {
+      return res.status(400).json({ success: false, error: 'Message must not exceed 1500 characters.' });
+    }
+    if (history && !Array.isArray(history)) {
+      return res.status(400).json({ success: false, error: 'History must be an array.' });
     }
 
     const assistantResult = await askEventAssistant(event, message, history || []);

@@ -1,4 +1,5 @@
 import { EventWithDetails } from '../types.js';
+import { callLLM } from './client.js';
 
 export interface AssistantAction {
   id?: string;
@@ -21,81 +22,6 @@ export interface AssistantAction {
 export interface AssistantResponse {
   reply: string;
   suggested_actions: AssistantAction[];
-}
-
-async function callAssistantLLM(systemPrompt: string, userPrompt: string): Promise<string> {
-  const groqKey =
-    process.env.GROQ_API_KEY ||
-    (process.env.GEMINI_API_KEY?.startsWith('gsk_') ? process.env.GEMINI_API_KEY : '');
-  const groqModel = process.env.GROQ_MODEL || 'qwen/qwen3.8-27b';
-
-  if (groqKey) {
-    let attempts = 0;
-    while (attempts < 3) {
-      attempts++;
-      const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-        method: 'POST',
-        headers: {
-          Authorization: `Bearer ${groqKey}`,
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          model: groqModel,
-          messages: [
-            { role: 'system', content: systemPrompt },
-            { role: 'user', content: userPrompt },
-          ],
-          response_format: { type: 'json_object' },
-          temperature: 0.6,
-          max_tokens: 650,
-        }),
-      });
-
-      if (res.status === 429 && attempts < 3) {
-        const err = await res.text();
-        console.warn(`[Assistant Groq 429 rate limit - backing off attempt ${attempts}/3]:`, err);
-        let waitMs = 1500 * attempts;
-        const matchMs = err.match(/try again in ([0-9.]+)ms/i);
-        const matchSec = err.match(/try again in ([0-9.]+)s/i);
-        if (matchMs && matchMs[1]) {
-          waitMs = Math.ceil(parseFloat(matchMs[1])) + 300;
-        } else if (matchSec && matchSec[1]) {
-          waitMs = Math.ceil(parseFloat(matchSec[1]) * 1000) + 300;
-        }
-        await new Promise((r) => setTimeout(r, waitMs));
-        continue;
-      }
-
-      if (!res.ok) {
-        const err = await res.text();
-        throw new Error(`Groq API error (${res.status}): ${err}`);
-      }
-
-      const data = await res.json();
-      return data.choices?.[0]?.message?.content || '';
-    }
-  }
-
-  const geminiKey = process.env.GEMINI_API_KEY;
-  if (geminiKey && !geminiKey.startsWith('gsk_')) {
-    const { GoogleGenAI } = await import('@google/genai');
-    const ai = new GoogleGenAI({
-      apiKey: geminiKey,
-      httpOptions: { headers: { 'User-Agent': 'aistudio-build' } },
-    });
-    const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
-      contents: userPrompt,
-      config: {
-        systemInstruction: systemPrompt,
-        responseMimeType: 'application/json',
-        temperature: 0.6,
-      },
-    });
-    return response.text || '';
-  }
-
-  throw new Error('No LLM API key configured.');
 }
 
 export async function askEventAssistant(
@@ -193,7 +119,7 @@ Return strict JSON matching this schema:
 Analyze and formulate your response in JSON:`;
 
   try {
-    const raw = await callAssistantLLM(systemInstruction, prompt);
+    const raw = await callLLM(systemInstruction, prompt, { temperature: 0.6, maxTokens: 650 });
     const clean = raw.replace(/^```json\s*/i, '').replace(/\s*```$/i, '').trim();
     const parsed = JSON.parse(clean);
 

@@ -1,86 +1,5 @@
 import { PlanGenerationPayload } from '../types.js';
-
-/**
- * Universal LLM caller supporting Groq API (high-speed LLaMA/Qwen inference)
- * with graceful fallback to Gemini API if configured.
- */
-async function callLLM(systemPrompt: string, userPrompt: string, temperature = 0.4): Promise<string> {
-  const groqKey =
-    process.env.GROQ_API_KEY ||
-    (process.env.GEMINI_API_KEY?.startsWith('gsk_') ? process.env.GEMINI_API_KEY : '');
-  const groqModel = process.env.GROQ_MODEL || 'qwen/qwen3.8-27b';
-
-  if (groqKey) {
-    let attempts = 0;
-    while (attempts < 3) {
-      attempts++;
-      const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-        method: 'POST',
-        headers: {
-          Authorization: `Bearer ${groqKey}`,
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          model: groqModel,
-          messages: [
-            { role: 'system', content: systemPrompt },
-            { role: 'user', content: userPrompt },
-          ],
-          response_format: { type: 'json_object' },
-          temperature,
-          max_tokens: 1000,
-        }),
-      });
-
-      if (res.status === 429 && attempts < 3) {
-        const errBody = await res.text();
-        console.warn(`[Groq 429 rate limit - backing off attempt ${attempts}/3]:`, errBody);
-        let waitMs = 1500 * attempts;
-        const matchMs = errBody.match(/try again in ([0-9.]+)ms/i);
-        const matchSec = errBody.match(/try again in ([0-9.]+)s/i);
-        if (matchMs && matchMs[1]) {
-          waitMs = Math.ceil(parseFloat(matchMs[1])) + 300;
-        } else if (matchSec && matchSec[1]) {
-          waitMs = Math.ceil(parseFloat(matchSec[1]) * 1000) + 300;
-        }
-        await new Promise((r) => setTimeout(r, waitMs));
-        continue;
-      }
-
-      if (!res.ok) {
-        const errBody = await res.text();
-        throw new Error(`Groq API error (${res.status}): ${errBody}`);
-      }
-
-      const data = await res.json();
-      return data.choices?.[0]?.message?.content || '';
-    }
-  }
-
-  // Fallback to Gemini if a standard Google API key is provided
-  const geminiKey = process.env.GEMINI_API_KEY;
-  if (geminiKey && !geminiKey.startsWith('gsk_')) {
-    const { GoogleGenAI } = await import('@google/genai');
-    const ai = new GoogleGenAI({
-      apiKey: geminiKey,
-      httpOptions: { headers: { 'User-Agent': 'aistudio-build' } },
-    });
-    const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
-      contents: userPrompt,
-      config: {
-        systemInstruction: systemPrompt,
-        responseMimeType: 'application/json',
-        temperature,
-      },
-    });
-    return response.text || '';
-  }
-
-  throw new Error(
-    'No valid LLM API key configured. Please set GROQ_API_KEY in your .env file.'
-  );
-}
+import { callLLM } from './client.js';
 
 /**
  * Strict validator for JSON Schema Contract:
@@ -224,7 +143,7 @@ Always produce strict JSON matching the requested schema. Ensure arithmetic mutu
 Do not output markdown codeblocks, provide raw JSON only.`;
 
   try {
-    const rawText = await callLLM(systemInstruction, prompt, 0.4);
+    const rawText = await callLLM(systemInstruction, prompt, { temperature: 0.4 });
 
     let parsed: any;
     try {
@@ -267,7 +186,7 @@ Return ONLY pure JSON matching the exact schema without deviations.
 Ensure every category, estimated_cost (number), and due_date (YYYY-MM-DD) are present.`;
 
   const systemInstruction = `You are PlanCraft AI. Produce valid, strictly formatted JSON matching the requested schema.`;
-  const rawText = await callLLM(systemInstruction, retryPrompt, 0.2);
+  const rawText = await callLLM(systemInstruction, retryPrompt, { temperature: 0.2 });
 
   const parsed = JSON.parse(
     rawText

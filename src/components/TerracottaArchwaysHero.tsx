@@ -13,6 +13,7 @@ import {
   Calendar,
   Store,
   Lightbulb,
+  Users,
 } from 'lucide-react';
 
 import { PlannerTab } from '../types';
@@ -24,6 +25,7 @@ interface TerracottaArchwaysHeroProps {
   onScrollToWorkspace?: () => void;
   hasActiveEvent: boolean;
   activeEventName?: string;
+  activeEventType?: string;
   isCollapsed?: boolean;
   onToggleCollapse?: () => void;
 }
@@ -47,6 +49,7 @@ export const TerracottaArchwaysHero: React.FC<TerracottaArchwaysHeroProps> = ({
   onScrollToWorkspace,
   hasActiveEvent,
   activeEventName,
+  activeEventType,
   isCollapsed = false,
   onToggleCollapse,
 }) => {
@@ -576,12 +579,29 @@ export const TerracottaArchwaysHero: React.FC<TerracottaArchwaysHeroProps> = ({
             <Calendar className="w-3.5 h-3.5 text-[#E0A37E]" />
             <span>Milestone Timeline</span>
           </button>
+          {activeEventType === 'community' ? (
+            <button
+              onClick={() => onSelectTab?.('civic')}
+              className="px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-[#EEEDEA] border border-white/15 transition-all flex items-center gap-1.5 cursor-pointer hover:border-[#E0A37E]/50"
+            >
+              <ShieldCheck className="w-3.5 h-3.5 text-[#E0A37E]" />
+              <span>Civic Logistics</span>
+            </button>
+          ) : (
+            <button
+              onClick={() => onSelectTab?.('vendors')}
+              className="px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-[#EEEDEA] border border-white/15 transition-all flex items-center gap-1.5 cursor-pointer hover:border-[#E0A37E]/50"
+            >
+              <Store className="w-3.5 h-3.5 text-[#E0A37E]" />
+              <span>Vendors</span>
+            </button>
+          )}
           <button
-            onClick={() => onSelectTab?.('vendors')}
+            onClick={() => onSelectTab?.('guests')}
             className="px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-[#EEEDEA] border border-white/15 transition-all flex items-center gap-1.5 cursor-pointer hover:border-[#E0A37E]/50"
           >
-            <Store className="w-3.5 h-3.5 text-[#E0A37E]" />
-            <span>Vendors</span>
+            <Users className="w-3.5 h-3.5 text-[#E0A37E]" />
+            <span>Guests</span>
           </button>
           <button
             onClick={() => onSelectTab?.('ideas')}

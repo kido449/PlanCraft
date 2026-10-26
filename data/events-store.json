@@ -285,6 +285,266 @@
       "vibe": "Modern minimal, warm candlelight, organic florals",
       "created_at": "2026-10-24T15:44:46.142Z",
       "updated_at": "2026-10-24T15:44:46.142Z"
+    },
+    "416815fe-f2b1-486d-8178-47a844bfe453": {
+      "id": "416815fe-f2b1-486d-8178-47a844bfe453",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T14:34:01.526Z",
+      "updated_at": "2026-10-26T14:34:01.526Z"
+    },
+    "f28235a7-47d6-47e8-bb3b-7819bef9aa7f": {
+      "id": "f28235a7-47d6-47e8-bb3b-7819bef9aa7f",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T14:34:01.533Z",
+      "updated_at": "2026-10-26T14:34:01.533Z"
+    },
+    "2ff0eaa9-d2c4-4d76-ad8c-d85ae0506ba0": {
+      "id": "2ff0eaa9-d2c4-4d76-ad8c-d85ae0506ba0",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T14:34:01.539Z",
+      "updated_at": "2026-10-26T14:34:01.539Z"
+    },
+    "c1973b77-d915-4243-8019-20b6062a9c26": {
+      "id": "c1973b77-d915-4243-8019-20b6062a9c26",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T14:34:01.545Z",
+      "updated_at": "2026-10-26T14:34:01.545Z"
+    },
+    "d06ddea4-3082-4b56-8756-09b4834e23b1": {
+      "id": "d06ddea4-3082-4b56-8756-09b4834e23b1",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T14:34:01.549Z",
+      "updated_at": "2026-10-26T14:34:01.549Z"
+    },
+    "e7fcf2ab-ba04-4103-acf2-46dee04b235a": {
+      "id": "e7fcf2ab-ba04-4103-acf2-46dee04b235a",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T14:46:02.705Z",
+      "updated_at": "2026-10-26T14:46:02.705Z"
+    },
+    "f3eecf51-7c63-4ccc-bd66-0eb6bcd7d4d6": {
+      "id": "f3eecf51-7c63-4ccc-bd66-0eb6bcd7d4d6",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T14:46:02.715Z",
+      "updated_at": "2026-10-26T14:46:02.715Z"
+    },
+    "22233c51-c949-4ec4-a67d-ebc6989a94f0": {
+      "id": "22233c51-c949-4ec4-a67d-ebc6989a94f0",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T14:46:02.721Z",
+      "updated_at": "2026-10-26T14:46:02.721Z"
+    },
+    "1d960646-a6b6-452f-ae1a-f6dcb204b4ee": {
+      "id": "1d960646-a6b6-452f-ae1a-f6dcb204b4ee",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T14:46:02.727Z",
+      "updated_at": "2026-10-26T14:46:02.727Z"
+    },
+    "e4631078-cf67-43b5-824e-a5df48301448": {
+      "id": "e4631078-cf67-43b5-824e-a5df48301448",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T14:46:02.732Z",
+      "updated_at": "2026-10-26T14:46:02.732Z"
+    },
+    "30e7df2a-4411-47db-98d1-4c1f7ba736b8": {
+      "id": "30e7df2a-4411-47db-98d1-4c1f7ba736b8",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T15:18:43.140Z",
+      "updated_at": "2026-10-26T15:18:43.140Z"
+    },
+    "c4476807-599d-4fc7-8108-37de082975fb": {
+      "id": "c4476807-599d-4fc7-8108-37de082975fb",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T15:18:43.152Z",
+      "updated_at": "2026-10-26T15:18:43.152Z"
+    },
+    "cd951da0-b689-4055-ba6d-66d1c14b8017": {
+      "id": "cd951da0-b689-4055-ba6d-66d1c14b8017",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T15:18:43.158Z",
+      "updated_at": "2026-10-26T15:18:43.158Z"
+    },
+    "78aec43a-4559-47f0-8b4d-cd239ea9d5da": {
+      "id": "78aec43a-4559-47f0-8b4d-cd239ea9d5da",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T15:18:43.164Z",
+      "updated_at": "2026-10-26T15:18:43.164Z"
+    },
+    "0f38c885-065b-4ccc-bae2-10ddfafc7b08": {
+      "id": "0f38c885-065b-4ccc-bae2-10ddfafc7b08",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T15:18:43.170Z",
+      "updated_at": "2026-10-26T15:18:43.170Z"
+    },
+    "e4ec710f-ea68-4c43-aa04-5fa70ec3ac69": {
+      "id": "e4ec710f-ea68-4c43-aa04-5fa70ec3ac69",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T15:42:44.664Z",
+      "updated_at": "2026-10-26T15:42:44.664Z"
+    },
+    "f6cc1a2d-94cc-4412-8967-44ca03788f6f": {
+      "id": "f6cc1a2d-94cc-4412-8967-44ca03788f6f",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T15:42:44.672Z",
+      "updated_at": "2026-10-26T15:42:44.672Z"
+    },
+    "aafdaa9c-1e7e-4e41-a0a9-229a044bd8c0": {
+      "id": "aafdaa9c-1e7e-4e41-a0a9-229a044bd8c0",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T15:42:44.678Z",
+      "updated_at": "2026-10-26T15:42:44.678Z"
+    },
+    "53db0a1c-d444-43b8-baf3-c33feb99faa4": {
+      "id": "53db0a1c-d444-43b8-baf3-c33feb99faa4",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T15:42:44.683Z",
+      "updated_at": "2026-10-26T15:42:44.683Z"
+    },
+    "8f680f2d-118c-497f-9119-899535161047": {
+      "id": "8f680f2d-118c-497f-9119-899535161047",
+      "owner_id": "test-replan-owner-101",
+      "type": "wedding",
+      "name": "Delta Test Celebration",
+      "date": "2026-10-30",
+      "guest_count": 100,
+      "location": "Sonoma, CA",
+      "total_budget": 30000,
+      "vibe": "Refined rustic",
+      "created_at": "2026-10-26T15:42:44.687Z",
+      "updated_at": "2026-10-26T15:42:44.687Z"
     }
   },
   "budget_items": {
@@ -887,6 +1147,410 @@
       "actual_cost": null,
       "status": "planned",
       "notes": "Covers minimalist digital and paper invitation suites and day-of coordination services."
+    },
+    "d72367a0-496c-456c-bfaa-8c20bad9d73f": {
+      "id": "d72367a0-496c-456c-bfaa-8c20bad9d73f",
+      "event_id": "416815fe-f2b1-486d-8178-47a844bfe453",
+      "category": "Venue",
+      "estimated_cost": 10000,
+      "actual_cost": 10000,
+      "status": "paid",
+      "notes": "Estate fee",
+      "is_user_edited": true
+    },
+    "55f84c37-ef83-4fce-a4bd-8df6943b12ac": {
+      "id": "55f84c37-ef83-4fce-a4bd-8df6943b12ac",
+      "event_id": "416815fe-f2b1-486d-8178-47a844bfe453",
+      "category": "Photography",
+      "estimated_cost": 4800,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Custom locked photography contract",
+      "is_user_edited": true
+    },
+    "792ee274-b930-48fa-9131-0e40de87f4fb": {
+      "id": "792ee274-b930-48fa-9131-0e40de87f4fb",
+      "event_id": "416815fe-f2b1-486d-8178-47a844bfe453",
+      "category": "Catering",
+      "estimated_cost": 8000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "AI reduced"
+    },
+    "020e3d93-d609-49b6-b0a1-e2f9237b9b6b": {
+      "id": "020e3d93-d609-49b6-b0a1-e2f9237b9b6b",
+      "event_id": "416815fe-f2b1-486d-8178-47a844bfe453",
+      "category": "Florals",
+      "estimated_cost": 2500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "AI reduced"
+    },
+    "b3c4a66c-081d-4f87-bb2a-762386e28886": {
+      "id": "b3c4a66c-081d-4f87-bb2a-762386e28886",
+      "event_id": "f28235a7-47d6-47e8-bb3b-7819bef9aa7f",
+      "category": "Catering",
+      "estimated_cost": 10000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "New"
+    },
+    "e3453c37-8f0a-410c-a7d5-00f3db7e32c7": {
+      "id": "e3453c37-8f0a-410c-a7d5-00f3db7e32c7",
+      "event_id": "2ff0eaa9-d2c4-4d76-ad8c-d85ae0506ba0",
+      "category": "Venue",
+      "estimated_cost": 5000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Budget"
+    },
+    "2672bf70-5f59-40b4-b3ca-e45975deae57": {
+      "id": "2672bf70-5f59-40b4-b3ca-e45975deae57",
+      "event_id": "c1973b77-d915-4243-8019-20b6062a9c26",
+      "category": "Catering",
+      "estimated_cost": 10000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Test"
+    },
+    "e609109c-5e9e-442d-8c6a-8ebad93c0064": {
+      "id": "e609109c-5e9e-442d-8c6a-8ebad93c0064",
+      "event_id": "d06ddea4-3082-4b56-8756-09b4834e23b1",
+      "category": "Venue",
+      "estimated_cost": 10000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Estate fee"
+    },
+    "4df875b1-3754-407d-93a0-a0c644d86da6": {
+      "id": "4df875b1-3754-407d-93a0-a0c644d86da6",
+      "event_id": "d06ddea4-3082-4b56-8756-09b4834e23b1",
+      "category": "Catering",
+      "estimated_cost": 12000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Dinner and drinks"
+    },
+    "160b89ea-5084-4c2c-a4c4-d180d2100fe2": {
+      "id": "160b89ea-5084-4c2c-a4c4-d180d2100fe2",
+      "event_id": "d06ddea4-3082-4b56-8756-09b4834e23b1",
+      "category": "Photography",
+      "estimated_cost": 4000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Full day"
+    },
+    "358cb11c-0326-4e60-804e-2d940b86e89f": {
+      "id": "358cb11c-0326-4e60-804e-2d940b86e89f",
+      "event_id": "d06ddea4-3082-4b56-8756-09b4834e23b1",
+      "category": "Florals",
+      "estimated_cost": 4000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Arrangements"
+    },
+    "79edb5ee-d02f-4c86-95ba-03cbd67b5555": {
+      "id": "79edb5ee-d02f-4c86-95ba-03cbd67b5555",
+      "event_id": "e7fcf2ab-ba04-4103-acf2-46dee04b235a",
+      "category": "Venue",
+      "estimated_cost": 10000,
+      "actual_cost": 10000,
+      "status": "paid",
+      "notes": "Estate fee",
+      "is_user_edited": true
+    },
+    "7e083726-0929-47bd-8785-9afe6c196892": {
+      "id": "7e083726-0929-47bd-8785-9afe6c196892",
+      "event_id": "e7fcf2ab-ba04-4103-acf2-46dee04b235a",
+      "category": "Photography",
+      "estimated_cost": 4800,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Custom locked photography contract",
+      "is_user_edited": true
+    },
+    "3feac0d8-26f6-4fc7-bfbb-9ada8e5dc4c2": {
+      "id": "3feac0d8-26f6-4fc7-bfbb-9ada8e5dc4c2",
+      "event_id": "e7fcf2ab-ba04-4103-acf2-46dee04b235a",
+      "category": "Catering",
+      "estimated_cost": 8000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "AI reduced"
+    },
+    "8bcfbe74-373f-4271-b46f-cb77e916f09a": {
+      "id": "8bcfbe74-373f-4271-b46f-cb77e916f09a",
+      "event_id": "e7fcf2ab-ba04-4103-acf2-46dee04b235a",
+      "category": "Florals",
+      "estimated_cost": 2500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "AI reduced"
+    },
+    "179a600b-55ca-4b6a-b54d-4c3616516365": {
+      "id": "179a600b-55ca-4b6a-b54d-4c3616516365",
+      "event_id": "f3eecf51-7c63-4ccc-bd66-0eb6bcd7d4d6",
+      "category": "Catering",
+      "estimated_cost": 10000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "New"
+    },
+    "dee2b7f5-fd6a-49d0-8fa9-64fb0c2ea26e": {
+      "id": "dee2b7f5-fd6a-49d0-8fa9-64fb0c2ea26e",
+      "event_id": "22233c51-c949-4ec4-a67d-ebc6989a94f0",
+      "category": "Venue",
+      "estimated_cost": 5000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Budget"
+    },
+    "407d71ef-1ec7-42b8-9247-5177a259988e": {
+      "id": "407d71ef-1ec7-42b8-9247-5177a259988e",
+      "event_id": "1d960646-a6b6-452f-ae1a-f6dcb204b4ee",
+      "category": "Catering",
+      "estimated_cost": 10000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Test"
+    },
+    "79ec6733-3ec3-4cbc-89ea-3bab778ade61": {
+      "id": "79ec6733-3ec3-4cbc-89ea-3bab778ade61",
+      "event_id": "e4631078-cf67-43b5-824e-a5df48301448",
+      "category": "Venue",
+      "estimated_cost": 10000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Estate fee"
+    },
+    "07d4826c-58c8-4769-8747-f4ed595464ed": {
+      "id": "07d4826c-58c8-4769-8747-f4ed595464ed",
+      "event_id": "e4631078-cf67-43b5-824e-a5df48301448",
+      "category": "Catering",
+      "estimated_cost": 12000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Dinner and drinks"
+    },
+    "6a5dbd90-43c9-4843-8860-a1cfe4c7066b": {
+      "id": "6a5dbd90-43c9-4843-8860-a1cfe4c7066b",
+      "event_id": "e4631078-cf67-43b5-824e-a5df48301448",
+      "category": "Photography",
+      "estimated_cost": 4000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Full day"
+    },
+    "efe860ba-6761-48b3-b566-f928bd5caa33": {
+      "id": "efe860ba-6761-48b3-b566-f928bd5caa33",
+      "event_id": "e4631078-cf67-43b5-824e-a5df48301448",
+      "category": "Florals",
+      "estimated_cost": 4000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Arrangements"
+    },
+    "20d80dde-d8d7-4cea-9b5e-2594f56cb13e": {
+      "id": "20d80dde-d8d7-4cea-9b5e-2594f56cb13e",
+      "event_id": "30e7df2a-4411-47db-98d1-4c1f7ba736b8",
+      "category": "Venue",
+      "estimated_cost": 10000,
+      "actual_cost": 10000,
+      "status": "paid",
+      "notes": "Estate fee",
+      "is_user_edited": true
+    },
+    "7aaade31-fa7c-4608-a128-931bac928a69": {
+      "id": "7aaade31-fa7c-4608-a128-931bac928a69",
+      "event_id": "30e7df2a-4411-47db-98d1-4c1f7ba736b8",
+      "category": "Photography",
+      "estimated_cost": 4800,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Custom locked photography contract",
+      "is_user_edited": true
+    },
+    "1e59e37f-face-4a3b-83b4-62654b8a7583": {
+      "id": "1e59e37f-face-4a3b-83b4-62654b8a7583",
+      "event_id": "30e7df2a-4411-47db-98d1-4c1f7ba736b8",
+      "category": "Catering",
+      "estimated_cost": 8000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "AI reduced"
+    },
+    "cc35b129-d11e-4abd-8328-0149758c0ab9": {
+      "id": "cc35b129-d11e-4abd-8328-0149758c0ab9",
+      "event_id": "30e7df2a-4411-47db-98d1-4c1f7ba736b8",
+      "category": "Florals",
+      "estimated_cost": 2500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "AI reduced"
+    },
+    "20dfa9fd-38ac-4964-a416-448f59b1c2cf": {
+      "id": "20dfa9fd-38ac-4964-a416-448f59b1c2cf",
+      "event_id": "c4476807-599d-4fc7-8108-37de082975fb",
+      "category": "Catering",
+      "estimated_cost": 10000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "New"
+    },
+    "76506df8-6c85-4653-a3cf-e2789691061d": {
+      "id": "76506df8-6c85-4653-a3cf-e2789691061d",
+      "event_id": "cd951da0-b689-4055-ba6d-66d1c14b8017",
+      "category": "Venue",
+      "estimated_cost": 5000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Budget"
+    },
+    "72b190da-e907-473d-a704-a0b0c2899d8a": {
+      "id": "72b190da-e907-473d-a704-a0b0c2899d8a",
+      "event_id": "78aec43a-4559-47f0-8b4d-cd239ea9d5da",
+      "category": "Catering",
+      "estimated_cost": 10000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Test"
+    },
+    "7ee4069b-f198-483a-aded-1da7dea47a06": {
+      "id": "7ee4069b-f198-483a-aded-1da7dea47a06",
+      "event_id": "0f38c885-065b-4ccc-bae2-10ddfafc7b08",
+      "category": "Venue",
+      "estimated_cost": 10000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Estate fee"
+    },
+    "0e70109e-1dd5-429d-9ef6-fe154a2cec7e": {
+      "id": "0e70109e-1dd5-429d-9ef6-fe154a2cec7e",
+      "event_id": "0f38c885-065b-4ccc-bae2-10ddfafc7b08",
+      "category": "Catering",
+      "estimated_cost": 12000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Dinner and drinks"
+    },
+    "b90981fb-bc58-48de-abb4-81986534828a": {
+      "id": "b90981fb-bc58-48de-abb4-81986534828a",
+      "event_id": "0f38c885-065b-4ccc-bae2-10ddfafc7b08",
+      "category": "Photography",
+      "estimated_cost": 4000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Full day"
+    },
+    "61478442-f6b7-41b9-a4d0-3d390a8ef5e0": {
+      "id": "61478442-f6b7-41b9-a4d0-3d390a8ef5e0",
+      "event_id": "0f38c885-065b-4ccc-bae2-10ddfafc7b08",
+      "category": "Florals",
+      "estimated_cost": 4000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Arrangements"
+    },
+    "b990cb0a-893f-4266-ab2b-12eea3fdebd3": {
+      "id": "b990cb0a-893f-4266-ab2b-12eea3fdebd3",
+      "event_id": "e4ec710f-ea68-4c43-aa04-5fa70ec3ac69",
+      "category": "Venue",
+      "estimated_cost": 10000,
+      "actual_cost": 10000,
+      "status": "paid",
+      "notes": "Estate fee",
+      "is_user_edited": true
+    },
+    "d4a7baf0-241d-4ccd-96a1-5c2ba2cd207d": {
+      "id": "d4a7baf0-241d-4ccd-96a1-5c2ba2cd207d",
+      "event_id": "e4ec710f-ea68-4c43-aa04-5fa70ec3ac69",
+      "category": "Photography",
+      "estimated_cost": 4800,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Custom locked photography contract",
+      "is_user_edited": true
+    },
+    "5270c5a5-4a25-4336-9449-4bf54bc86571": {
+      "id": "5270c5a5-4a25-4336-9449-4bf54bc86571",
+      "event_id": "e4ec710f-ea68-4c43-aa04-5fa70ec3ac69",
+      "category": "Catering",
+      "estimated_cost": 8000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "AI reduced"
+    },
+    "487dae2b-4eed-4b98-896e-e7d6c11edd6c": {
+      "id": "487dae2b-4eed-4b98-896e-e7d6c11edd6c",
+      "event_id": "e4ec710f-ea68-4c43-aa04-5fa70ec3ac69",
+      "category": "Florals",
+      "estimated_cost": 2500,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "AI reduced"
+    },
+    "592ef7fa-3eeb-49e7-92aa-f812642b59e8": {
+      "id": "592ef7fa-3eeb-49e7-92aa-f812642b59e8",
+      "event_id": "f6cc1a2d-94cc-4412-8967-44ca03788f6f",
+      "category": "Catering",
+      "estimated_cost": 10000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "New"
+    },
+    "9795a395-c3a1-4a43-a6ac-b759def2d41d": {
+      "id": "9795a395-c3a1-4a43-a6ac-b759def2d41d",
+      "event_id": "aafdaa9c-1e7e-4e41-a0a9-229a044bd8c0",
+      "category": "Venue",
+      "estimated_cost": 5000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Budget"
+    },
+    "3b941849-827a-49d2-867a-7288162d626f": {
+      "id": "3b941849-827a-49d2-867a-7288162d626f",
+      "event_id": "53db0a1c-d444-43b8-baf3-c33feb99faa4",
+      "category": "Catering",
+      "estimated_cost": 10000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Test"
+    },
+    "bfb82452-02dc-4326-9ec9-4d1c2e327827": {
+      "id": "bfb82452-02dc-4326-9ec9-4d1c2e327827",
+      "event_id": "8f680f2d-118c-497f-9119-899535161047",
+      "category": "Venue",
+      "estimated_cost": 10000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Estate fee"
+    },
+    "0f1057d0-70d8-453c-88cd-7c14f40b568c": {
+      "id": "0f1057d0-70d8-453c-88cd-7c14f40b568c",
+      "event_id": "8f680f2d-118c-497f-9119-899535161047",
+      "category": "Catering",
+      "estimated_cost": 12000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Dinner and drinks"
+    },
+    "c40bdcc8-6013-4445-8367-e67b4df06d5c": {
+      "id": "c40bdcc8-6013-4445-8367-e67b4df06d5c",
+      "event_id": "8f680f2d-118c-497f-9119-899535161047",
+      "category": "Photography",
+      "estimated_cost": 4000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Full day"
+    },
+    "eb076368-9f29-4151-953f-17bd0ae8fa18": {
+      "id": "eb076368-9f29-4151-953f-17bd0ae8fa18",
+      "event_id": "8f680f2d-118c-497f-9119-899535161047",
+      "category": "Florals",
+      "estimated_cost": 4000,
+      "actual_cost": null,
+      "status": "planned",
+      "notes": "Arrangements"
     }
   },
   "timeline_tasks": {
@@ -1631,6 +2295,262 @@
       "id": "0eee1bc6-e998-4b08-a6ec-aced4449960c",
       "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
       "is_user_edited": true
+    },
+    "44634295-9cde-4e65-a64b-9b1864faf40a": {
+      "id": "44634295-9cde-4e65-a64b-9b1864faf40a",
+      "event_id": "416815fe-f2b1-486d-8178-47a844bfe453",
+      "title": "Adjusted Tasting",
+      "category": "Catering",
+      "due_date": "2026-08-01",
+      "status": "pending",
+      "notes": "Adjusted"
+    },
+    "14c94d39-7383-46e3-af74-65ae64d742b2": {
+      "id": "14c94d39-7383-46e3-af74-65ae64d742b2",
+      "event_id": "f28235a7-47d6-47e8-bb3b-7819bef9aa7f",
+      "title": "Sign Venue Contract",
+      "category": "Venue",
+      "due_date": "2026-05-01",
+      "status": "completed",
+      "notes": "Deposit due",
+      "is_user_edited": true
+    },
+    "70216e29-655b-4b8c-940e-39440dc5a9ca": {
+      "id": "70216e29-655b-4b8c-940e-39440dc5a9ca",
+      "event_id": "f28235a7-47d6-47e8-bb3b-7819bef9aa7f",
+      "title": "Final Linens Sign-off",
+      "category": "Decor",
+      "due_date": "2026-09-20",
+      "status": "pending",
+      "notes": "New task"
+    },
+    "3c750da9-421e-4fbf-9344-538d0db1c4db": {
+      "id": "3c750da9-421e-4fbf-9344-538d0db1c4db",
+      "event_id": "2ff0eaa9-d2c4-4d76-ad8c-d85ae0506ba0",
+      "title": "Milestone",
+      "category": "General",
+      "due_date": "2026-08-01",
+      "status": "pending",
+      "notes": "Note"
+    },
+    "c91f9bf2-b09b-4858-be98-e093b6ea678a": {
+      "id": "c91f9bf2-b09b-4858-be98-e093b6ea678a",
+      "event_id": "c1973b77-d915-4243-8019-20b6062a9c26",
+      "title": "Test",
+      "category": "General",
+      "due_date": "2026-08-01",
+      "status": "pending",
+      "notes": "Test"
+    },
+    "64c6c2b0-d2d5-4bfa-8306-4a4132549659": {
+      "id": "64c6c2b0-d2d5-4bfa-8306-4a4132549659",
+      "event_id": "d06ddea4-3082-4b56-8756-09b4834e23b1",
+      "title": "Sign Venue Contract",
+      "category": "Venue",
+      "due_date": "2026-05-01",
+      "status": "pending",
+      "notes": "Deposit due"
+    },
+    "2df9cbed-08e0-467a-8a10-e5edccb6812b": {
+      "id": "2df9cbed-08e0-467a-8a10-e5edccb6812b",
+      "event_id": "d06ddea4-3082-4b56-8756-09b4834e23b1",
+      "title": "Tasting Session",
+      "category": "Catering",
+      "due_date": "2026-07-01",
+      "status": "pending",
+      "notes": "Menu selection"
+    },
+    "9fe04081-d37c-47b0-998e-67e2ef3ab1c2": {
+      "id": "9fe04081-d37c-47b0-998e-67e2ef3ab1c2",
+      "event_id": "e7fcf2ab-ba04-4103-acf2-46dee04b235a",
+      "title": "Adjusted Tasting",
+      "category": "Catering",
+      "due_date": "2026-08-01",
+      "status": "pending",
+      "notes": "Adjusted"
+    },
+    "4b92f6af-1bd0-4ad5-a36c-9f97a56939ff": {
+      "id": "4b92f6af-1bd0-4ad5-a36c-9f97a56939ff",
+      "event_id": "f3eecf51-7c63-4ccc-bd66-0eb6bcd7d4d6",
+      "title": "Sign Venue Contract",
+      "category": "Venue",
+      "due_date": "2026-05-01",
+      "status": "completed",
+      "notes": "Deposit due",
+      "is_user_edited": true
+    },
+    "abb62d13-39b7-4db1-9418-ebd022ea3442": {
+      "id": "abb62d13-39b7-4db1-9418-ebd022ea3442",
+      "event_id": "f3eecf51-7c63-4ccc-bd66-0eb6bcd7d4d6",
+      "title": "Final Linens Sign-off",
+      "category": "Decor",
+      "due_date": "2026-09-20",
+      "status": "pending",
+      "notes": "New task"
+    },
+    "fa3abc0f-34e0-4dd5-8cb4-4a036f261fe8": {
+      "id": "fa3abc0f-34e0-4dd5-8cb4-4a036f261fe8",
+      "event_id": "22233c51-c949-4ec4-a67d-ebc6989a94f0",
+      "title": "Milestone",
+      "category": "General",
+      "due_date": "2026-08-01",
+      "status": "pending",
+      "notes": "Note"
+    },
+    "a0c52932-29a2-4a63-be1d-720c8fabc34d": {
+      "id": "a0c52932-29a2-4a63-be1d-720c8fabc34d",
+      "event_id": "1d960646-a6b6-452f-ae1a-f6dcb204b4ee",
+      "title": "Test",
+      "category": "General",
+      "due_date": "2026-08-01",
+      "status": "pending",
+      "notes": "Test"
+    },
+    "6367c28c-0d19-4bc2-add1-6ff00d75e211": {
+      "id": "6367c28c-0d19-4bc2-add1-6ff00d75e211",
+      "event_id": "e4631078-cf67-43b5-824e-a5df48301448",
+      "title": "Sign Venue Contract",
+      "category": "Venue",
+      "due_date": "2026-05-01",
+      "status": "pending",
+      "notes": "Deposit due"
+    },
+    "89470c9c-76b0-4408-8e5a-0b3d25380df1": {
+      "id": "89470c9c-76b0-4408-8e5a-0b3d25380df1",
+      "event_id": "e4631078-cf67-43b5-824e-a5df48301448",
+      "title": "Tasting Session",
+      "category": "Catering",
+      "due_date": "2026-07-01",
+      "status": "pending",
+      "notes": "Menu selection"
+    },
+    "1196ad8a-a781-4e22-82a8-1e06331e6525": {
+      "id": "1196ad8a-a781-4e22-82a8-1e06331e6525",
+      "event_id": "30e7df2a-4411-47db-98d1-4c1f7ba736b8",
+      "title": "Adjusted Tasting",
+      "category": "Catering",
+      "due_date": "2026-08-01",
+      "status": "pending",
+      "notes": "Adjusted"
+    },
+    "ae0e006c-1e61-41db-abf0-2085c46e916f": {
+      "id": "ae0e006c-1e61-41db-abf0-2085c46e916f",
+      "event_id": "c4476807-599d-4fc7-8108-37de082975fb",
+      "title": "Sign Venue Contract",
+      "category": "Venue",
+      "due_date": "2026-05-01",
+      "status": "completed",
+      "notes": "Deposit due",
+      "is_user_edited": true
+    },
+    "e90d044d-06c7-4093-a7e3-f9c70eaa729a": {
+      "id": "e90d044d-06c7-4093-a7e3-f9c70eaa729a",
+      "event_id": "c4476807-599d-4fc7-8108-37de082975fb",
+      "title": "Final Linens Sign-off",
+      "category": "Decor",
+      "due_date": "2026-09-20",
+      "status": "pending",
+      "notes": "New task"
+    },
+    "babef8f6-ad34-4470-84c6-8d334b62253f": {
+      "id": "babef8f6-ad34-4470-84c6-8d334b62253f",
+      "event_id": "cd951da0-b689-4055-ba6d-66d1c14b8017",
+      "title": "Milestone",
+      "category": "General",
+      "due_date": "2026-08-01",
+      "status": "pending",
+      "notes": "Note"
+    },
+    "333bf4d1-663e-4acf-bdc5-d51fac0a7fb7": {
+      "id": "333bf4d1-663e-4acf-bdc5-d51fac0a7fb7",
+      "event_id": "78aec43a-4559-47f0-8b4d-cd239ea9d5da",
+      "title": "Test",
+      "category": "General",
+      "due_date": "2026-08-01",
+      "status": "pending",
+      "notes": "Test"
+    },
+    "4a09481b-9635-48dc-98c1-00d092c1abb8": {
+      "id": "4a09481b-9635-48dc-98c1-00d092c1abb8",
+      "event_id": "0f38c885-065b-4ccc-bae2-10ddfafc7b08",
+      "title": "Sign Venue Contract",
+      "category": "Venue",
+      "due_date": "2026-05-01",
+      "status": "pending",
+      "notes": "Deposit due"
+    },
+    "77221b3f-57c9-4147-abe8-328530c39a02": {
+      "id": "77221b3f-57c9-4147-abe8-328530c39a02",
+      "event_id": "0f38c885-065b-4ccc-bae2-10ddfafc7b08",
+      "title": "Tasting Session",
+      "category": "Catering",
+      "due_date": "2026-07-01",
+      "status": "pending",
+      "notes": "Menu selection"
+    },
+    "e591928e-7ed1-4b32-98f5-9e7449c1aa92": {
+      "id": "e591928e-7ed1-4b32-98f5-9e7449c1aa92",
+      "event_id": "e4ec710f-ea68-4c43-aa04-5fa70ec3ac69",
+      "title": "Adjusted Tasting",
+      "category": "Catering",
+      "due_date": "2026-08-01",
+      "status": "pending",
+      "notes": "Adjusted"
+    },
+    "66b2e8e8-045b-4ab0-8418-bfaed097cdbf": {
+      "id": "66b2e8e8-045b-4ab0-8418-bfaed097cdbf",
+      "event_id": "f6cc1a2d-94cc-4412-8967-44ca03788f6f",
+      "title": "Sign Venue Contract",
+      "category": "Venue",
+      "due_date": "2026-05-01",
+      "status": "completed",
+      "notes": "Deposit due",
+      "is_user_edited": true
+    },
+    "d6bc7133-744a-47c2-b49b-9edec080be08": {
+      "id": "d6bc7133-744a-47c2-b49b-9edec080be08",
+      "event_id": "f6cc1a2d-94cc-4412-8967-44ca03788f6f",
+      "title": "Final Linens Sign-off",
+      "category": "Decor",
+      "due_date": "2026-09-20",
+      "status": "pending",
+      "notes": "New task"
+    },
+    "3c6cb2f7-aeb8-4267-8e4d-e871995e5547": {
+      "id": "3c6cb2f7-aeb8-4267-8e4d-e871995e5547",
+      "event_id": "aafdaa9c-1e7e-4e41-a0a9-229a044bd8c0",
+      "title": "Milestone",
+      "category": "General",
+      "due_date": "2026-08-01",
+      "status": "pending",
+      "notes": "Note"
+    },
+    "fdd989a3-ae1d-4d20-bd55-a8aa82a24cef": {
+      "id": "fdd989a3-ae1d-4d20-bd55-a8aa82a24cef",
+      "event_id": "53db0a1c-d444-43b8-baf3-c33feb99faa4",
+      "title": "Test",
+      "category": "General",
+      "due_date": "2026-08-01",
+      "status": "pending",
+      "notes": "Test"
+    },
+    "9567a219-dbf6-4f50-a067-73901b4065f6": {
+      "id": "9567a219-dbf6-4f50-a067-73901b4065f6",
+      "event_id": "8f680f2d-118c-497f-9119-899535161047",
+      "title": "Sign Venue Contract",
+      "category": "Venue",
+      "due_date": "2026-05-01",
+      "status": "pending",
+      "notes": "Deposit due"
+    },
+    "5b3181bb-79d9-46b7-b590-976d2bdbc3aa": {
+      "id": "5b3181bb-79d9-46b7-b590-976d2bdbc3aa",
+      "event_id": "8f680f2d-118c-497f-9119-899535161047",
+      "title": "Tasting Session",
+      "category": "Catering",
+      "due_date": "2026-07-01",
+      "status": "pending",
+      "notes": "Menu selection"
     }
   },
   "vendors": {
@@ -2034,6 +2954,210 @@
       "estimated_cost": 2500,
       "status": "shortlisted",
       "notes": "Award-winning photography team focused on candid, documentary-style wedding coverage."
+    },
+    "6e22ca3f-147e-43ef-a7cd-134599b8a7b8": {
+      "id": "6e22ca3f-147e-43ef-a7cd-134599b8a7b8",
+      "event_id": "416815fe-f2b1-486d-8178-47a844bfe453",
+      "category": "Florals",
+      "name": "Budget Florals",
+      "contact": null,
+      "estimated_cost": 2500,
+      "status": "shortlisted",
+      "notes": "Scaled down"
+    },
+    "9474c596-814d-4dd5-bcef-e9c2bfb8394b": {
+      "id": "9474c596-814d-4dd5-bcef-e9c2bfb8394b",
+      "event_id": "2ff0eaa9-d2c4-4d76-ad8c-d85ae0506ba0",
+      "category": "Photography",
+      "name": "Irreplaceable Fine Art Photo",
+      "contact": null,
+      "estimated_cost": 4000,
+      "status": "booked",
+      "notes": "Booked style",
+      "is_user_edited": true
+    },
+    "df637a42-2df4-4108-ae59-fe52126f5ac9": {
+      "id": "df637a42-2df4-4108-ae59-fe52126f5ac9",
+      "event_id": "2ff0eaa9-d2c4-4d76-ad8c-d85ae0506ba0",
+      "category": "Live Music",
+      "name": "Acoustic Duo",
+      "contact": null,
+      "estimated_cost": 1200,
+      "status": "shortlisted",
+      "notes": "New vendor"
+    },
+    "4c34b531-e295-454d-ab6b-7f0741cc9ba1": {
+      "id": "4c34b531-e295-454d-ab6b-7f0741cc9ba1",
+      "event_id": "d06ddea4-3082-4b56-8756-09b4834e23b1",
+      "category": "Photography",
+      "name": "Elena Photography",
+      "contact": null,
+      "estimated_cost": 4000,
+      "status": "shortlisted",
+      "notes": "Booked style"
+    },
+    "aabdd087-20e4-4b66-bddd-f5b05b87562d": {
+      "id": "aabdd087-20e4-4b66-bddd-f5b05b87562d",
+      "event_id": "d06ddea4-3082-4b56-8756-09b4834e23b1",
+      "category": "Florals",
+      "name": "Bloom Workshop",
+      "contact": null,
+      "estimated_cost": 4000,
+      "status": "shortlisted",
+      "notes": "Standard florals"
+    },
+    "b47bc7b5-2bd7-4407-b0b6-aaf0d38e7fd8": {
+      "id": "b47bc7b5-2bd7-4407-b0b6-aaf0d38e7fd8",
+      "event_id": "e7fcf2ab-ba04-4103-acf2-46dee04b235a",
+      "category": "Florals",
+      "name": "Budget Florals",
+      "contact": null,
+      "estimated_cost": 2500,
+      "status": "shortlisted",
+      "notes": "Scaled down"
+    },
+    "3808ab2c-0b32-4e83-b59a-4b2eb74d231c": {
+      "id": "3808ab2c-0b32-4e83-b59a-4b2eb74d231c",
+      "event_id": "22233c51-c949-4ec4-a67d-ebc6989a94f0",
+      "category": "Photography",
+      "name": "Irreplaceable Fine Art Photo",
+      "contact": null,
+      "estimated_cost": 4000,
+      "status": "booked",
+      "notes": "Booked style",
+      "is_user_edited": true
+    },
+    "e6e52529-fe81-4933-b3d7-a137cec565c0": {
+      "id": "e6e52529-fe81-4933-b3d7-a137cec565c0",
+      "event_id": "22233c51-c949-4ec4-a67d-ebc6989a94f0",
+      "category": "Live Music",
+      "name": "Acoustic Duo",
+      "contact": null,
+      "estimated_cost": 1200,
+      "status": "shortlisted",
+      "notes": "New vendor"
+    },
+    "cb8fcee0-283c-4fda-9609-e0c2a4cf408c": {
+      "id": "cb8fcee0-283c-4fda-9609-e0c2a4cf408c",
+      "event_id": "e4631078-cf67-43b5-824e-a5df48301448",
+      "category": "Photography",
+      "name": "Elena Photography",
+      "contact": null,
+      "estimated_cost": 4000,
+      "status": "shortlisted",
+      "notes": "Booked style"
+    },
+    "d68ad3bb-c611-435c-95e3-b1fc44fb99a8": {
+      "id": "d68ad3bb-c611-435c-95e3-b1fc44fb99a8",
+      "event_id": "e4631078-cf67-43b5-824e-a5df48301448",
+      "category": "Florals",
+      "name": "Bloom Workshop",
+      "contact": null,
+      "estimated_cost": 4000,
+      "status": "shortlisted",
+      "notes": "Standard florals"
+    },
+    "05365813-48c7-4eb6-9493-cec7fea78876": {
+      "id": "05365813-48c7-4eb6-9493-cec7fea78876",
+      "event_id": "30e7df2a-4411-47db-98d1-4c1f7ba736b8",
+      "category": "Florals",
+      "name": "Budget Florals",
+      "contact": null,
+      "estimated_cost": 2500,
+      "status": "shortlisted",
+      "notes": "Scaled down"
+    },
+    "2661d656-711c-4f37-bf0f-5585869f136b": {
+      "id": "2661d656-711c-4f37-bf0f-5585869f136b",
+      "event_id": "cd951da0-b689-4055-ba6d-66d1c14b8017",
+      "category": "Photography",
+      "name": "Irreplaceable Fine Art Photo",
+      "contact": null,
+      "estimated_cost": 4000,
+      "status": "booked",
+      "notes": "Booked style",
+      "is_user_edited": true
+    },
+    "4baabb59-fe0d-4181-9d1a-a86ab6cb660f": {
+      "id": "4baabb59-fe0d-4181-9d1a-a86ab6cb660f",
+      "event_id": "cd951da0-b689-4055-ba6d-66d1c14b8017",
+      "category": "Live Music",
+      "name": "Acoustic Duo",
+      "contact": null,
+      "estimated_cost": 1200,
+      "status": "shortlisted",
+      "notes": "New vendor"
+    },
+    "94fd89da-7a2c-47d3-885f-7a931c6628d8": {
+      "id": "94fd89da-7a2c-47d3-885f-7a931c6628d8",
+      "event_id": "0f38c885-065b-4ccc-bae2-10ddfafc7b08",
+      "category": "Photography",
+      "name": "Elena Photography",
+      "contact": null,
+      "estimated_cost": 4000,
+      "status": "shortlisted",
+      "notes": "Booked style"
+    },
+    "ab95db49-7b99-4ecd-b330-9d183ddf9a8e": {
+      "id": "ab95db49-7b99-4ecd-b330-9d183ddf9a8e",
+      "event_id": "0f38c885-065b-4ccc-bae2-10ddfafc7b08",
+      "category": "Florals",
+      "name": "Bloom Workshop",
+      "contact": null,
+      "estimated_cost": 4000,
+      "status": "shortlisted",
+      "notes": "Standard florals"
+    },
+    "38026211-0147-42b8-af4e-634d09a4c582": {
+      "id": "38026211-0147-42b8-af4e-634d09a4c582",
+      "event_id": "e4ec710f-ea68-4c43-aa04-5fa70ec3ac69",
+      "category": "Florals",
+      "name": "Budget Florals",
+      "contact": null,
+      "estimated_cost": 2500,
+      "status": "shortlisted",
+      "notes": "Scaled down"
+    },
+    "d5f45b03-cdfc-414c-8f9e-a3c2210c9aa2": {
+      "id": "d5f45b03-cdfc-414c-8f9e-a3c2210c9aa2",
+      "event_id": "aafdaa9c-1e7e-4e41-a0a9-229a044bd8c0",
+      "category": "Photography",
+      "name": "Irreplaceable Fine Art Photo",
+      "contact": null,
+      "estimated_cost": 4000,
+      "status": "booked",
+      "notes": "Booked style",
+      "is_user_edited": true
+    },
+    "4f82822f-d55c-4f03-908e-f9821fa3d657": {
+      "id": "4f82822f-d55c-4f03-908e-f9821fa3d657",
+      "event_id": "aafdaa9c-1e7e-4e41-a0a9-229a044bd8c0",
+      "category": "Live Music",
+      "name": "Acoustic Duo",
+      "contact": null,
+      "estimated_cost": 1200,
+      "status": "shortlisted",
+      "notes": "New vendor"
+    },
+    "633d9f4c-cecb-4c5b-b67e-9bc0f1b76591": {
+      "id": "633d9f4c-cecb-4c5b-b67e-9bc0f1b76591",
+      "event_id": "8f680f2d-118c-497f-9119-899535161047",
+      "category": "Photography",
+      "name": "Elena Photography",
+      "contact": null,
+      "estimated_cost": 4000,
+      "status": "shortlisted",
+      "notes": "Booked style"
+    },
+    "56264f97-4de1-4aa0-b249-d303d41c7be6": {
+      "id": "56264f97-4de1-4aa0-b249-d303d41c7be6",
+      "event_id": "8f680f2d-118c-497f-9119-899535161047",
+      "category": "Florals",
+      "name": "Bloom Workshop",
+      "contact": null,
+      "estimated_cost": 4000,
+      "status": "shortlisted",
+      "notes": "Standard florals"
     }
   },
   "volunteers": {
@@ -2279,6 +3403,126 @@
       "event_id": "0cef9003-72ab-4389-a0a3-b5cc638d80ba",
       "theme": "Guest Experience",
       "description": "Personalized welcomes and interactive celebration elements."
+    },
+    "5183b46f-f0ad-44db-9806-cfe1b3d12640": {
+      "id": "5183b46f-f0ad-44db-9806-cfe1b3d12640",
+      "event_id": "416815fe-f2b1-486d-8178-47a844bfe453",
+      "theme": "Intimate Sonoma",
+      "description": "Scaled back for intimate scale"
+    },
+    "ed825ec1-0d84-4bea-abfd-0c891e7f7c38": {
+      "id": "ed825ec1-0d84-4bea-abfd-0c891e7f7c38",
+      "event_id": "f28235a7-47d6-47e8-bb3b-7819bef9aa7f",
+      "theme": "Sonoma Sunset",
+      "description": "Candles and vineyard backdrop"
+    },
+    "24850d17-bafe-4247-a153-c0104920abaa": {
+      "id": "24850d17-bafe-4247-a153-c0104920abaa",
+      "event_id": "2ff0eaa9-d2c4-4d76-ad8c-d85ae0506ba0",
+      "theme": "Sonoma Sunset",
+      "description": "Candles and vineyard backdrop"
+    },
+    "4bb11ed1-d22c-4704-98d1-81c91cd1d88a": {
+      "id": "4bb11ed1-d22c-4704-98d1-81c91cd1d88a",
+      "event_id": "c1973b77-d915-4243-8019-20b6062a9c26",
+      "theme": "Sonoma Sunset",
+      "description": "Candles and vineyard backdrop"
+    },
+    "7837db3d-a8de-4a72-870d-eac8c59682e1": {
+      "id": "7837db3d-a8de-4a72-870d-eac8c59682e1",
+      "event_id": "d06ddea4-3082-4b56-8756-09b4834e23b1",
+      "theme": "Sonoma Sunset",
+      "description": "Candles and vineyard backdrop"
+    },
+    "494759d5-e639-4d4d-a4bc-639f3bfa9b91": {
+      "id": "494759d5-e639-4d4d-a4bc-639f3bfa9b91",
+      "event_id": "e7fcf2ab-ba04-4103-acf2-46dee04b235a",
+      "theme": "Intimate Sonoma",
+      "description": "Scaled back for intimate scale"
+    },
+    "cc5b0398-3415-4a71-9256-3fd8387135a1": {
+      "id": "cc5b0398-3415-4a71-9256-3fd8387135a1",
+      "event_id": "f3eecf51-7c63-4ccc-bd66-0eb6bcd7d4d6",
+      "theme": "Sonoma Sunset",
+      "description": "Candles and vineyard backdrop"
+    },
+    "5b7cb5e7-9330-462c-a565-32f77dee0ad8": {
+      "id": "5b7cb5e7-9330-462c-a565-32f77dee0ad8",
+      "event_id": "22233c51-c949-4ec4-a67d-ebc6989a94f0",
+      "theme": "Sonoma Sunset",
+      "description": "Candles and vineyard backdrop"
+    },
+    "4cd5fe95-c5f3-46d6-b011-cb8c1ba31058": {
+      "id": "4cd5fe95-c5f3-46d6-b011-cb8c1ba31058",
+      "event_id": "1d960646-a6b6-452f-ae1a-f6dcb204b4ee",
+      "theme": "Sonoma Sunset",
+      "description": "Candles and vineyard backdrop"
+    },
+    "ce6811a8-bcf8-4ed4-a871-e4d2f9eb972e": {
+      "id": "ce6811a8-bcf8-4ed4-a871-e4d2f9eb972e",
+      "event_id": "e4631078-cf67-43b5-824e-a5df48301448",
+      "theme": "Sonoma Sunset",
+      "description": "Candles and vineyard backdrop"
+    },
+    "177b5706-6225-44ac-b44c-a62c67885722": {
+      "id": "177b5706-6225-44ac-b44c-a62c67885722",
+      "event_id": "30e7df2a-4411-47db-98d1-4c1f7ba736b8",
+      "theme": "Intimate Sonoma",
+      "description": "Scaled back for intimate scale"
+    },
+    "1620b057-fd8b-4f29-bb6f-d932a2dd9740": {
+      "id": "1620b057-fd8b-4f29-bb6f-d932a2dd9740",
+      "event_id": "c4476807-599d-4fc7-8108-37de082975fb",
+      "theme": "Sonoma Sunset",
+      "description": "Candles and vineyard backdrop"
+    },
+    "cb118bbd-9769-4cf6-abc5-58d3c7688917": {
+      "id": "cb118bbd-9769-4cf6-abc5-58d3c7688917",
+      "event_id": "cd951da0-b689-4055-ba6d-66d1c14b8017",
+      "theme": "Sonoma Sunset",
+      "description": "Candles and vineyard backdrop"
+    },
+    "d84100ba-c194-4468-ada0-17297b6c94cd": {
+      "id": "d84100ba-c194-4468-ada0-17297b6c94cd",
+      "event_id": "78aec43a-4559-47f0-8b4d-cd239ea9d5da",
+      "theme": "Sonoma Sunset",
+      "description": "Candles and vineyard backdrop"
+    },
+    "f1b6fd3f-d5b9-4d70-9375-fbe563684bb4": {
+      "id": "f1b6fd3f-d5b9-4d70-9375-fbe563684bb4",
+      "event_id": "0f38c885-065b-4ccc-bae2-10ddfafc7b08",
+      "theme": "Sonoma Sunset",
+      "description": "Candles and vineyard backdrop"
+    },
+    "590ad2d9-015f-4178-afbf-81e0f5d69cee": {
+      "id": "590ad2d9-015f-4178-afbf-81e0f5d69cee",
+      "event_id": "e4ec710f-ea68-4c43-aa04-5fa70ec3ac69",
+      "theme": "Intimate Sonoma",
+      "description": "Scaled back for intimate scale"
+    },
+    "9dd97bf2-b82f-4d3a-bff2-2e7915f4ec7d": {
+      "id": "9dd97bf2-b82f-4d3a-bff2-2e7915f4ec7d",
+      "event_id": "f6cc1a2d-94cc-4412-8967-44ca03788f6f",
+      "theme": "Sonoma Sunset",
+      "description": "Candles and vineyard backdrop"
+    },
+    "e91acf51-9d67-4e08-be0b-c50a613196ba": {
+      "id": "e91acf51-9d67-4e08-be0b-c50a613196ba",
+      "event_id": "aafdaa9c-1e7e-4e41-a0a9-229a044bd8c0",
+      "theme": "Sonoma Sunset",
+      "description": "Candles and vineyard backdrop"
+    },
+    "f5e77f7e-fdac-42c9-860b-628944e82988": {
+      "id": "f5e77f7e-fdac-42c9-860b-628944e82988",
+      "event_id": "53db0a1c-d444-43b8-baf3-c33feb99faa4",
+      "theme": "Sonoma Sunset",
+      "description": "Candles and vineyard backdrop"
+    },
+    "92f4399e-5cde-43c7-bfe2-38a8346efca1": {
+      "id": "92f4399e-5cde-43c7-bfe2-38a8346efca1",
+      "event_id": "8f680f2d-118c-497f-9119-899535161047",
+      "theme": "Sonoma Sunset",
+      "description": "Candles and vineyard backdrop"
     }
   },
   "replan_logs": {
@@ -2331,6 +3575,166 @@
       "old_guest_count": 100,
       "new_guest_count": 100,
       "rationale": "With no change to total budget ($25,000) or headcount (100), the existing allocation is preserved to maintain the modern minimal aesthetic. The locked Floral & Decor cost of $4,000 remains fixed, and all other categories are rebalanced to ensure the sum equals exactly $25,000 while supporting the warm candlelight vibe."
+    },
+    "955a7170-90f3-4ea3-b918-7bca9faa1537": {
+      "id": "955a7170-90f3-4ea3-b918-7bca9faa1537",
+      "event_id": "416815fe-f2b1-486d-8178-47a844bfe453",
+      "timestamp": "2026-10-26T14:34:01.532Z",
+      "old_budget": 30000,
+      "new_budget": 25000,
+      "old_guest_count": 100,
+      "new_guest_count": 75,
+      "rationale": "Preserved user-locked photography and paid venue deposits while rebalancing catering."
+    },
+    "f0faa971-5674-4065-b6cc-1377fabdf963": {
+      "id": "f0faa971-5674-4065-b6cc-1377fabdf963",
+      "event_id": "f28235a7-47d6-47e8-bb3b-7819bef9aa7f",
+      "timestamp": "2026-10-26T14:34:01.537Z",
+      "old_budget": 30000,
+      "new_budget": 25000,
+      "old_guest_count": 100,
+      "new_guest_count": 80,
+      "rationale": "Updated schedule."
+    },
+    "7037a31c-5016-4b4c-a8f4-cdab9ea0bb45": {
+      "id": "7037a31c-5016-4b4c-a8f4-cdab9ea0bb45",
+      "event_id": "2ff0eaa9-d2c4-4d76-ad8c-d85ae0506ba0",
+      "timestamp": "2026-10-26T14:34:01.544Z",
+      "old_budget": 30000,
+      "new_budget": 20000,
+      "old_guest_count": 100,
+      "new_guest_count": 60,
+      "rationale": "Replaced unbooked partners."
+    },
+    "1f21fbd4-106b-47ea-97f5-f90d5a06c2be": {
+      "id": "1f21fbd4-106b-47ea-97f5-f90d5a06c2be",
+      "event_id": "c1973b77-d915-4243-8019-20b6062a9c26",
+      "timestamp": "2026-10-26T14:34:01.548Z",
+      "old_budget": 30000,
+      "new_budget": 40000,
+      "old_guest_count": 100,
+      "new_guest_count": 150,
+      "rationale": "Budget increased from $30,000 to $40,000 to support additional guest count."
+    },
+    "ba5f3098-6407-4174-8d9b-29eacbe8f5a9": {
+      "id": "ba5f3098-6407-4174-8d9b-29eacbe8f5a9",
+      "event_id": "e7fcf2ab-ba04-4103-acf2-46dee04b235a",
+      "timestamp": "2026-10-26T14:46:02.712Z",
+      "old_budget": 30000,
+      "new_budget": 25000,
+      "old_guest_count": 100,
+      "new_guest_count": 75,
+      "rationale": "Preserved user-locked photography and paid venue deposits while rebalancing catering."
+    },
+    "ae1860a7-7160-4427-ad70-977a94cc2cd1": {
+      "id": "ae1860a7-7160-4427-ad70-977a94cc2cd1",
+      "event_id": "f3eecf51-7c63-4ccc-bd66-0eb6bcd7d4d6",
+      "timestamp": "2026-10-26T14:46:02.719Z",
+      "old_budget": 30000,
+      "new_budget": 25000,
+      "old_guest_count": 100,
+      "new_guest_count": 80,
+      "rationale": "Updated schedule."
+    },
+    "e470f3c6-5466-4576-bea5-f7d2f9db882c": {
+      "id": "e470f3c6-5466-4576-bea5-f7d2f9db882c",
+      "event_id": "22233c51-c949-4ec4-a67d-ebc6989a94f0",
+      "timestamp": "2026-10-26T14:46:02.725Z",
+      "old_budget": 30000,
+      "new_budget": 20000,
+      "old_guest_count": 100,
+      "new_guest_count": 60,
+      "rationale": "Replaced unbooked partners."
+    },
+    "5c4372ff-59ef-4509-b49f-45623f7f866b": {
+      "id": "5c4372ff-59ef-4509-b49f-45623f7f866b",
+      "event_id": "1d960646-a6b6-452f-ae1a-f6dcb204b4ee",
+      "timestamp": "2026-10-26T14:46:02.730Z",
+      "old_budget": 30000,
+      "new_budget": 40000,
+      "old_guest_count": 100,
+      "new_guest_count": 150,
+      "rationale": "Budget increased from $30,000 to $40,000 to support additional guest count."
+    },
+    "d3114724-5ade-42e1-87e2-76ba76ff2073": {
+      "id": "d3114724-5ade-42e1-87e2-76ba76ff2073",
+      "event_id": "30e7df2a-4411-47db-98d1-4c1f7ba736b8",
+      "timestamp": "2026-10-26T15:18:43.149Z",
+      "old_budget": 30000,
+      "new_budget": 25000,
+      "old_guest_count": 100,
+      "new_guest_count": 75,
+      "rationale": "Preserved user-locked photography and paid venue deposits while rebalancing catering."
+    },
+    "300d5a43-8bde-4ada-975f-d8023bb5c9e9": {
+      "id": "300d5a43-8bde-4ada-975f-d8023bb5c9e9",
+      "event_id": "c4476807-599d-4fc7-8108-37de082975fb",
+      "timestamp": "2026-10-26T15:18:43.156Z",
+      "old_budget": 30000,
+      "new_budget": 25000,
+      "old_guest_count": 100,
+      "new_guest_count": 80,
+      "rationale": "Updated schedule."
+    },
+    "04340c02-9186-488e-bb96-0cff54410700": {
+      "id": "04340c02-9186-488e-bb96-0cff54410700",
+      "event_id": "cd951da0-b689-4055-ba6d-66d1c14b8017",
+      "timestamp": "2026-10-26T15:18:43.162Z",
+      "old_budget": 30000,
+      "new_budget": 20000,
+      "old_guest_count": 100,
+      "new_guest_count": 60,
+      "rationale": "Replaced unbooked partners."
+    },
+    "6fc3f782-bdfc-41b0-b66c-8e7ffa597341": {
+      "id": "6fc3f782-bdfc-41b0-b66c-8e7ffa597341",
+      "event_id": "78aec43a-4559-47f0-8b4d-cd239ea9d5da",
+      "timestamp": "2026-10-26T15:18:43.167Z",
+      "old_budget": 30000,
+      "new_budget": 40000,
+      "old_guest_count": 100,
+      "new_guest_count": 150,
+      "rationale": "Budget increased from $30,000 to $40,000 to support additional guest count."
+    },
+    "07f9f631-8a41-41f1-9cf6-3d8d852ec321": {
+      "id": "07f9f631-8a41-41f1-9cf6-3d8d852ec321",
+      "event_id": "e4ec710f-ea68-4c43-aa04-5fa70ec3ac69",
+      "timestamp": "2026-10-26T15:42:44.670Z",
+      "old_budget": 30000,
+      "new_budget": 25000,
+      "old_guest_count": 100,
+      "new_guest_count": 75,
+      "rationale": "Preserved user-locked photography and paid venue deposits while rebalancing catering."
+    },
+    "cf428f75-bf86-4fcb-a375-5f0c4343e37c": {
+      "id": "cf428f75-bf86-4fcb-a375-5f0c4343e37c",
+      "event_id": "f6cc1a2d-94cc-4412-8967-44ca03788f6f",
+      "timestamp": "2026-10-26T15:42:44.676Z",
+      "old_budget": 30000,
+      "new_budget": 25000,
+      "old_guest_count": 100,
+      "new_guest_count": 80,
+      "rationale": "Updated schedule."
+    },
+    "9eb4b828-6fb8-426d-a04b-61fcce119942": {
+      "id": "9eb4b828-6fb8-426d-a04b-61fcce119942",
+      "event_id": "aafdaa9c-1e7e-4e41-a0a9-229a044bd8c0",
+      "timestamp": "2026-10-26T15:42:44.682Z",
+      "old_budget": 30000,
+      "new_budget": 20000,
+      "old_guest_count": 100,
+      "new_guest_count": 60,
+      "rationale": "Replaced unbooked partners."
+    },
+    "e37742eb-a0b7-45f8-a9bc-ab51b95c0ff2": {
+      "id": "e37742eb-a0b7-45f8-a9bc-ab51b95c0ff2",
+      "event_id": "53db0a1c-d444-43b8-baf3-c33feb99faa4",
+      "timestamp": "2026-10-26T15:42:44.686Z",
+      "old_budget": 30000,
+      "new_budget": 40000,
+      "old_guest_count": 100,
+      "new_guest_count": 150,
+      "rationale": "Budget increased from $30,000 to $40,000 to support additional guest count."
     }
   }
 }

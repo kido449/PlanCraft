@@ -390,6 +390,7 @@ How would you like to refine your plan? You can ask me to reallocate funds, stre
             onChange={(e) => setInput(e.target.value)}
             placeholder={`Ask your AI Assistant (e.g. "Add $2,000 for lighting and adjust catering", "What rain contingencies do we need?")`}
             readOnly={isLoading}
+            aria-label="Planning assistant message input"
             className={`w-full pl-4 pr-24 py-3 bg-[#EEEDEA]/40 hover:bg-[#EEEDEA]/60 focus:bg-white text-xs sm:text-sm text-[#111111] rounded-full border border-[#14372D]/20 focus:outline-none focus:ring-2 focus:ring-[#111111] transition-all ${
               isLoading ? 'opacity-70 cursor-wait' : ''
             }`}
@@ -398,6 +399,7 @@ How would you like to refine your plan? You can ask me to reallocate funds, stre
           <button
             type="submit"
             disabled={!input.trim() || isLoading}
+            aria-label="Send message to AI assistant"
             className="absolute right-1.5 px-4 py-2 rounded-full bg-[#111111] hover:bg-[#413936] text-[#EEEDEA] text-xs font-medium transition flex items-center gap-1.5 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
           >
             <span>Ask AI</span>
