@@ -104,6 +104,12 @@ async function apiFetch<T = any>(endpoint: string, options: RequestInit = {}): P
   const contentType = res.headers.get('content-type') || '';
   if (!contentType.includes('application/json')) {
     const rawText = await res.text();
+    const isVercelHost = typeof window !== 'undefined' && window.location.hostname.includes('vercel.app');
+    if (isVercelHost && !API_BASE) {
+      throw new Error(
+        'Frontend is deployed on Vercel without VITE_API_URL configured. In Vercel Project Settings -> Environment Variables, add VITE_API_URL with your Render backend URL (e.g. https://your-backend.onrender.com) and trigger a redeploy.'
+      );
+    }
     const cleanSnippet = rawText.trim().slice(0, 120);
     throw new Error(
       `Server at ${targetUrl} returned ${res.status} ${res.statusText || 'Error'} (non-JSON): ${cleanSnippet || 'Ensure backend server is running.'}`
