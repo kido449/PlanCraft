@@ -14,6 +14,23 @@ import {
 let currentUserId = localStorage.getItem('plancraft_user_id') || 'default-user-101';
 let currentSessionToken = localStorage.getItem('plancraft_session_token') || '';
 
+// Base API URL configuration: allows pointing frontend to remote backend (e.g. Render)
+// If VITE_API_URL is set (e.g. "https://plancraft-ai.onrender.com"), all calls route there.
+// If unset, defaults to relative paths ("/api/...") for local development or same-host proxies.
+const API_BASE = (import.meta.env.VITE_API_URL || '').replace(/\/+$/, '');
+
+export function getApiBaseUrl(): string {
+  return API_BASE;
+}
+
+function resolveUrl(endpoint: string): string {
+  if (endpoint.startsWith('http://') || endpoint.startsWith('https://')) {
+    return endpoint;
+  }
+  const cleanEndpoint = endpoint.startsWith('/') ? endpoint : `/${endpoint}`;
+  return `${API_BASE}${cleanEndpoint}`;
+}
+
 export function getUserId(): string {
   return currentUserId;
 }
@@ -29,14 +46,15 @@ export async function setUserId(id: string): Promise<string> {
 export async function ensureSession(): Promise<string> {
   if (currentSessionToken) return currentSessionToken;
   try {
-    const res = await fetch('/api/auth/session', {
+    const url = resolveUrl('/api/auth/session');
+    const res = await fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ userId: currentUserId }),
     });
     const contentType = res.headers.get('content-type') || '';
     if (!contentType.includes('application/json')) {
-      console.warn('Session endpoint returned non-JSON response. Ensure PlanCraft server is running.');
+      console.warn(`Session endpoint (${url}) returned non-JSON response. Ensure PlanCraft backend is reachable.`);
       return '';
     }
     const data = await res.json();
@@ -66,10 +84,11 @@ async function getHeaders(): Promise<HeadersInit> {
  */
 async function apiFetch<T = any>(endpoint: string, options: RequestInit = {}): Promise<T> {
   const headers = await getHeaders();
+  const targetUrl = resolveUrl(endpoint);
   let res: Response;
 
   try {
-    res = await fetch(endpoint, {
+    res = await fetch(targetUrl, {
       ...options,
       headers: {
         ...headers,
@@ -78,7 +97,7 @@ async function apiFetch<T = any>(endpoint: string, options: RequestInit = {}): P
     });
   } catch (networkErr: any) {
     throw new Error(
-      `Cannot connect to PlanCraft server (${networkErr.message}). Please ensure the server is running on http://localhost:3000.`
+      `Cannot connect to PlanCraft API at ${targetUrl} (${networkErr.message}). Verify backend server status and VITE_API_URL.`
     );
   }
 
@@ -87,7 +106,7 @@ async function apiFetch<T = any>(endpoint: string, options: RequestInit = {}): P
     const rawText = await res.text();
     const cleanSnippet = rawText.trim().slice(0, 120);
     throw new Error(
-      `Server returned ${res.status} ${res.statusText || 'Error'} (non-JSON): ${cleanSnippet || 'Please ensure the server is running.'}`
+      `Server at ${targetUrl} returned ${res.status} ${res.statusText || 'Error'} (non-JSON): ${cleanSnippet || 'Ensure backend server is running.'}`
     );
   }
 

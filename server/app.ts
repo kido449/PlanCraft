@@ -9,6 +9,27 @@ dotenv.config();
 
 export const app = express();
 
+// Permissive CORS middleware for cross-origin frontend deployments (e.g. Vercel -> Render)
+app.use((req: Request, res: Response, next: NextFunction) => {
+  const origin = req.headers.origin;
+  if (origin) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+  } else {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+  }
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS');
+  res.setHeader(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept, Authorization, x-session-token, x-user-id'
+  );
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
+
+  if (req.method === 'OPTIONS') {
+    return res.status(204).end();
+  }
+  next();
+});
+
 // Body parser with 1mb limit
 app.use(express.json({ limit: '1mb' }));
 
