@@ -59,6 +59,7 @@ export interface IdeaRecord {
   event_id: string;
   theme: string;
   description: string;
+  is_fallback?: boolean;
 }
 
 export interface ReplanLogRecord {
@@ -147,5 +148,7 @@ export interface AssistantMessage {
   timestamp: string;
   suggested_actions?: AssistantAction[];
   appliedActionIds?: string[];
+  is_fallback?: boolean;
+  fallback_reason?: string;
 }
 

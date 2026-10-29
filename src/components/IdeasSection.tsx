@@ -60,9 +60,16 @@ export const IdeasSection: React.FC<IdeasSectionProps> = ({ ideas, vibe, locatio
               >
                 <div>
                   <div className="flex items-start justify-between gap-2 border-b border-[#14372D]/10 pb-3">
-                    <span className="text-xs uppercase tracking-wider text-[#7A7571] font-medium">
-                      Concept #{index + 1}
-                    </span>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs uppercase tracking-wider text-[#7A7571] font-medium">
+                        Concept #{index + 1}
+                      </span>
+                      {idea.is_fallback && (
+                        <span className="text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-500/10 text-amber-800 border border-amber-500/30" title="Loaded from backup template">
+                          Backup Template
+                        </span>
+                      )}
+                    </div>
                     <div className="flex items-center gap-1.5">
                       <button
                         onClick={() => togglePin(idea.id)}

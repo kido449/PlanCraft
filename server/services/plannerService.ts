@@ -1,6 +1,7 @@
 import { eventStore } from '../db/store.js';
 import { buildGeneratePrompt, buildReplanPrompt } from '../ai/prompts.js';
 import { executePlanGeneration } from '../ai/generator.js';
+import { enforcePlanConstraints } from '../ai/constraints.js';
 import { EventWithDetails } from '../types.js';
 
 export async function executeGenerateFlow(
@@ -9,7 +10,11 @@ export async function executeGenerateFlow(
 ): Promise<{ event: EventWithDetails; promptUsed: string }> {
   const eventWithDetails = eventStore.getEvent(eventId, ownerId);
   const prompt = buildGeneratePrompt(eventWithDetails);
-  const generatedPlan = await executePlanGeneration(prompt);
+  const rawGeneratedPlan = await executePlanGeneration(prompt);
+
+  // Programmatic code-level constraint enforcement & clamping
+  const { payload: generatedPlan } = enforcePlanConstraints(rawGeneratedPlan, eventWithDetails);
+
   const updatedEvent = eventStore.saveGeneratedPlan(eventWithDetails.id, ownerId, generatedPlan);
   return {
     event: updatedEvent,
@@ -48,9 +53,20 @@ export async function executeReplanFlow(
   });
 
   // 3. Execute LLM generation
-  const replanResult = await executePlanGeneration(prompt);
+  const rawReplanResult = await executePlanGeneration(prompt);
 
-  // 4. Merge replan payload preserving user-edited/locked items
+  // Find locked budget items that must be preserved
+  const lockedBudgetItems = (refreshedEvent.budget || []).filter(
+    (b) => b.is_user_edited || b.status === 'paid' || b.actual_cost !== null
+  );
+
+  // 4. Code-level programmatic constraint enforcement & clamping
+  const { payload: replanResult } = enforcePlanConstraints(rawReplanResult, refreshedEvent, {
+    lockedBudgetItems,
+    isReplan: true,
+  });
+
+  // 5. Merge replan payload preserving user-edited/locked items
   const finalEvent = eventStore.applyReplan(eventId, ownerId, replanResult, {
     old_budget: oldBudget,
     new_budget: targetBudget,
@@ -65,3 +81,4 @@ export async function executeReplanFlow(
     rationale: replanResult.replan_rationale,
   };
 }
+

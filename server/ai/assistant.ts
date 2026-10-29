@@ -22,6 +22,8 @@ export interface AssistantAction {
 export interface AssistantResponse {
   reply: string;
   suggested_actions: AssistantAction[];
+  is_fallback?: boolean;
+  fallback_reason?: string;
 }
 
 export async function askEventAssistant(
@@ -126,6 +128,7 @@ Analyze and formulate your response in JSON:`;
     return {
       reply: parsed.reply || 'Analysis completed.',
       suggested_actions: Array.isArray(parsed.suggested_actions) ? parsed.suggested_actions : [],
+      is_fallback: false,
     };
   } catch (err: any) {
     console.error('Error in askEventAssistant:', err);
@@ -144,6 +147,8 @@ Analyze and formulate your response in JSON:`;
           },
         },
       ],
+      is_fallback: true,
+      fallback_reason: `Live AI inference failed (${err.message || 'Provider connection error'}). Displaying deterministic offline backup template.`,
     };
   }
 }

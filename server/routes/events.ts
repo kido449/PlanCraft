@@ -3,16 +3,39 @@ import { eventStore } from '../db/store.js';
 import { buildGeneratePrompt } from '../ai/prompts.js';
 import { askEventAssistant } from '../ai/assistant.js';
 import { executeGenerateFlow, executeReplanFlow } from '../services/plannerService.js';
+import { requireAuth, createSessionToken } from '../auth.js';
 
 export const eventsRouter = Router();
 
-// Helper to extract owner ID from request header
-function getOwnerId(req: Request): string {
-  const header = req.headers['x-user-id'];
-  if (typeof header === 'string' && header.trim()) {
-    return header.trim();
+// Public Authentication Endpoint: Issue signed session token
+eventsRouter.post('/auth/session', (req: Request, res: Response) => {
+  try {
+    const requestedId =
+      typeof req.body?.userId === 'string' && req.body.userId.trim()
+        ? req.body.userId.trim()
+        : 'default-user-101';
+
+    const token = createSessionToken(requestedId);
+    res.json({
+      success: true,
+      token,
+      userId: requestedId,
+    });
+  } catch (err: any) {
+    res.status(500).json({ success: false, error: err.message });
   }
-  return 'default-user-101';
+});
+
+// Enforce cryptographic token authentication on all event/resource endpoints
+eventsRouter.use(requireAuth);
+
+// Helper to extract verified owner ID from authenticated session
+function getOwnerId(req: Request): string {
+  const user = (req as any).user;
+  if (user && typeof user.id === 'string' && user.id.trim()) {
+    return user.id.trim();
+  }
+  throw new Error('Unauthorized: Missing or invalid authenticated user session');
 }
 
 // 1. GET /api/events - List events for user
@@ -129,21 +152,37 @@ eventsRouter.post('/events/:id/generate', async (req: Request, res: Response) =>
 eventsRouter.post('/events/:id/replan', async (req: Request, res: Response) => {
   try {
     const ownerId = getOwnerId(req);
-    const { reason, budget_override, guest_override, constraints } = req.body || {};
-    if (reason && (typeof reason !== 'string' || reason.length > 500)) {
+    const body = req.body || {};
+    const { reason, constraints } = body;
+    const targetBudget = body.new_budget !== undefined ? body.new_budget : body.budget_override;
+    const targetGuests = body.new_guest_count !== undefined ? body.new_guest_count : body.guest_override;
+
+    if (reason !== undefined && (typeof reason !== 'string' || reason.length > 500)) {
       return res.status(400).json({ success: false, error: 'Replan reason must be under 500 characters.' });
     }
-    if (constraints && (!Array.isArray(constraints) || constraints.length > 20)) {
+    if (constraints !== undefined && (!Array.isArray(constraints) || constraints.length > 20)) {
       return res.status(400).json({ success: false, error: 'Constraints must be an array of at most 20 items.' });
     }
-    if (budget_override !== undefined && (isNaN(Number(budget_override)) || Number(budget_override) < 0 || Number(budget_override) > 1000000000)) {
-      return res.status(400).json({ success: false, error: 'Budget override must be a number between 0 and 1,000,000,000.' });
+    if (targetBudget !== undefined) {
+      const numBudget = Number(targetBudget);
+      if (isNaN(numBudget) || numBudget < 0 || numBudget > 1000000000) {
+        return res.status(400).json({ success: false, error: 'Budget override must be a number between 0 and 1,000,000,000.' });
+      }
     }
-    if (guest_override !== undefined && (isNaN(Number(guest_override)) || Number(guest_override) < 1 || Number(guest_override) > 500000)) {
-      return res.status(400).json({ success: false, error: 'Guest override must be a number between 1 and 500,000.' });
+    if (targetGuests !== undefined) {
+      const numGuests = Number(targetGuests);
+      if (isNaN(numGuests) || numGuests < 1 || numGuests > 500000) {
+        return res.status(400).json({ success: false, error: 'Guest override must be a number between 1 and 500,000.' });
+      }
     }
 
-    const result = await executeReplanFlow(req.params.id, ownerId, req.body);
+    const replanParams = {
+      new_budget: targetBudget !== undefined ? Number(targetBudget) : undefined,
+      new_guest_count: targetGuests !== undefined ? Math.round(Number(targetGuests)) : undefined,
+      reason: reason ? String(reason).trim() : undefined,
+    };
+
+    const result = await executeReplanFlow(req.params.id, ownerId, replanParams);
     res.json({
       success: true,
       event: result.event,
@@ -443,6 +482,8 @@ eventsRouter.post('/events/:id/assistant', async (req: Request, res: Response) =
       success: true,
       reply: assistantResult.reply,
       suggested_actions: assistantResult.suggested_actions,
+      is_fallback: Boolean(assistantResult.is_fallback),
+      fallback_reason: assistantResult.fallback_reason,
     });
   } catch (err: any) {
     console.error('Error in /api/events/:id/assistant:', err);

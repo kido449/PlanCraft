@@ -10,34 +10,61 @@ import {
   EventType,
 } from './types';
 
-// Multi-tenant user simulation key
+// Multi-tenant user session management
 let currentUserId = localStorage.getItem('plancraft_user_id') || 'default-user-101';
+let currentSessionToken = localStorage.getItem('plancraft_session_token') || '';
 
 export function getUserId(): string {
   return currentUserId;
 }
 
-export function setUserId(id: string): void {
+export async function setUserId(id: string): Promise<string> {
   currentUserId = id;
   localStorage.setItem('plancraft_user_id', id);
+  currentSessionToken = '';
+  localStorage.removeItem('plancraft_session_token');
+  return await ensureSession();
 }
 
-function getHeaders(): HeadersInit {
+export async function ensureSession(): Promise<string> {
+  if (currentSessionToken) return currentSessionToken;
+  try {
+    const res = await fetch('/api/auth/session', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ userId: currentUserId }),
+    });
+    const data = await res.json();
+    if (data.token) {
+      currentSessionToken = data.token;
+      localStorage.setItem('plancraft_session_token', data.token);
+      return data.token;
+    }
+  } catch (err) {
+    console.error('Failed to initialize session token:', err);
+  }
+  return '';
+}
+
+async function getHeaders(): Promise<HeadersInit> {
+  if (!currentSessionToken) {
+    await ensureSession();
+  }
   return {
     'Content-Type': 'application/json',
-    'x-user-id': currentUserId,
+    ...(currentSessionToken ? { Authorization: `Bearer ${currentSessionToken}` } : {}),
   };
 }
 
 export async function fetchEvents(): Promise<EventRecord[]> {
-  const res = await fetch('/api/events', { headers: getHeaders() });
+  const res = await fetch('/api/events', { headers: await getHeaders() });
   const data = await res.json();
   if (!res.ok || !data.success) throw new Error(data.error || 'Failed to fetch events');
   return data.events;
 }
 
 export async function fetchEvent(id: string): Promise<EventWithDetails> {
-  const res = await fetch(`/api/events/${id}`, { headers: getHeaders() });
+  const res = await fetch(`/api/events/${id}`, { headers: await getHeaders() });
   const data = await res.json();
   if (!res.ok || !data.success) throw new Error(data.error || 'Failed to fetch event');
   return data.event;
@@ -54,7 +81,7 @@ export async function createEvent(payload: {
 }): Promise<EventRecord> {
   const res = await fetch('/api/events', {
     method: 'POST',
-    headers: getHeaders(),
+    headers: await getHeaders(),
     body: JSON.stringify(payload),
   });
   const data = await res.json();
@@ -68,7 +95,7 @@ export async function updateEvent(
 ): Promise<EventRecord> {
   const res = await fetch(`/api/events/${id}`, {
     method: 'PATCH',
-    headers: getHeaders(),
+    headers: await getHeaders(),
     body: JSON.stringify(updates),
   });
   const data = await res.json();
@@ -79,7 +106,7 @@ export async function updateEvent(
 export async function deleteEvent(id: string): Promise<void> {
   const res = await fetch(`/api/events/${id}`, {
     method: 'DELETE',
-    headers: getHeaders(),
+    headers: await getHeaders(),
   });
   const data = await res.json();
   if (!res.ok || !data.success) throw new Error(data.error || 'Failed to delete event');
@@ -88,7 +115,7 @@ export async function deleteEvent(id: string): Promise<void> {
 export async function generateEventPlan(id: string): Promise<{ event: EventWithDetails; promptUsed: string }> {
   const res = await fetch(`/api/events/${id}/generate`, {
     method: 'POST',
-    headers: getHeaders(),
+    headers: await getHeaders(),
   });
   const data = await res.json();
   if (!res.ok || !data.success) throw new Error(data.error || 'Failed to generate plan');
@@ -101,7 +128,7 @@ export async function replanEvent(
 ): Promise<{ event: EventWithDetails; promptUsed: string; rationale?: string }> {
   const res = await fetch(`/api/events/${id}/replan`, {
     method: 'POST',
-    headers: getHeaders(),
+    headers: await getHeaders(),
     body: JSON.stringify(payload),
   });
   const data = await res.json();
@@ -116,7 +143,7 @@ export async function updateBudgetItem(
 ): Promise<BudgetItemRecord> {
   const res = await fetch(`/api/budget-items/${id}`, {
     method: 'PATCH',
-    headers: getHeaders(),
+    headers: await getHeaders(),
     body: JSON.stringify(updates),
   });
   const data = await res.json();
@@ -130,7 +157,7 @@ export async function addBudgetItem(
 ): Promise<BudgetItemRecord> {
   const res = await fetch(`/api/events/${eventId}/budget-items`, {
     method: 'POST',
-    headers: getHeaders(),
+    headers: await getHeaders(),
     body: JSON.stringify(item),
   });
   const data = await res.json();
@@ -141,7 +168,7 @@ export async function addBudgetItem(
 export async function deleteBudgetItem(id: string): Promise<void> {
   const res = await fetch(`/api/budget-items/${id}`, {
     method: 'DELETE',
-    headers: getHeaders(),
+    headers: await getHeaders(),
   });
   const data = await res.json();
   if (!res.ok || !data.success) throw new Error(data.error || 'Failed to delete budget item');
@@ -154,7 +181,7 @@ export async function updateTimelineTask(
 ): Promise<TimelineTaskRecord> {
   const res = await fetch(`/api/timeline-tasks/${id}`, {
     method: 'PATCH',
-    headers: getHeaders(),
+    headers: await getHeaders(),
     body: JSON.stringify(updates),
   });
   const data = await res.json();
@@ -168,7 +195,7 @@ export async function addTimelineTask(
 ): Promise<TimelineTaskRecord> {
   const res = await fetch(`/api/events/${eventId}/timeline-tasks`, {
     method: 'POST',
-    headers: getHeaders(),
+    headers: await getHeaders(),
     body: JSON.stringify(task),
   });
   const data = await res.json();
@@ -179,7 +206,7 @@ export async function addTimelineTask(
 export async function deleteTimelineTask(id: string): Promise<void> {
   const res = await fetch(`/api/timeline-tasks/${id}`, {
     method: 'DELETE',
-    headers: getHeaders(),
+    headers: await getHeaders(),
   });
   const data = await res.json();
   if (!res.ok || !data.success) throw new Error(data.error || 'Failed to delete timeline task');
@@ -192,7 +219,7 @@ export async function updateVendor(
 ): Promise<VendorRecord> {
   const res = await fetch(`/api/vendors/${id}`, {
     method: 'PATCH',
-    headers: getHeaders(),
+    headers: await getHeaders(),
     body: JSON.stringify(updates),
   });
   const data = await res.json();
@@ -206,7 +233,7 @@ export async function addVendor(
 ): Promise<VendorRecord> {
   const res = await fetch(`/api/events/${eventId}/vendors`, {
     method: 'POST',
-    headers: getHeaders(),
+    headers: await getHeaders(),
     body: JSON.stringify(vendor),
   });
   const data = await res.json();
@@ -217,7 +244,7 @@ export async function addVendor(
 export async function deleteVendor(id: string): Promise<void> {
   const res = await fetch(`/api/vendors/${id}`, {
     method: 'DELETE',
-    headers: getHeaders(),
+    headers: await getHeaders(),
   });
   const data = await res.json();
   if (!res.ok || !data.success) throw new Error(data.error || 'Failed to delete vendor');
@@ -230,7 +257,7 @@ export async function addVolunteer(
 ): Promise<VolunteerRecord> {
   const res = await fetch(`/api/events/${eventId}/volunteers`, {
     method: 'POST',
-    headers: getHeaders(),
+    headers: await getHeaders(),
     body: JSON.stringify(volunteer),
   });
   const data = await res.json();
@@ -244,7 +271,7 @@ export async function updateVolunteer(
 ): Promise<VolunteerRecord> {
   const res = await fetch(`/api/volunteers/${id}`, {
     method: 'PATCH',
-    headers: getHeaders(),
+    headers: await getHeaders(),
     body: JSON.stringify(updates),
   });
   const data = await res.json();
@@ -255,7 +282,7 @@ export async function updateVolunteer(
 export async function deleteVolunteer(id: string): Promise<void> {
   const res = await fetch(`/api/volunteers/${id}`, {
     method: 'DELETE',
-    headers: getHeaders(),
+    headers: await getHeaders(),
   });
   const data = await res.json();
   if (!res.ok || !data.success) throw new Error(data.error || 'Failed to delete volunteer role');
@@ -268,7 +295,7 @@ export async function addPermit(
 ): Promise<PermitRecord> {
   const res = await fetch(`/api/events/${eventId}/permits`, {
     method: 'POST',
-    headers: getHeaders(),
+    headers: await getHeaders(),
     body: JSON.stringify(permit),
   });
   const data = await res.json();
@@ -282,7 +309,7 @@ export async function updatePermit(
 ): Promise<PermitRecord> {
   const res = await fetch(`/api/permits/${id}`, {
     method: 'PATCH',
-    headers: getHeaders(),
+    headers: await getHeaders(),
     body: JSON.stringify(updates),
   });
   const data = await res.json();
@@ -293,7 +320,7 @@ export async function updatePermit(
 export async function deletePermit(id: string): Promise<void> {
   const res = await fetch(`/api/permits/${id}`, {
     method: 'DELETE',
-    headers: getHeaders(),
+    headers: await getHeaders(),
   });
   const data = await res.json();
   if (!res.ok || !data.success) throw new Error(data.error || 'Failed to delete permit');
@@ -301,7 +328,7 @@ export async function deletePermit(id: string): Promise<void> {
 
 // Guest List API
 export async function fetchGuests(eventId: string): Promise<GuestRecord[]> {
-  const res = await fetch(`/api/events/${eventId}/guests`, { headers: getHeaders() });
+  const res = await fetch(`/api/events/${eventId}/guests`, { headers: await getHeaders() });
   const data = await res.json();
   if (!res.ok || !data.success) throw new Error(data.error || 'Failed to fetch guests');
   return data.guests;
@@ -313,7 +340,7 @@ export async function addGuest(
 ): Promise<GuestRecord> {
   const res = await fetch(`/api/events/${eventId}/guests`, {
     method: 'POST',
-    headers: getHeaders(),
+    headers: await getHeaders(),
     body: JSON.stringify(guest),
   });
   const data = await res.json();
@@ -327,7 +354,7 @@ export async function updateGuest(
 ): Promise<GuestRecord> {
   const res = await fetch(`/api/guests/${id}`, {
     method: 'PATCH',
-    headers: getHeaders(),
+    headers: await getHeaders(),
     body: JSON.stringify(updates),
   });
   const data = await res.json();
@@ -338,7 +365,7 @@ export async function updateGuest(
 export async function deleteGuest(id: string): Promise<void> {
   const res = await fetch(`/api/guests/${id}`, {
     method: 'DELETE',
-    headers: getHeaders(),
+    headers: await getHeaders(),
   });
   const data = await res.json();
   if (!res.ok || !data.success) throw new Error(data.error || 'Failed to delete guest');
@@ -348,7 +375,7 @@ export async function deleteGuest(id: string): Promise<void> {
 // Traceability preview
 export async function getPromptPreview(eventId: string): Promise<{ prompt: string; event: EventWithDetails }> {
   const res = await fetch(`/api/events/${eventId}/prompt-preview`, {
-    headers: getHeaders(),
+    headers: await getHeaders(),
   });
   const data = await res.json();
   if (!res.ok || !data.success) throw new Error(data.error || 'Failed to fetch prompt preview');
@@ -365,14 +392,19 @@ export async function askAssistant(
   eventId: string,
   message: string,
   history: Array<{ role: 'user' | 'assistant'; content: string }> = []
-): Promise<{ reply: string; suggested_actions: any[] }> {
+): Promise<{ reply: string; suggested_actions: any[]; is_fallback?: boolean; fallback_reason?: string }> {
   const res = await fetch(`/api/events/${eventId}/assistant`, {
     method: 'POST',
-    headers: getHeaders(),
+    headers: await getHeaders(),
     body: JSON.stringify({ message, history }),
   });
   const data = await res.json();
   if (!res.ok || !data.success) throw new Error(data.error || 'Assistant failed to respond');
-  return { reply: data.reply, suggested_actions: data.suggested_actions || [] };
+  return {
+    reply: data.reply,
+    suggested_actions: data.suggested_actions || [],
+    is_fallback: Boolean(data.is_fallback),
+    fallback_reason: data.fallback_reason,
+  };
 }
 

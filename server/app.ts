@@ -41,10 +41,7 @@ const llmEndpointLimiter = rateLimit({
 app.use('/api', globalLimiter);
 app.use(['/api/events/:id/generate', '/api/events/:id/replan', '/api/events/:id/assistant'], llmEndpointLimiter);
 
-// API Routes
-app.use('/api', eventsRouter);
-
-// Health check endpoint
+// Health check endpoint (Public)
 app.get('/api/health', (_req: Request, res: Response) => {
   const hasGroq = Boolean(process.env.GROQ_API_KEY || process.env.GEMINI_API_KEY?.startsWith('gsk_'));
   const hasGemini = Boolean(process.env.GEMINI_API_KEY && !process.env.GEMINI_API_KEY.startsWith('gsk_'));
@@ -61,6 +58,9 @@ app.get('/api/health', (_req: Request, res: Response) => {
       : 'None',
   });
 });
+
+// API Routes
+app.use('/api', eventsRouter);
 
 // Seed default initial event if database is completely empty
 const defaultOwnerId = 'default-user-101';

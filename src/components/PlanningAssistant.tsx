@@ -151,6 +151,8 @@ How would you like to refine your plan? You can ask me to reallocate funds, stre
           ...act,
           id: `act-${Date.now()}-${idx}`,
         })),
+        is_fallback: res.is_fallback,
+        fallback_reason: res.fallback_reason,
       };
 
       setMessages((prev) => [...prev, assistantMessage]);
@@ -280,6 +282,19 @@ How would you like to refine your plan? You can ask me to reallocate funds, stre
                     : 'bg-white border border-[#14372D]/15 text-[#111111] shadow-sm rounded-tl-none'
                 }`}
               >
+                {msg.is_fallback && (
+                  <div className="mb-3 px-3 py-2 rounded-[10px] bg-amber-500/10 border border-amber-500/30 flex items-start gap-2 text-amber-900 text-xs">
+                    <ShieldAlert className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+                    <div>
+                      <span className="font-semibold text-amber-800 uppercase tracking-wider text-[10px] block">
+                        Using Backup Template · AI Provider Offline
+                      </span>
+                      <span className="text-amber-700 text-[11px] leading-tight block mt-0.5">
+                        {msg.fallback_reason || 'Live AI connection was unavailable. Serving deterministic backup template.'}
+                      </span>
+                    </div>
+                  </div>
+                )}
                 <div className="whitespace-pre-wrap font-sans space-y-2">
                   {msg.content.split('\n\n').map((paragraph, pIdx) => (
                     <p key={pIdx} className="text-balance leading-relaxed">

@@ -59,6 +59,7 @@ export interface IdeaRecord {
   event_id: string;
   theme: string;
   description: string;
+  is_fallback?: boolean;
 }
 
 export interface VolunteerRecord {
@@ -160,6 +161,7 @@ export interface GeneratedPermitOutputItem {
 export interface GeneratedIdeaOutputItem {
   theme: string;
   description: string;
+  is_fallback?: boolean;
 }
 
 export interface PlanGenerationPayload {

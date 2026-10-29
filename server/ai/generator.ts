@@ -54,20 +54,23 @@ export function validatePlanPayload(obj: any): {
     }
   }
 
-  // Ideas validation (graceful fallback if omitted or empty)
+  // Ideas validation (graceful fallback if omitted or empty - explicitly tagged)
+  let fallbackIdeasUsed = false;
   if (!Array.isArray(obj.ideas) || obj.ideas.length === 0) {
+    fallbackIdeasUsed = true;
     obj.ideas = [
-      { theme: 'Atmosphere & Design', description: 'Curated styling and ambient lighting tailored to the theme.' },
-      { theme: 'Guest Experience', description: 'Personalized welcomes and interactive celebration elements.' },
+      { theme: 'Atmosphere & Design', description: 'Curated styling and ambient lighting tailored to the theme.', is_fallback: true },
+      { theme: 'Guest Experience', description: 'Personalized welcomes and interactive celebration elements.', is_fallback: true },
     ];
   } else {
     obj.ideas = obj.ideas.filter(
       (item: any) => item && typeof item.theme === 'string' && typeof item.description === 'string'
     );
     if (obj.ideas.length === 0) {
+      fallbackIdeasUsed = true;
       obj.ideas = [
-        { theme: 'Atmosphere & Design', description: 'Curated styling and ambient lighting tailored to the theme.' },
-        { theme: 'Guest Experience', description: 'Personalized welcomes and interactive celebration elements.' },
+        { theme: 'Atmosphere & Design', description: 'Curated styling and ambient lighting tailored to the theme.', is_fallback: true },
+        { theme: 'Guest Experience', description: 'Personalized welcomes and interactive celebration elements.', is_fallback: true },
       ];
     }
   }
@@ -126,6 +129,7 @@ export function validatePlanPayload(obj: any): {
     ideas: obj.ideas.map((item: any) => ({
       theme: String(item.theme).trim(),
       description: String(item.description).trim(),
+      is_fallback: Boolean(item.is_fallback || fallbackIdeasUsed),
     })),
     replan_rationale: obj.replan_rationale ? String(obj.replan_rationale) : undefined,
   };

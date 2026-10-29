@@ -351,6 +351,7 @@ class EventStore {
         event_id: eventId,
         theme: idea.theme,
         description: idea.description,
+        is_fallback: Boolean(idea.is_fallback),
       };
     }
 
@@ -528,6 +529,7 @@ class EventStore {
           event_id: eventId,
           theme: idea.theme,
           description: idea.description,
+          is_fallback: Boolean(idea.is_fallback),
         };
       }
     }
