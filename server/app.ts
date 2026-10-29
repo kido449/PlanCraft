@@ -62,6 +62,14 @@ app.get('/api/health', (_req: Request, res: Response) => {
 // API Routes
 app.use('/api', eventsRouter);
 
+// Fallback 404 for any unmatched /api routes (guarantees strict JSON, never HTML)
+app.all('/api/*', (req: Request, res: Response) => {
+  res.status(404).json({
+    success: false,
+    error: `API route ${req.method} ${req.path} not found`,
+  });
+});
+
 // Seed default initial event if database is completely empty
 const defaultOwnerId = 'default-user-101';
 try {
