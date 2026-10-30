@@ -139,6 +139,7 @@ Configure the following in your `.env` file:
 | `PORT` | Local server port | `3000` |
 | `NODE_ENV` | Environment mode (`development`, `production`, `test`) | `development` |
 | `SESSION_SECRET` | Secret key for signing HMAC-SHA256 session tokens | `your-secret-key-min-32-chars` |
+| `VITE_API_URL` | Backend URL when frontend is deployed separately (e.g. Vercel → Render) | *(empty for local dev)* |
 
 ### Running Locally
 ```bash
